@@ -24,9 +24,12 @@
   align-items: center;
   gap: 8px;
   flex-shrink: 0;
-}
+  text-decoration: none;
+  color: inherit;
+  transition: opacity 0.2s;
 
-.brand-icon { font-size: 20px; }
+  &:hover { opacity: 0.82; text-decoration: none; }
+}
 
 .brand-name {
   font-family: 'Rajdhani', sans-serif;

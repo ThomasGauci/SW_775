@@ -1,0 +1,146 @@
+<div class="landing">
+
+  <!-- ── Floating background orbs ── -->
+  <div class="bg-orbs" aria-hidden="true">
+    <div class="orb orb-fire"></div>
+    <div class="orb orb-water"></div>
+    <div class="orb orb-wind"></div>
+    <div class="orb orb-light"></div>
+    <div class="orb orb-dark"></div>
+  </div>
+
+  <!-- ══════════════════════════════════
+       NAVBAR
+  ══════════════════════════════════ -->
+  <header class="land-nav">
+    <div class="land-nav-brand">
+      <app-logo [size]="36" />
+      <span class="land-nav-title">Summoners War Companion</span>
+    </div>
+
+    <nav class="land-nav-links">
+      @if (authService.isAuthenticated()) {
+        <a routerLink="/siege" class="btn btn-primary btn-sm">Accéder à l'app</a>
+      } @else {
+        <a routerLink="/login"    class="btn btn-ghost btn-sm">Connexion</a>
+        <a routerLink="/register" class="btn btn-primary btn-sm">Inscription</a>
+      }
+    </nav>
+  </header>
+
+  <!-- ══════════════════════════════════
+       HERO
+  ══════════════════════════════════ -->
+  <section class="hero">
+    <div class="hero-inner">
+
+      <div class="hero-logo">
+        <app-logo [size]="148" [animated]="true" />
+        <div class="hero-logo-glow"></div>
+      </div>
+
+      <div class="hero-text">
+        <h1 class="hero-title">
+          <span class="gradient-text">Summoners War</span>
+          <br>Companion
+        </h1>
+        <p class="hero-subtitle">
+          Votre outil tout-en-un pour le suivi de siège, la gestion de runes,
+          d'artefacts et de votre collection de monstres.
+        </p>
+
+        <div class="hero-ctas">
+          @if (authService.isAuthenticated()) {
+            <a routerLink="/siege" class="btn btn-primary btn-lg">
+              Accéder à l'application →
+            </a>
+          } @else {
+            <a routerLink="/register" class="btn btn-primary btn-lg">
+              Commencer gratuitement
+            </a>
+            <a routerLink="/login" class="btn btn-ghost btn-lg">
+              Se connecter
+            </a>
+          }
+        </div>
+
+        <!-- Elements row -->
+        <div class="elem-row" aria-hidden="true">
+          <span class="elem-pill fire">🔥 Feu</span>
+          <span class="elem-pill water">💧 Eau</span>
+          <span class="elem-pill wind">🌿 Vent</span>
+          <span class="elem-pill light">☀️ Lumière</span>
+          <span class="elem-pill dark">🌑 Ténèbres</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       STATS STRIP
+  ══════════════════════════════════ -->
+  <section class="stats-strip">
+    @for (s of stats; track s.label) {
+      <div class="stat-item">
+        <span class="stat-value">{{ s.value }}</span>
+        <span class="stat-label">{{ s.label }}</span>
+      </div>
+    }
+  </section>
+
+  <!-- ══════════════════════════════════
+       FEATURES
+  ══════════════════════════════════ -->
+  <section class="features" id="features">
+    <h2 class="section-title">Tout ce dont vous avez besoin</h2>
+    <p class="section-sub">Importez votre compte une seule fois, explorez toutes vos données.</p>
+
+    <div class="features-grid">
+      @for (f of features; track f.title) {
+        <div class="feature-card" [class]="'feature-card--' + f.color">
+          <div class="feature-icon">{{ f.icon }}</div>
+          <div class="feature-body">
+            <div class="feature-header">
+              <h3 class="feature-title">{{ f.title }}</h3>
+              @if (f.tag) {
+                <span class="feature-tag">{{ f.tag }}</span>
+              }
+            </div>
+            <p class="feature-desc">{{ f.desc }}</p>
+          </div>
+        </div>
+      }
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       CTA BANNER
+  ══════════════════════════════════ -->
+  <section class="cta-banner">
+    <div class="cta-inner">
+      <h2 class="cta-title">Prêt à optimiser votre siège&nbsp;?</h2>
+      <p class="cta-sub">Créez votre compte en quelques secondes, importez votre fichier SW Exporter et c'est parti.</p>
+      @if (!authService.isAuthenticated()) {
+        <a routerLink="/register" class="btn btn-primary btn-lg">Créer un compte gratuit</a>
+      } @else {
+        <a routerLink="/import" class="btn btn-primary btn-lg">Importer mon compte SW</a>
+      }
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       FOOTER
+  ══════════════════════════════════ -->
+  <footer class="land-footer">
+    <div class="land-footer-inner">
+      <div class="land-footer-brand">
+        <app-logo [size]="28" />
+        <span>SW Companion</span>
+      </div>
+      <p class="land-footer-note">
+        Projet non affilié à Com2uS. Summoners War est une marque déposée de Com2uS Holdings.
+      </p>
+    </div>
+  </footer>
+
+</div>

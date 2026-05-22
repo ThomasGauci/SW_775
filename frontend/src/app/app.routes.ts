@@ -2,6 +2,15 @@ import { Routes } from '@angular/router';
 import { authGuard } from './core/guards/auth.guard';
 
 export const routes: Routes = [
+  // ── Public landing page ──────────────────────────────────
+  {
+    path: '',
+    pathMatch: 'full',
+    loadComponent: () =>
+      import('./pages/landing/landing.component').then(m => m.LandingComponent)
+  },
+
+  // ── Auth pages ───────────────────────────────────────────
   {
     path: 'login',
     loadComponent: () =>
@@ -12,6 +21,8 @@ export const routes: Routes = [
     loadComponent: () =>
       import('./pages/register/register.component').then(m => m.RegisterComponent)
   },
+
+  // ── Protected app (main layout) ──────────────────────────
   {
     path: '',
     loadComponent: () =>
@@ -24,14 +35,14 @@ export const routes: Routes = [
           import('./pages/import/import.component').then(m => m.ImportComponent)
       },
       {
-        path: 'monsters',
-        loadComponent: () =>
-          import('./pages/monsters/monsters.component').then(m => m.MonstersComponent)
-      },
-      {
         path: 'siege',
         loadComponent: () =>
           import('./pages/tracker/tracker.component').then(m => m.TrackerComponent)
+      },
+      {
+        path: 'monsters',
+        loadComponent: () =>
+          import('./pages/monsters/monsters.component').then(m => m.MonstersComponent)
       },
       {
         path: 'runes',
@@ -50,8 +61,6 @@ export const routes: Routes = [
       }
     ]
   },
-  {
-    path: '**',
-    redirectTo: ''
-  }
+
+  { path: '**', redirectTo: '' }
 ];

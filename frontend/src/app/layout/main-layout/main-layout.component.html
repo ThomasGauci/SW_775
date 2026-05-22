@@ -2,10 +2,10 @@
 
   <!-- Top Navbar -->
   <header class="navbar">
-    <div class="navbar-brand">
-      <span class="brand-icon">🏰</span>
-      <span class="brand-name">SW 775</span>
-    </div>
+    <a routerLink="/" class="navbar-brand" title="Accueil">
+      <app-logo [size]="32" />
+      <span class="brand-name">SW Companion</span>
+    </a>
 
     <nav class="navbar-nav">
       @for (item of navItems(); track item.path) {
