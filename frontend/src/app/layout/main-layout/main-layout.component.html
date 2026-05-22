@@ -1,0 +1,37 @@
+<div class="app-shell">
+
+  <!-- Top Navbar -->
+  <header class="navbar">
+    <div class="navbar-brand">
+      <span class="brand-icon">🏰</span>
+      <span class="brand-name">SW 775</span>
+    </div>
+
+    <nav class="navbar-nav">
+      @for (item of navItems; track item.path) {
+        <a
+          class="nav-link"
+          [routerLink]="item.path"
+          routerLinkActive="active"
+        >
+          <span class="nav-icon">{{ item.icon }}</span>
+          <span class="nav-label">{{ item.label }}</span>
+          @if (item.soon) {
+            <span class="nav-soon">Soon</span>
+          }
+        </a>
+      }
+    </nav>
+
+    <div class="navbar-user">
+      <span class="user-name">{{ username }}</span>
+      <button class="btn-logout" (click)="logout()">Déconnexion</button>
+    </div>
+  </header>
+
+  <!-- Page content -->
+  <main class="app-content">
+    <router-outlet />
+  </main>
+
+</div>

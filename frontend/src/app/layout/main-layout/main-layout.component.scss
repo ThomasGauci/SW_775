@@ -1,0 +1,137 @@
+.app-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg);
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  height: 58px;
+  background: var(--bg2);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  gap: 16px;
+  position: sticky;
+  top: 0;
+  z-index: 200;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.brand-icon { font-size: 20px; }
+
+.brand-name {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--accent);
+  letter-spacing: .06em;
+}
+
+/* ===== Nav links ===== */
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  flex: 1;
+  padding: 0 8px;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--text2);
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: .04em;
+  transition: background .15s, color .15s;
+  white-space: nowrap;
+
+  &:hover {
+    background: var(--bg3);
+    color: var(--text);
+  }
+
+  &.active {
+    background: rgba(79, 142, 247, 0.12);
+    color: var(--accent);
+  }
+}
+
+.nav-icon { font-size: 16px; }
+
+.nav-soon {
+  font-size: 10px;
+  font-weight: 700;
+  background: var(--bg4);
+  color: var(--text3);
+  border-radius: 4px;
+  padding: 1px 5px;
+  letter-spacing: .06em;
+}
+
+/* ===== User area ===== */
+.navbar-user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  margin-left: auto;
+}
+
+.user-name {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text2);
+
+  @media (max-width: 480px) { display: none; }
+}
+
+.btn-logout {
+  padding: 5px 12px;
+  border-radius: 6px;
+  border: .5px solid var(--border2);
+  background: var(--bg3);
+  color: var(--text2);
+  font-size: 12px;
+  font-weight: 600;
+  font-family: 'Rajdhani', sans-serif;
+  letter-spacing: .04em;
+  cursor: pointer;
+  transition: background .15s, color .15s, border-color .15s;
+
+  &:hover {
+    background: var(--lose-bg);
+    color: var(--lose);
+    border-color: var(--lose);
+  }
+}
+
+/* ===== Content ===== */
+.app-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 600px) {
+  .navbar { padding: 0 12px; gap: 8px; }
+  .nav-link { padding: 6px 10px; }
+  .nav-label { display: none; }
+  .nav-icon { font-size: 20px; }
+  .brand-name { display: none; }
+}

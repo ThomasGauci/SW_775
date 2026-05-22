@@ -2,7 +2,6 @@ import {
   Component, OnInit, signal, ChangeDetectionStrategy, ChangeDetectorRef
 } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { AuthService } from '../../core/services/auth.service';
 import { BattleService } from '../../core/services/battle.service';
 import { Battle, BattleStats } from '../../models/battle.model';
 import { Monster } from '../../models/monster.model';
@@ -31,7 +30,6 @@ export class TrackerComponent implements OnInit {
   successMsg = signal<string | null>(null);
 
   constructor(
-    readonly authService: AuthService,
     private battleService: BattleService,
     private cdr: ChangeDetectorRef
   ) {}
@@ -113,12 +111,4 @@ export class TrackerComponent implements OnInit {
     });
   }
 
-  logout(): void {
-    this.authService.logout();
-  }
-
-  get username(): string {
-    const user = this.authService.currentUser();
-    return user?.username ?? user?.email ?? 'Joueur';
-  }
 }

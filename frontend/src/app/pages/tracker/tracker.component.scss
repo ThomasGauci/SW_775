@@ -5,58 +5,6 @@
   background: var(--bg);
 }
 
-/* ===== Header ===== */
-.tracker-header {
-  background: var(--bg2);
-  border-bottom: 1px solid var(--border);
-  padding: 0 24px;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
-
-.header-left {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.header-logo {
-  font-size: 22px;
-}
-
-.header-title {
-  font-family: 'Rajdhani', sans-serif;
-  font-size: 20px;
-  font-weight: 700;
-  color: var(--text);
-  letter-spacing: 0.04em;
-
-  @media (max-width: 480px) {
-    display: none;
-  }
-}
-
-.header-right {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.header-user {
-  font-size: 13px;
-  font-weight: 600;
-  color: var(--text2);
-
-  @media (max-width: 400px) {
-    display: none;
-  }
-}
-
 /* ===== Tab Navigation ===== */
 .tab-nav {
   background: var(--bg2);
