@@ -1,0 +1,95 @@
+<div class="statistics">
+  @if (loading) {
+    <div class="stats-empty">
+      <span class="spinner"></span>
+      <span>Chargement...</span>
+    </div>
+  } @else if (!stats || stats.total === 0) {
+    <div class="stats-empty">
+      <span class="empty-icon">📊</span>
+      <span>Aucune statistique disponible</span>
+      <small>Enregistrez des combats pour voir vos statistiques</small>
+    </div>
+  } @else {
+    <!-- Overview Cards -->
+    <div class="stat-cards">
+      <div class="stat-card">
+        <div class="stat-value">{{ stats.total }}</div>
+        <div class="stat-label">Combats</div>
+      </div>
+      <div class="stat-card win">
+        <div class="stat-value win">{{ stats.wins }}</div>
+        <div class="stat-label">Victoires</div>
+      </div>
+      <div class="stat-card lose">
+        <div class="stat-value lose">{{ stats.losses }}</div>
+        <div class="stat-label">Défaites</div>
+      </div>
+      <div class="stat-card accent">
+        <div class="stat-value accent">{{ formatPct(stats.winRate) }}</div>
+        <div class="stat-label">Win Rate</div>
+      </div>
+    </div>
+
+    <!-- Win Rate Bar -->
+    <div class="winrate-section">
+      <div class="winrate-header">
+        <span class="section-title">Taux de victoire</span>
+        <span class="winrate-value">{{ formatPct(stats.winRate) }}</span>
+      </div>
+      <div class="winrate-bar-track">
+        <div class="winrate-bar-fill" [style.width]="getWinRateWidth(stats.winRate)"></div>
+      </div>
+      <div class="winrate-labels">
+        <span class="win-lbl">✅ {{ stats.wins }} victoires</span>
+        <span class="lose-lbl">❌ {{ stats.losses }} défaites</span>
+      </div>
+    </div>
+
+    <!-- Top 10 Monsters -->
+    @if (stats.topMonsters && stats.topMonsters.length > 0) {
+      <div class="top-monsters-section">
+        <h3 class="section-title">Top 10 monstres</h3>
+        <div class="top-table">
+          <div class="top-table-header">
+            <span class="col-rank">#</span>
+            <span class="col-monster">Monstre</span>
+            <span class="col-app">Présences</span>
+            <span class="col-wins">Victoires</span>
+            <span class="col-wr">Win Rate</span>
+          </div>
+          @for (entry of stats.topMonsters; track entry.monster.id; let i = $index) {
+            <div class="top-table-row">
+              <span class="col-rank rank-num" [class.gold]="i === 0" [class.silver]="i === 1" [class.bronze]="i === 2">
+                {{ i + 1 }}
+              </span>
+              <div class="col-monster monster-cell">
+                <div class="mini-img-sm">
+                  @if (entry.monster.img) {
+                    <img [src]="entry.monster.img" [alt]="entry.monster.name" />
+                  } @else {
+                    <span>{{ getElemEmoji(entry.monster.elem) }}</span>
+                  }
+                </div>
+                <div class="monster-cell-info">
+                  <span class="monster-cell-name">{{ entry.monster.name }}</span>
+                  <span class="monster-cell-meta">
+                    {{ getElemEmoji(entry.monster.elem) }}
+                    <span class="nat-stars-sm">{{ getNatStars(entry.monster.nat) }}</span>
+                  </span>
+                </div>
+              </div>
+              <span class="col-app">{{ entry.appearances }}</span>
+              <span class="col-wins win-text">{{ entry.wins }}</span>
+              <span class="col-wr">
+                <span class="wr-pill" [class.high]="entry.winRate >= 0.6" [class.low]="entry.winRate < 0.4">
+                  {{ formatPct(entry.winRate) }}
+                </span>
+              </span>
+            </div>
+          }
+        </div>
+      </div>
+    }
+  }
+</div>

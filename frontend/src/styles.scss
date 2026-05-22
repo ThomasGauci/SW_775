@@ -1,0 +1,280 @@
+/* ===== CSS Variables ===== */
+:root {
+  --bg: #0d0f14;
+  --bg2: #151820;
+  --bg3: #1c2030;
+  --bg4: #232740;
+  --border: rgba(255, 255, 255, 0.07);
+  --border2: rgba(255, 255, 255, 0.14);
+  --text: #e8eaf0;
+  --text2: #8890a8;
+  --text3: #555e78;
+  --accent: #4f8ef7;
+  --accent2: #3a6fd8;
+  --win: #2a9d6e;
+  --win-bg: rgba(42, 157, 110, 0.15);
+  --lose: #d94f4f;
+  --lose-bg: rgba(217, 79, 79, 0.15);
+  --fire: #e8643a;
+  --water: #3a8fe8;
+  --wind: #3ab870;
+  --light: #d4a83a;
+  --dark: #9b5cf0;
+}
+
+/* ===== Global Resets ===== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: 'Nunito', sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.2s;
+
+  &:hover {
+    color: var(--accent2);
+    text-decoration: underline;
+  }
+}
+
+button {
+  font-family: 'Nunito', sans-serif;
+  cursor: pointer;
+}
+
+input,
+select,
+textarea {
+  font-family: 'Nunito', sans-serif;
+}
+
+/* ===== Scrollbar Styling ===== */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg2);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--bg4);
+  border-radius: 3px;
+
+  &:hover {
+    background: var(--text3);
+  }
+}
+
+/* ===== Utility Classes ===== */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s, opacity 0.2s;
+
+  &:active {
+    transform: translateY(1px);
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  &-primary {
+    background: var(--accent);
+    color: #fff;
+
+    &:hover:not(:disabled) {
+      background: var(--accent2);
+    }
+  }
+
+  &-danger {
+    background: var(--lose);
+    color: #fff;
+
+    &:hover:not(:disabled) {
+      background: #c03e3e;
+    }
+  }
+
+  &-ghost {
+    background: transparent;
+    color: var(--text2);
+    border: 1px solid var(--border2);
+
+    &:hover:not(:disabled) {
+      color: var(--text);
+      border-color: var(--text3);
+    }
+  }
+
+  &-sm {
+    padding: 5px 12px;
+    font-size: 12px;
+  }
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+
+  label {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text2);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  input,
+  select {
+    background: var(--bg3);
+    border: 1px solid var(--border2);
+    border-radius: 8px;
+    color: var(--text);
+    padding: 10px 14px;
+    font-size: 14px;
+    transition: border-color 0.2s;
+    outline: none;
+
+    &:focus {
+      border-color: var(--accent);
+    }
+
+    &::placeholder {
+      color: var(--text3);
+    }
+
+    &.error {
+      border-color: var(--lose);
+    }
+  }
+
+  .field-error {
+    font-size: 12px;
+    color: var(--lose);
+  }
+}
+
+.card {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.elem-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+
+  &.f { color: var(--fire); background: rgba(232, 100, 58, 0.15); }
+  &.w { color: var(--water); background: rgba(58, 143, 232, 0.15); }
+  &.n { color: var(--wind); background: rgba(58, 184, 112, 0.15); }
+  &.l { color: var(--light); background: rgba(212, 168, 58, 0.15); }
+  &.d { color: var(--dark); background: rgba(155, 92, 240, 0.15); }
+}
+
+.nat-stars {
+  color: var(--light);
+  font-size: 11px;
+  letter-spacing: -1px;
+}
+
+/* ===== Modal Overlay ===== */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.modal-box {
+  background: var(--bg2);
+  border: 1px solid var(--border2);
+  border-radius: 16px;
+  width: 100%;
+  max-width: 680px;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* ===== Loading Spinner ===== */
+.spinner {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--border2);
+  border-top-color: var(--accent);
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* ===== Error message ===== */
+.error-msg {
+  background: var(--lose-bg);
+  border: 1px solid var(--lose);
+  color: var(--lose);
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 13px;
+}
+
+.success-msg {
+  background: var(--win-bg);
+  border: 1px solid var(--win);
+  color: var(--win);
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 13px;
+}

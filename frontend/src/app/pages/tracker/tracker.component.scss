@@ -1,0 +1,143 @@
+.tracker-layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg);
+}
+
+/* ===== Header ===== */
+.tracker-header {
+  background: var(--bg2);
+  border-bottom: 1px solid var(--border);
+  padding: 0 24px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-logo {
+  font-size: 22px;
+}
+
+.header-title {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: 0.04em;
+
+  @media (max-width: 480px) {
+    display: none;
+  }
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.header-user {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text2);
+
+  @media (max-width: 400px) {
+    display: none;
+  }
+}
+
+/* ===== Tab Navigation ===== */
+.tab-nav {
+  background: var(--bg2);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  padding: 0 24px;
+  gap: 4px;
+  overflow-x: auto;
+
+  &::-webkit-scrollbar {
+    height: 0;
+  }
+}
+
+.tab-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0 16px;
+  height: 48px;
+  background: none;
+  border: none;
+  border-bottom: 3px solid transparent;
+  color: var(--text3);
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: color 0.2s, border-color 0.2s;
+
+  &:hover:not(.active) {
+    color: var(--text2);
+  }
+
+  &.active {
+    color: var(--accent);
+    border-bottom-color: var(--accent);
+  }
+}
+
+.tab-count {
+  background: var(--bg4);
+  color: var(--text2);
+  font-size: 11px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  padding: 1px 7px;
+  border-radius: 10px;
+  min-width: 22px;
+  text-align: center;
+
+  .active & {
+    background: rgba(79, 142, 247, 0.2);
+    color: var(--accent);
+  }
+}
+
+/* ===== Content ===== */
+.tracker-content {
+  flex: 1;
+  padding: 24px;
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+
+  @media (max-width: 600px) {
+    padding: 16px;
+  }
+}
+
+.tab-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  animation: fadeIn 0.2s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}

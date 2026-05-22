@@ -1,0 +1,76 @@
+<div class="auth-page">
+  <div class="auth-card">
+    <div class="auth-logo">
+      <span class="logo-icon">⚔️</span>
+      <h1>SW Siege Tracker</h1>
+      <p>Créez votre compte</p>
+    </div>
+
+    <form [formGroup]="form" (ngSubmit)="submit()" class="auth-form">
+      @if (error()) {
+        <div class="error-msg">{{ error() }}</div>
+      }
+
+      <div class="form-field">
+        <label for="email">Email</label>
+        <input
+          id="email"
+          type="email"
+          formControlName="email"
+          placeholder="votre@email.com"
+          autocomplete="email"
+          [class.error]="emailCtrl.invalid && emailCtrl.touched"
+        />
+        @if (emailCtrl.invalid && emailCtrl.touched) {
+          <span class="field-error">Email invalide</span>
+        }
+      </div>
+
+      <div class="form-field">
+        <label for="username">Pseudo</label>
+        <input
+          id="username"
+          type="text"
+          formControlName="username"
+          placeholder="MonPseudo"
+          autocomplete="username"
+          [class.error]="usernameCtrl.invalid && usernameCtrl.touched"
+        />
+        @if (usernameCtrl.invalid && usernameCtrl.touched) {
+          <span class="field-error">Pseudo requis (min. 3 caractères)</span>
+        }
+      </div>
+
+      <div class="form-field">
+        <label for="password">Mot de passe</label>
+        <input
+          id="password"
+          type="password"
+          formControlName="password"
+          placeholder="••••••••"
+          autocomplete="new-password"
+          [class.error]="passwordCtrl.invalid && passwordCtrl.touched"
+        />
+        @if (passwordCtrl.invalid && passwordCtrl.touched) {
+          <span class="field-error">Mot de passe requis (min. 6 caractères)</span>
+        }
+      </div>
+
+      <button
+        type="submit"
+        class="btn btn-primary submit-btn"
+        [disabled]="form.invalid || loading()"
+      >
+        @if (loading()) {
+          <span class="spinner"></span>
+        }
+        Créer le compte
+      </button>
+    </form>
+
+    <div class="auth-footer">
+      Déjà un compte ?
+      <a routerLink="/login">Se connecter</a>
+    </div>
+  </div>
+</div>

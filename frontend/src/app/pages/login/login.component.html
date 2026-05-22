@@ -1,0 +1,61 @@
+<div class="auth-page">
+  <div class="auth-card">
+    <div class="auth-logo">
+      <span class="logo-icon">⚔️</span>
+      <h1>SW Siege Tracker</h1>
+      <p>Connectez-vous à votre compte</p>
+    </div>
+
+    <form [formGroup]="form" (ngSubmit)="submit()" class="auth-form">
+      @if (error()) {
+        <div class="error-msg">{{ error() }}</div>
+      }
+
+      <div class="form-field">
+        <label for="email">Email</label>
+        <input
+          id="email"
+          type="email"
+          formControlName="email"
+          placeholder="votre@email.com"
+          autocomplete="email"
+          [class.error]="emailCtrl.invalid && emailCtrl.touched"
+        />
+        @if (emailCtrl.invalid && emailCtrl.touched) {
+          <span class="field-error">Email invalide</span>
+        }
+      </div>
+
+      <div class="form-field">
+        <label for="password">Mot de passe</label>
+        <input
+          id="password"
+          type="password"
+          formControlName="password"
+          placeholder="••••••••"
+          autocomplete="current-password"
+          [class.error]="passwordCtrl.invalid && passwordCtrl.touched"
+        />
+        @if (passwordCtrl.invalid && passwordCtrl.touched) {
+          <span class="field-error">Mot de passe requis (min. 4 caractères)</span>
+        }
+      </div>
+
+      <button
+        type="submit"
+        class="btn btn-primary submit-btn"
+        [disabled]="form.invalid || loading()"
+      >
+        @if (loading()) {
+          <span class="spinner"></span>
+        }
+        Se connecter
+      </button>
+    </form>
+
+    <div class="auth-footer">
+      Pas encore de compte ?
+      <a routerLink="/register">Créer un compte</a>
+    </div>
+  </div>
+</div>

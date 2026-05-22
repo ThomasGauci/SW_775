@@ -1,0 +1,112 @@
+<div class="battle-form">
+  <div class="teams-row">
+
+    <!-- Attaque -->
+    <div class="team-section att">
+      <div class="team-header">
+        <span class="team-label att-label">⚔️ Attaque</span>
+      </div>
+      <div class="team-slots">
+        @for (slot of attTeam(); track $index) {
+          <div class="slot">
+            @if (slot) {
+              <div class="slot-filled">
+                <div class="slot-img-wrap">
+                  @if (slot.img) {
+                    <img [src]="slot.img" [alt]="slot.name" />
+                  } @else {
+                    <span class="slot-fallback">{{ getElemEmoji(slot.elem) }}</span>
+                  }
+                </div>
+                <div class="slot-name">{{ slot.name }}</div>
+                <div class="slot-meta">
+                  <span class="elem-dot">{{ getElemEmoji(slot.elem) }}</span>
+                  <span class="nat-stars">{{ getNatStars(slot.nat) }}</span>
+                </div>
+                <button class="slot-remove" (click)="removeMonster('att', $index)" aria-label="Retirer">✕</button>
+              </div>
+            } @else {
+              <button class="slot-empty" (click)="openPicker('att', $index)">
+                <span class="slot-plus">+</span>
+                <span class="slot-hint">Ajouter</span>
+              </button>
+            }
+          </div>
+        }
+      </div>
+    </div>
+
+    <!-- VS -->
+    <div class="vs-divider">VS</div>
+
+    <!-- Défense -->
+    <div class="team-section def">
+      <div class="team-header">
+        <span class="team-label def-label">🛡️ Défense</span>
+      </div>
+      <div class="team-slots">
+        @for (slot of defTeam(); track $index) {
+          <div class="slot">
+            @if (slot) {
+              <div class="slot-filled">
+                <div class="slot-img-wrap">
+                  @if (slot.img) {
+                    <img [src]="slot.img" [alt]="slot.name" />
+                  } @else {
+                    <span class="slot-fallback">{{ getElemEmoji(slot.elem) }}</span>
+                  }
+                </div>
+                <div class="slot-name">{{ slot.name }}</div>
+                <div class="slot-meta">
+                  <span class="elem-dot">{{ getElemEmoji(slot.elem) }}</span>
+                  <span class="nat-stars">{{ getNatStars(slot.nat) }}</span>
+                </div>
+                <button class="slot-remove" (click)="removeMonster('def', $index)" aria-label="Retirer">✕</button>
+              </div>
+            } @else {
+              <button class="slot-empty" (click)="openPicker('def', $index)">
+                <span class="slot-plus">+</span>
+                <span class="slot-hint">Ajouter</span>
+              </button>
+            }
+          </div>
+        }
+      </div>
+    </div>
+  </div>
+
+  <!-- Winner selection -->
+  <div class="winner-section">
+    <span class="winner-label">Résultat :</span>
+    <div class="winner-options">
+      <label class="winner-option" [class.selected]="winner() === 'att'">
+        <input type="radio" name="winner" value="att" [checked]="winner() === 'att'" (change)="winner.set('att')" />
+        <span class="winner-icon">⚔️</span>
+        <span>Victoire attaque</span>
+      </label>
+      <label class="winner-option" [class.selected]="winner() === 'def'">
+        <input type="radio" name="winner" value="def" [checked]="winner() === 'def'" (change)="winner.set('def')" />
+        <span class="winner-icon">🛡️</span>
+        <span>Victoire défense</span>
+      </label>
+    </div>
+  </div>
+
+  <!-- Submit -->
+  <button
+    class="btn btn-primary submit-btn"
+    (click)="submit()"
+    [disabled]="!isValid()"
+  >
+    ✅ Enregistrer le combat
+  </button>
+</div>
+
+<!-- Monster Picker Modal -->
+@if (pickerTarget()) {
+  <app-monster-picker
+    [excludeIds]="allSelectedIds()"
+    (selected)="onMonsterSelected($event)"
+    (closed)="closePicker()"
+  />
+}

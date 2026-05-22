@@ -1,0 +1,33 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+build/
+
+# Environment files (contain secrets)
+.env
+backend/.env
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.suo
+*.user
+
+# Claude Code settings
+.claude/
+
+# Angular cache
+.angular/
+
+# TypeScript cache
+*.tsbuildinfo

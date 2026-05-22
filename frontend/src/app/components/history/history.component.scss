@@ -1,0 +1,194 @@
+.history {
+  display: flex;
+  flex-direction: column;
+}
+
+.history-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 60px 20px;
+  color: var(--text3);
+
+  .empty-icon {
+    font-size: 40px;
+  }
+
+  span {
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+  small {
+    font-size: 13px;
+    color: var(--text3);
+  }
+}
+
+.battle-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.battle-item {
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  display: flex;
+  overflow: hidden;
+  transition: border-color 0.2s;
+
+  &:hover {
+    border-color: var(--border2);
+  }
+
+  &.win {
+    border-left-color: var(--win);
+  }
+
+  &.lose {
+    border-left-color: var(--lose);
+  }
+}
+
+.battle-result-bar {
+  width: 4px;
+  flex-shrink: 0;
+
+  &.win { background: var(--win); }
+  &.lose { background: var(--lose); }
+}
+
+.battle-content {
+  flex: 1;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  min-width: 0;
+}
+
+.battle-teams {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+  flex-wrap: wrap;
+}
+
+.battle-team {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+}
+
+.team-tag {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  &.att-tag { color: var(--accent); }
+  &.def-tag { color: var(--text3); }
+}
+
+.team-monsters {
+  display: flex;
+  gap: 6px;
+}
+
+.mini-monster {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  width: 44px;
+}
+
+.mini-img {
+  width: 36px;
+  height: 36px;
+  border-radius: 6px;
+  background: var(--bg4);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.mini-name {
+  font-size: 9px;
+  color: var(--text2);
+  text-align: center;
+  line-height: 1.2;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.vs-small {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text3);
+  flex-shrink: 0;
+}
+
+.battle-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+}
+
+.result-badge {
+  font-size: 12px;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 20px;
+
+  &.win {
+    background: var(--win-bg);
+    color: var(--win);
+    border: 1px solid rgba(42, 157, 110, 0.3);
+  }
+
+  &.lose {
+    background: var(--lose-bg);
+    color: var(--lose);
+    border: 1px solid rgba(217, 79, 79, 0.3);
+  }
+}
+
+.battle-date {
+  font-size: 12px;
+  color: var(--text3);
+  white-space: nowrap;
+}
+
+.delete-btn {
+  padding: 4px 8px;
+  font-size: 14px;
+  border-color: transparent;
+
+  &:hover {
+    border-color: var(--lose);
+    color: var(--lose);
+  }
+}

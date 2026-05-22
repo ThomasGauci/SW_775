@@ -1,0 +1,78 @@
+<div class="history">
+  @if (loading) {
+    <div class="history-empty">
+      <span class="spinner"></span>
+      <span>Chargement...</span>
+    </div>
+  } @else if (battles.length === 0) {
+    <div class="history-empty">
+      <span class="empty-icon">📋</span>
+      <span>Aucun combat enregistré</span>
+      <small>Utilisez l'onglet Attaque pour enregistrer un combat</small>
+    </div>
+  } @else {
+    <div class="battle-list">
+      @for (battle of battles; track battle.id; let i = $index) {
+        <div class="battle-item" [class.win]="battle.winner === 'att'" [class.lose]="battle.winner === 'def'">
+
+          <div class="battle-result-bar" [class.win]="battle.winner === 'att'" [class.lose]="battle.winner === 'def'"></div>
+
+          <div class="battle-content">
+            <div class="battle-teams">
+
+              <!-- Attaque -->
+              <div class="battle-team">
+                <span class="team-tag att-tag">⚔️ ATT</span>
+                <div class="team-monsters">
+                  @for (monster of battle.att; track monster.id) {
+                    <div class="mini-monster" [title]="monster.name">
+                      <div class="mini-img">
+                        @if (monster.img) {
+                          <img [src]="monster.img" [alt]="monster.name" />
+                        } @else {
+                          <span>{{ getElemEmoji(monster.elem) }}</span>
+                        }
+                      </div>
+                      <span class="mini-name">{{ monster.name }}</span>
+                    </div>
+                  }
+                </div>
+              </div>
+
+              <div class="vs-small">VS</div>
+
+              <!-- Défense -->
+              <div class="battle-team">
+                <span class="team-tag def-tag">🛡️ DEF</span>
+                <div class="team-monsters">
+                  @for (monster of battle.def; track monster.id) {
+                    <div class="mini-monster" [title]="monster.name">
+                      <div class="mini-img">
+                        @if (monster.img) {
+                          <img [src]="monster.img" [alt]="monster.name" />
+                        } @else {
+                          <span>{{ getElemEmoji(monster.elem) }}</span>
+                        }
+                      </div>
+                      <span class="mini-name">{{ monster.name }}</span>
+                    </div>
+                  }
+                </div>
+              </div>
+            </div>
+
+            <div class="battle-meta">
+              <span class="result-badge" [class.win]="battle.winner === 'att'" [class.lose]="battle.winner === 'def'">
+                {{ battle.winner === 'att' ? '✅ Victoire' : '❌ Défaite' }}
+              </span>
+              <span class="battle-date">{{ battle.date | date:'dd/MM/yy HH:mm' }}</span>
+              <button class="btn btn-ghost btn-sm delete-btn" (click)="onDelete(battle.id)" title="Supprimer">
+                🗑️
+              </button>
+            </div>
+          </div>
+        </div>
+      }
+    </div>
+  }
+</div>

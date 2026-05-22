@@ -1,0 +1,89 @@
+<div class="modal-overlay" (click)="close()">
+  <div class="modal-box" (click)="stopPropagation($event)">
+
+    <!-- Header -->
+    <div class="picker-header">
+      <h2>Choisir un monstre</h2>
+      <button class="close-btn" (click)="close()" aria-label="Fermer">✕</button>
+    </div>
+
+    <!-- Search & Filters -->
+    <div class="picker-filters">
+      <input
+        class="search-input"
+        type="text"
+        placeholder="Rechercher un monstre..."
+        [value]="searchQuery()"
+        (input)="setSearch($any($event.target).value)"
+      />
+
+      <div class="filter-row">
+        <div class="filter-group">
+          @for (elem of elements; track elem) {
+            <button
+              class="filter-btn elem-btn"
+              [class.active]="elemFilter() === elem"
+              [class]="elem !== 'all' ? 'elem-' + elem : ''"
+              (click)="setElem(elem)"
+            >
+              {{ getElemLabel(elem) }}
+            </button>
+          }
+        </div>
+
+        <div class="filter-group">
+          @for (nat of nats; track nat) {
+            <button
+              class="filter-btn nat-btn"
+              [class.active]="natFilter() === nat"
+              (click)="setNat(nat)"
+            >
+              @if (nat === 'all') { Tous } @else { {{ nat }}★ }
+            </button>
+          }
+        </div>
+      </div>
+    </div>
+
+    <!-- Monster Grid -->
+    <div class="picker-grid-wrap">
+      @if (monsterService.loading()) {
+        <div class="picker-empty">
+          <span class="spinner"></span>
+          <span>Chargement...</span>
+        </div>
+      } @else if (filteredMonsters().length === 0) {
+        <div class="picker-empty">
+          <span class="no-result-icon">🔍</span>
+          <span>Aucun monstre trouvé</span>
+        </div>
+      } @else {
+        <div class="picker-grid">
+          @for (monster of filteredMonsters(); track monster.id) {
+            <button class="monster-card" (click)="selectMonster(monster)">
+              <div class="monster-img-wrap">
+                @if (monster.img) {
+                  <img [src]="monster.img | safeUrl" [alt]="monster.name" />
+                } @else {
+                  <span class="monster-fallback-icon">{{ getElemEmoji(monster.elem) }}</span>
+                }
+              </div>
+              <div class="monster-info">
+                <span class="monster-name">{{ monster.name }}</span>
+                <div class="monster-meta">
+                  <span class="elem-dot" [class]="'elem-' + monster.elem">{{ getElemEmoji(monster.elem) }}</span>
+                  <span class="nat-stars">{{ getNatStars(monster.nat) }}</span>
+                </div>
+              </div>
+            </button>
+          }
+        </div>
+      }
+    </div>
+
+    <!-- Footer count -->
+    <div class="picker-footer">
+      {{ filteredMonsters().length }} monstre(s)
+    </div>
+  </div>
+</div>

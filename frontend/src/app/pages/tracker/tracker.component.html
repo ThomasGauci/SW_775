@@ -1,0 +1,83 @@
+<div class="tracker-layout">
+
+  <!-- Header -->
+  <header class="tracker-header">
+    <div class="header-left">
+      <span class="header-logo">⚔️</span>
+      <h1 class="header-title">SW Siege Tracker</h1>
+    </div>
+    <div class="header-right">
+      <span class="header-user">👤 {{ username }}</span>
+      <button class="btn btn-ghost btn-sm" (click)="logout()">
+        Déconnexion
+      </button>
+    </div>
+  </header>
+
+  <!-- Tab Navigation -->
+  <nav class="tab-nav">
+    <button
+      class="tab-btn"
+      [class.active]="activeTab() === 'form'"
+      (click)="setTab('form')"
+    >
+      ⚔️ <span>Attaque</span>
+    </button>
+    <button
+      class="tab-btn"
+      [class.active]="activeTab() === 'history'"
+      (click)="setTab('history')"
+    >
+      📋 <span>Historique</span>
+      @if (battles().length > 0) {
+        <span class="tab-count">{{ battles().length }}</span>
+      }
+    </button>
+    <button
+      class="tab-btn"
+      [class.active]="activeTab() === 'stats'"
+      (click)="setTab('stats')"
+    >
+      📊 <span>Statistiques</span>
+    </button>
+  </nav>
+
+  <!-- Content -->
+  <main class="tracker-content">
+
+    <!-- Battle Form Tab -->
+    @if (activeTab() === 'form') {
+      <div class="tab-panel">
+        @if (successMsg()) {
+          <div class="success-msg">{{ successMsg() }}</div>
+        }
+        @if (errorMsg()) {
+          <div class="error-msg">{{ errorMsg() }}</div>
+        }
+        <app-battle-form (battleSubmit)="onBattleSubmit($event)" />
+      </div>
+    }
+
+    <!-- History Tab -->
+    @if (activeTab() === 'history') {
+      <div class="tab-panel">
+        <app-history
+          [battles]="battles()"
+          [loading]="loadingBattles()"
+          (deleteBattle)="onDeleteBattle($event)"
+        />
+      </div>
+    }
+
+    <!-- Statistics Tab -->
+    @if (activeTab() === 'stats') {
+      <div class="tab-panel">
+        <app-statistics
+          [stats]="stats()"
+          [loading]="loadingStats()"
+        />
+      </div>
+    }
+
+  </main>
+</div>
