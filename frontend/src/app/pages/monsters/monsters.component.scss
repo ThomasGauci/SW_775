@@ -1,0 +1,300 @@
+.monsters-page {
+  padding: 28px 24px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* ===== No data ===== */
+.no-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  gap: 16px;
+  text-align: center;
+  padding: 40px 24px;
+
+  .no-data-icon { font-size: 64px; }
+
+  h2 {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--text);
+    letter-spacing: .04em;
+  }
+
+  p { color: var(--text2); font-size: 15px; }
+}
+
+/* ===== Page header ===== */
+.page-header {
+  margin-bottom: 20px;
+
+  h1 {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--text);
+    letter-spacing: .04em;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+.count-badge {
+  background: var(--bg3);
+  border: 1px solid var(--border2);
+  color: var(--accent);
+  font-size: 14px;
+  font-weight: 700;
+  font-family: 'Rajdhani', sans-serif;
+  border-radius: 12px;
+  padding: 2px 10px;
+}
+
+/* ===== Filters ===== */
+.filters-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  padding: 14px 16px;
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+.search-input {
+  background: var(--bg3);
+  border: 1px solid var(--border2);
+  border-radius: 8px;
+  color: var(--text);
+  padding: 7px 12px;
+  font-size: 14px;
+  outline: none;
+  min-width: 200px;
+  transition: border-color .2s;
+
+  &:focus { border-color: var(--accent); }
+  &::placeholder { color: var(--text3); }
+}
+
+.elem-filters {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+
+.elem-btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 10px;
+  border-radius: 7px;
+  border: 1px solid var(--border);
+  background: var(--bg3);
+  color: var(--text2);
+  font-size: 12px;
+  font-weight: 600;
+  font-family: 'Rajdhani', sans-serif;
+  letter-spacing: .04em;
+  cursor: pointer;
+  transition: background .15s, border-color .15s, color .15s;
+
+  &:hover { background: var(--bg4); }
+  &.active {
+    background: rgba(79, 142, 247, 0.15);
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+}
+
+.sort-controls {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-left: auto;
+}
+
+.sort-label {
+  font-size: 12px;
+  color: var(--text3);
+  letter-spacing: .05em;
+  text-transform: uppercase;
+}
+
+.sort-btn {
+  padding: 5px 10px;
+  border-radius: 7px;
+  border: 1px solid var(--border);
+  background: var(--bg3);
+  color: var(--text2);
+  font-size: 12px;
+  font-weight: 600;
+  font-family: 'Rajdhani', sans-serif;
+  letter-spacing: .04em;
+  cursor: pointer;
+  transition: background .15s, color .15s;
+
+  &:hover { background: var(--bg4); }
+  &.active {
+    background: rgba(79, 142, 247, 0.12);
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+}
+
+/* ===== Monsters Grid ===== */
+.monsters-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 14px;
+}
+
+.monster-card {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform .15s, border-color .15s, box-shadow .15s;
+  display: flex;
+  flex-direction: column;
+
+  &:hover {
+    transform: translateY(-2px);
+    border-color: var(--border2);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+  }
+
+  &.max-unit {
+    border-color: rgba(212, 168, 58, 0.4);
+    box-shadow: 0 0 0 1px rgba(212, 168, 58, 0.15);
+  }
+
+  &.awakened .card-img-wrapper {
+    position: relative;
+  }
+}
+
+.card-img-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1;
+  background: var(--bg3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.monster-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.monster-img-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.awakened-badge {
+  position: absolute;
+  top: 4px;
+  right: 6px;
+  font-size: 14px;
+}
+
+.card-body {
+  padding: 10px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  flex: 1;
+}
+
+.card-name {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: .03em;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  line-height: 1.2;
+}
+
+.card-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+}
+
+.card-stars {
+  font-size: 9px;
+  letter-spacing: -1px;
+  line-height: 1;
+}
+
+.card-level {
+  font-size: 12px;
+  color: var(--text2);
+  font-weight: 600;
+
+  &.max-level {
+    color: var(--win);
+    font-weight: 700;
+  }
+}
+
+.card-nat {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 11px;
+}
+
+.nat-label {
+  color: var(--text3);
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: .06em;
+}
+
+.card-skills {
+  font-size: 11px;
+  color: var(--text3);
+}
+
+.skills-val {
+  color: var(--text2);
+  font-weight: 600;
+}
+
+/* ===== No results ===== */
+.no-results {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 48px;
+  color: var(--text3);
+  font-size: 14px;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 600px) {
+  .monsters-page { padding: 16px 12px; }
+  .filters-bar { flex-direction: column; align-items: flex-start; }
+  .sort-controls { margin-left: 0; }
+  .monsters-grid { grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); }
+}

@@ -83,6 +83,21 @@
   letter-spacing: .06em;
 }
 
+.nav-dot {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--lose);
+  flex-shrink: 0;
+  animation: pulse-dot 2s ease-in-out infinite;
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(0.7); }
+}
+
 /* ===== User area ===== */
 .navbar-user {
   display: flex;
@@ -90,6 +105,19 @@
   gap: 10px;
   flex-shrink: 0;
   margin-left: auto;
+}
+
+.wizard-name {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--win);
+  background: var(--win-bg);
+  border: .5px solid rgba(42, 157, 110, 0.3);
+  border-radius: 6px;
+  padding: 3px 8px;
+  white-space: nowrap;
+
+  @media (max-width: 680px) { display: none; }
 }
 
 .user-name {

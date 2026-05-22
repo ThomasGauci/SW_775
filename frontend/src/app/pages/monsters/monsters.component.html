@@ -1,0 +1,118 @@
+<div class="monsters-page">
+
+  <!-- No data state -->
+  @if (!swAccountService.hasData()) {
+    <div class="no-data">
+      <div class="no-data-icon">🐉</div>
+      <h2>Aucune donnée importée</h2>
+      <p>Importez votre compte SW pour voir vos monstres.</p>
+      <a routerLink="/import" class="btn btn-primary">Importer mon compte</a>
+    </div>
+  } @else {
+
+    <div class="page-header">
+      <h1>Monstres <span class="count-badge">{{ filteredUnits().length }}</span></h1>
+    </div>
+
+    <!-- Filters bar -->
+    <div class="filters-bar">
+      <input
+        type="text"
+        class="search-input"
+        placeholder="Rechercher un monstre..."
+        [ngModel]="searchQuery()"
+        (ngModelChange)="searchQuery.set($event)"
+      />
+
+      <div class="elem-filters">
+        @for (ef of elemFilters; track ef.key) {
+          <button
+            class="elem-btn"
+            [class.active]="filterElem() === ef.key"
+            [class]="ef.cls ? 'elem-btn ' + ef.cls + (filterElem() === ef.key ? ' active' : '') : 'elem-btn' + (filterElem() === ef.key ? ' active' : '')"
+            (click)="filterElem.set(ef.key)"
+          >
+            @if (ef.key !== 'all') {
+              <span class="elem-dot" [class]="'elem-' + ef.key"></span>
+            }
+            {{ ef.label }}
+          </button>
+        }
+      </div>
+
+      <div class="sort-controls">
+        <span class="sort-label">Trier par</span>
+        <button class="sort-btn" [class.active]="sortKey() === 'name'" (click)="toggleSort('name')">
+          Nom {{ sortKey() === 'name' ? (sortDir() === 1 ? '↑' : '↓') : '' }}
+        </button>
+        <button class="sort-btn" [class.active]="sortKey() === 'stars'" (click)="toggleSort('stars')">
+          Étoiles {{ sortKey() === 'stars' ? (sortDir() === 1 ? '↑' : '↓') : '' }}
+        </button>
+        <button class="sort-btn" [class.active]="sortKey() === 'level'" (click)="toggleSort('level')">
+          Niveau {{ sortKey() === 'level' ? (sortDir() === 1 ? '↑' : '↓') : '' }}
+        </button>
+        <button class="sort-btn" [class.active]="sortKey() === 'nat'" (click)="toggleSort('nat')">
+          Nat {{ sortKey() === 'nat' ? (sortDir() === 1 ? '↑' : '↓') : '' }}
+        </button>
+      </div>
+    </div>
+
+    <!-- Grid -->
+    <div class="monsters-grid">
+      @for (item of filteredUnits(); track item.unit.unit_id) {
+        <div class="monster-card" [class.max-unit]="isMax(item.unit)" [class.awakened]="item.awakened">
+          <div class="card-img-wrapper" [class]="item.elem ? 'elem-bg-' + item.elem : ''">
+            @if (item.monster?.img) {
+              <img [src]="item.monster!.img | safeUrl" [alt]="item.name" class="monster-img" />
+            } @else {
+              <div class="monster-img-placeholder">
+                @if (item.elem) {
+                  <span class="elem-dot" style="width:32px;height:32px;" [class]="'elem-' + item.elem"></span>
+                } @else {
+                  <span style="font-size:32px;">❓</span>
+                }
+              </div>
+            }
+            @if (item.awakened) {
+              <span class="awakened-badge">✨</span>
+            }
+          </div>
+
+          <div class="card-body">
+            <div class="card-name">
+              @if (item.elem) {
+                <span class="elem-dot-sm" [class]="'elem-' + item.elem"></span>
+              }
+              {{ item.name }}
+            </div>
+
+            <div class="card-meta">
+              <span class="card-stars">
+                @for (s of starsArray(item.unit.class); track s) {⭐}
+              </span>
+              <span class="card-level" [class.max-level]="item.unit.unit_level === 40">
+                Lvl {{ item.unit.unit_level }}
+              </span>
+            </div>
+
+            <div class="card-nat">
+              <span class="nat-label">Nat</span>
+              <span class="nat-stars">{{ '★'.repeat(item.nat || 0) }}</span>
+            </div>
+
+            <div class="card-skills">
+              Compétences : <span class="skills-val">{{ item.skillsSummary }}</span>
+            </div>
+          </div>
+        </div>
+      }
+
+      @if (filteredUnits().length === 0) {
+        <div class="no-results">
+          Aucun monstre ne correspond à vos filtres.
+        </div>
+      }
+    </div>
+  }
+
+</div>

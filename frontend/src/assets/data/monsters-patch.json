@@ -5566,5 +5566,113 @@
     "name": "Velaska",
     "elem": "d",
     "nat": 5
+  },
+  {
+    "id": 11601,
+    "name": "Undine",
+    "elem": "w",
+    "nat": 4
+  },
+  {
+    "id": 20101,
+    "name": "Neostone Agent",
+    "elem": "w",
+    "nat": 4
+  },
+  {
+    "id": 13302,
+    "name": "Succubus",
+    "elem": "f",
+    "nat": 4
+  },
+  {
+    "id": 1000113,
+    "name": "Homunculus (Attaque)",
+    "elem": "n",
+    "nat": 5
+  },
+  {
+    "id": 11203,
+    "name": "Nine-tailed Fox",
+    "elem": "n",
+    "nat": 4
+  },
+  {
+    "id": 19803,
+    "name": "Magic Knight",
+    "elem": "n",
+    "nat": 4
+  },
+  {
+    "id": 15401,
+    "name": "Magical Archer",
+    "elem": "w",
+    "nat": 3
+  },
+  {
+    "id": 16901,
+    "name": "Samurai",
+    "elem": "w",
+    "nat": 4
+  },
+  {
+    "id": 15902,
+    "name": "Mystic Witch",
+    "elem": "f",
+    "nat": 3
+  },
+  {
+    "id": 17703,
+    "name": "Minotauros",
+    "elem": "n",
+    "nat": 3
+  },
+  {
+    "id": 16003,
+    "name": "Grim Reaper",
+    "elem": "n",
+    "nat": 3
+  },
+  {
+    "id": 20803,
+    "name": "Frankenstein",
+    "elem": "n",
+    "nat": 3
+  },
+  {
+    "id": 1000205,
+    "name": "Homunculus (Support)",
+    "elem": "d",
+    "nat": 5
+  },
+  {
+    "id": 18502,
+    "name": "Beast Hunter",
+    "elem": "f",
+    "nat": 3
+  },
+  {
+    "id": 29002,
+    "name": "Dokkaebi Princess and Sapsaree",
+    "elem": "f",
+    "nat": 4
+  },
+  {
+    "id": 12002,
+    "name": "High Elemental",
+    "elem": "f",
+    "nat": 3
+  },
+  {
+    "id": 16502,
+    "name": "Living Armor",
+    "elem": "f",
+    "nat": 3
+  },
+  {
+    "id": 10602,
+    "name": "Hellhound",
+    "elem": "f",
+    "nat": 2
   }
 ]

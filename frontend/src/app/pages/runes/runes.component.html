@@ -1,0 +1,154 @@
+<div class="runes-page">
+
+  <!-- No data state -->
+  @if (!swAccountService.hasData()) {
+    <div class="no-data">
+      <div class="no-data-icon">💎</div>
+      <h2>Aucune donnée importée</h2>
+      <p>Importez votre compte SW pour voir vos runes.</p>
+      <a routerLink="/import" class="btn btn-primary">Importer mon compte</a>
+    </div>
+  } @else {
+
+    <div class="page-header">
+      <h1>Runes <span class="count-badge">{{ filteredRunes().length }}</span></h1>
+    </div>
+
+    <!-- Filters -->
+    <div class="filters-bar">
+      <!-- Slot filter -->
+      <div class="filter-group">
+        <span class="filter-label">Emplacement</span>
+        <div class="slot-filters">
+          <button class="slot-btn" [class.active]="filterSlot() === 'all'" (click)="filterSlot.set('all')">Tous</button>
+          @for (slot of slots; track slot) {
+            <button
+              class="slot-btn"
+              [class]="'slot-btn slot-' + slot + (filterSlot() === slot ? ' active' : '')"
+              (click)="filterSlot.set(slot)"
+            >{{ slot }}</button>
+          }
+        </div>
+      </div>
+
+      <!-- Set filter -->
+      <div class="filter-group">
+        <span class="filter-label">Set</span>
+        <select class="filter-select" [ngModel]="filterSet()" (ngModelChange)="filterSet.set($event === 'all' ? 'all' : +$event)">
+          <option value="all">Tous les sets</option>
+          @for (id of setIds; track id) {
+            <option [value]="id">{{ getSetName(id) }}</option>
+          }
+        </select>
+      </div>
+
+      <!-- Rank filter -->
+      <div class="filter-group">
+        <span class="filter-label">Rang</span>
+        <select class="filter-select" [ngModel]="filterRank()" (ngModelChange)="filterRank.set($event === 'all' ? 'all' : +$event)">
+          <option value="all">Tous rangs</option>
+          @for (r of ranks; track r) {
+            <option [value]="r">{{ getRankName(r) }}</option>
+          }
+        </select>
+      </div>
+
+      <!-- Equipped filter -->
+      <div class="filter-group">
+        <span class="filter-label">Équipement</span>
+        <select class="filter-select" [ngModel]="filterEquipped()" (ngModelChange)="filterEquipped.set($event)">
+          <option value="all">Toutes</option>
+          <option value="equipped">Équipées</option>
+          <option value="unequipped">Inventaire</option>
+        </select>
+      </div>
+
+      <!-- Search -->
+      <input
+        type="text"
+        class="search-input"
+        placeholder="Rechercher un set..."
+        [ngModel]="searchText()"
+        (ngModelChange)="searchText.set($event)"
+      />
+    </div>
+
+    <!-- Table -->
+    <div class="table-wrapper">
+      <table class="runes-table">
+        <thead>
+          <tr>
+            <th class="col-slot sortable" (click)="toggleSort('slot')">
+              Empl. {{ sortKey() === 'slot' ? (sortDir() === 1 ? '↑' : '↓') : '' }}
+            </th>
+            <th class="col-set sortable" (click)="toggleSort('set')">
+              Set {{ sortKey() === 'set' ? (sortDir() === 1 ? '↑' : '↓') : '' }}
+            </th>
+            <th class="col-upgrade sortable" (click)="toggleSort('upgrade')">
+              +Niv {{ sortKey() === 'upgrade' ? (sortDir() === 1 ? '↑' : '↓') : '' }}
+            </th>
+            <th class="col-rank sortable" (click)="toggleSort('rank')">
+              Rang {{ sortKey() === 'rank' ? (sortDir() === 1 ? '↑' : '↓') : '' }}
+            </th>
+            <th class="col-main">Principale</th>
+            <th class="col-prefix">Préfixe</th>
+            <th class="col-subs">Sous-stats</th>
+            <th class="col-equipped">Équipée sur</th>
+          </tr>
+        </thead>
+        <tbody>
+          @for (rune of filteredRunes(); track rune.rune_id) {
+            <tr [class.ancient]="isAncient(rune)">
+              <td class="col-slot">
+                <span class="slot-badge" [class]="'slot-badge slot-' + rune.slot_no">{{ rune.slot_no }}</span>
+              </td>
+              <td class="col-set">
+                <span class="set-name">{{ getSetName(rune.set_id) }}</span>
+                @if (isAncient(rune)) {
+                  <span class="ancient-tag">Immémo.</span>
+                }
+              </td>
+              <td class="col-upgrade">
+                <span class="upgrade-badge" [class]="getUpgradeClass(rune.upgrade_curr)">+{{ rune.upgrade_curr }}</span>
+              </td>
+              <td class="col-rank">
+                <span class="rank-badge" [class]="getRankClass(rune.rank)">{{ getRankName(rune.rank) }}</span>
+              </td>
+              <td class="col-main stat-cell">{{ getStatDisplay(rune.pri_eff) }}</td>
+              <td class="col-prefix stat-cell">
+                @if (rune.prefix_eff && rune.prefix_eff[0] !== 0) {
+                  <span class="prefix-stat">{{ getStatDisplay(rune.prefix_eff) }}</span>
+                } @else {
+                  <span class="no-stat">—</span>
+                }
+              </td>
+              <td class="col-subs">
+                <div class="sub-stats">
+                  @for (sub of rune.sec_eff; track $index) {
+                    @if (sub[0] !== 0) {
+                      <span class="sub-stat" [class.enhanced]="sub[2] === 1" [class.grinded]="sub[3] > 0">
+                        {{ formatSecEff(sub) }}
+                      </span>
+                    }
+                  }
+                </div>
+              </td>
+              <td class="col-equipped">
+                <span class="equipped-label" [class.inventory]="rune.occupied_id === 0">
+                  {{ getEquippedOn(rune) }}
+                </span>
+              </td>
+            </tr>
+          }
+
+          @if (filteredRunes().length === 0) {
+            <tr>
+              <td colspan="8" class="no-results">Aucune rune ne correspond aux filtres.</td>
+            </tr>
+          }
+        </tbody>
+      </table>
+    </div>
+  }
+
+</div>

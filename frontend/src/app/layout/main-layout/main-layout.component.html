@@ -8,7 +8,7 @@
     </div>
 
     <nav class="navbar-nav">
-      @for (item of navItems; track item.path) {
+      @for (item of navItems(); track item.path) {
         <a
           class="nav-link"
           [routerLink]="item.path"
@@ -16,14 +16,19 @@
         >
           <span class="nav-icon">{{ item.icon }}</span>
           <span class="nav-label">{{ item.label }}</span>
-          @if (item.soon) {
-            <span class="nav-soon">Soon</span>
+          @if (item.showDot) {
+            <span class="nav-dot" title="Aucune donnée importée"></span>
           }
         </a>
       }
     </nav>
 
     <div class="navbar-user">
+      @if (hasSWData() && wizardName()) {
+        <span class="wizard-name" title="Compte SW importé">
+          🐉 {{ wizardName()!.wizard_name }}
+        </span>
+      }
       <span class="user-name">{{ username }}</span>
       <button class="btn-logout" (click)="logout()">Déconnexion</button>
     </div>

@@ -1,0 +1,146 @@
+<div class="import-page">
+  <div class="page-header">
+    <h1>Import de compte</h1>
+    <p class="page-subtitle">Importez votre fichier JSON généré par SW Exporter pour accéder à vos monstres, runes et artefacts.</p>
+  </div>
+
+  <!-- Already imported banner -->
+  @if (swAccountService.hasData() && !success()) {
+    <div class="already-imported card">
+      <div class="banner-header">
+        <div class="banner-icon">✅</div>
+        <div class="banner-info">
+          <div class="banner-title">Compte importé</div>
+          @if (currentData) {
+            <div class="banner-sub">
+              <strong>{{ currentData.wizard.wizard_name }}</strong>
+              — Niveau {{ currentData.wizard.wizard_level }}
+              — Importé le {{ formatDate(currentData.importedAt) }}
+            </div>
+          }
+        </div>
+      </div>
+      <div class="banner-stats">
+        <div class="stat-chip">
+          <span class="stat-icon">🐉</span>
+          <span class="stat-val">{{ currentData?.units?.length ?? 0 }}</span>
+          <span class="stat-label">Monstres</span>
+        </div>
+        <div class="stat-chip">
+          <span class="stat-icon">💎</span>
+          <span class="stat-val">{{ (currentData?.runes?.length ?? 0) + (currentData?.units?.reduce(sumEquippedRunes, 0) ?? 0) }}</span>
+          <span class="stat-label">Runes</span>
+        </div>
+        <div class="stat-chip">
+          <span class="stat-icon">🔮</span>
+          <span class="stat-val">{{ currentData?.artifacts?.length ?? 0 }}</span>
+          <span class="stat-label">Artefacts</span>
+        </div>
+      </div>
+      <div class="banner-actions">
+        <a routerLink="/monsters" class="btn btn-primary btn-sm">Voir les monstres</a>
+        <a routerLink="/runes" class="btn btn-ghost btn-sm">Voir les runes</a>
+        <button class="btn btn-danger btn-sm" (click)="clear()">Supprimer les données</button>
+      </div>
+    </div>
+  }
+
+  <!-- Drop Zone -->
+  <div
+    class="drop-zone"
+    [class.dragging]="isDragging()"
+    [class.loading]="importing()"
+    (dragover)="onDragOver($event)"
+    (dragleave)="onDragLeave()"
+    (drop)="onDrop($event)"
+    (click)="!importing() && fileInput.click()"
+  >
+    <input
+      #fileInput
+      type="file"
+      accept=".json"
+      class="file-input"
+      (change)="onFileSelected($event)"
+    />
+
+    @if (importing()) {
+      <div class="drop-content">
+        <div class="spinner"></div>
+        <p class="drop-title">Importation en cours...</p>
+      </div>
+    } @else {
+      <div class="drop-content">
+        <div class="drop-icon">📂</div>
+        <p class="drop-title">Glissez-déposez votre fichier JSON ici</p>
+        <p class="drop-sub">ou cliquez pour sélectionner un fichier</p>
+        <div class="drop-hint">Fichier généré par SW Exporter (format .json)</div>
+      </div>
+    }
+  </div>
+
+  <!-- Error message -->
+  @if (error()) {
+    <div class="error-msg">
+      ⚠️ {{ error() }}
+    </div>
+  }
+
+  <!-- Success message + summary -->
+  @if (success() && importedData()) {
+    <div class="success-card card">
+      <div class="success-header">
+        <span class="success-icon">🎉</span>
+        <div>
+          <div class="success-title">Import réussi !</div>
+          <div class="success-sub">Compte de <strong>{{ importedData()!.wizard.wizard_name }}</strong>, niveau {{ importedData()!.wizard.wizard_level }}</div>
+        </div>
+      </div>
+
+      <div class="summary-grid">
+        <div class="summary-item">
+          <div class="summary-icon">🐉</div>
+          <div class="summary-val">{{ importedData()!.units.length }}</div>
+          <div class="summary-label">Monstres</div>
+        </div>
+        <div class="summary-item">
+          <div class="summary-icon">💎</div>
+          <div class="summary-val">{{ swAccountService.runes().length }}</div>
+          <div class="summary-label">Runes (total)</div>
+        </div>
+        <div class="summary-item">
+          <div class="summary-icon">🔮</div>
+          <div class="summary-val">{{ importedData()!.artifacts.length }}</div>
+          <div class="summary-label">Artefacts</div>
+        </div>
+        <div class="summary-item">
+          <div class="summary-icon">💰</div>
+          <div class="summary-val">{{ importedData()!.wizard.wizard_mana.toLocaleString('fr-FR') }}</div>
+          <div class="summary-label">Mana</div>
+        </div>
+        <div class="summary-item">
+          <div class="summary-icon">💎</div>
+          <div class="summary-val">{{ importedData()!.wizard.wizard_crystal.toLocaleString('fr-FR') }}</div>
+          <div class="summary-label">Cristaux</div>
+        </div>
+      </div>
+
+      <div class="success-actions">
+        <a routerLink="/monsters" class="btn btn-primary">Voir les monstres 🐉</a>
+        <a routerLink="/runes" class="btn btn-ghost">Voir les runes 💎</a>
+        <a routerLink="/artifacts" class="btn btn-ghost">Voir les artefacts 🔮</a>
+      </div>
+    </div>
+  }
+
+  <!-- Instructions -->
+  <div class="instructions card">
+    <h3>Comment obtenir le fichier d'export ?</h3>
+    <ol>
+      <li>Installez l'extension <strong>SW Exporter</strong> sur Chrome ou Firefox</li>
+      <li>Connectez-vous à Summoners War sur votre navigateur</li>
+      <li>Cliquez sur l'icône SW Exporter et exportez vos données</li>
+      <li>Glissez le fichier <code>.json</code> dans la zone ci-dessus</li>
+    </ol>
+    <p class="instructions-note">⚠️ Les données sont stockées uniquement dans votre navigateur (localStorage). Elles ne sont jamais envoyées à un serveur.</p>
+  </div>
+</div>

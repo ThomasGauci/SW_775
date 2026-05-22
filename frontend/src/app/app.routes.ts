@@ -19,6 +19,16 @@ export const routes: Routes = [
     canActivate: [authGuard],
     children: [
       {
+        path: 'import',
+        loadComponent: () =>
+          import('./pages/import/import.component').then(m => m.ImportComponent)
+      },
+      {
+        path: 'monsters',
+        loadComponent: () =>
+          import('./pages/monsters/monsters.component').then(m => m.MonstersComponent)
+      },
+      {
         path: 'siege',
         loadComponent: () =>
           import('./pages/tracker/tracker.component').then(m => m.TrackerComponent)

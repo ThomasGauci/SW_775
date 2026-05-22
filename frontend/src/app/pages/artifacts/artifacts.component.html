@@ -1,0 +1,142 @@
+<div class="artifacts-page">
+
+  <!-- No data state -->
+  @if (!swAccountService.hasData()) {
+    <div class="no-data">
+      <div class="no-data-icon">🔮</div>
+      <h2>Aucune donnée importée</h2>
+      <p>Importez votre compte SW pour voir vos artefacts.</p>
+      <a routerLink="/import" class="btn btn-primary">Importer mon compte</a>
+    </div>
+  } @else {
+
+    <div class="page-header">
+      <h1>Artefacts <span class="count-badge">{{ filteredArtifacts().length }}</span></h1>
+    </div>
+
+    <!-- Filters -->
+    <div class="filters-bar">
+      <!-- Type filter -->
+      <div class="filter-group">
+        <span class="filter-label">Type</span>
+        <div class="type-filters">
+          <button class="type-btn" [class.active]="filterType() === 'all'" (click)="filterType.set('all')">Tous</button>
+          <button class="type-btn type-attr" [class.active]="filterType() === 1" (click)="filterType.set(1)">Attribut</button>
+          <button class="type-btn type-arch" [class.active]="filterType() === 2" (click)="filterType.set(2)">Archétype</button>
+        </div>
+      </div>
+
+      <!-- Attribute filter (only for type 1) -->
+      <div class="filter-group">
+        <span class="filter-label">Attribut</span>
+        <select class="filter-select" [ngModel]="filterAttribute()" (ngModelChange)="filterAttribute.set($event === 'all' ? 'all' : +$event)">
+          <option value="all">Tous</option>
+          @for (k of attributeKeys; track k) {
+            <option [value]="k">{{ getAttributeLabel(k) }}</option>
+          }
+        </select>
+      </div>
+
+      <!-- Style filter (only for type 2) -->
+      <div class="filter-group">
+        <span class="filter-label">Style</span>
+        <select class="filter-select" [ngModel]="filterStyle()" (ngModelChange)="filterStyle.set($event === 'all' ? 'all' : +$event)">
+          <option value="all">Tous</option>
+          @for (k of styleKeys; track k) {
+            <option [value]="k">{{ getStyleLabel(k) }}</option>
+          }
+        </select>
+      </div>
+
+      <!-- Equipped filter -->
+      <div class="filter-group">
+        <span class="filter-label">Équipement</span>
+        <select class="filter-select" [ngModel]="filterEquipped()" (ngModelChange)="filterEquipped.set($event)">
+          <option value="all">Tous</option>
+          <option value="equipped">Équipés</option>
+          <option value="unequipped">Inventaire</option>
+        </select>
+      </div>
+
+      <!-- Sort -->
+      <div class="filter-group">
+        <span class="filter-label">Trier</span>
+        <div class="sort-controls">
+          <button class="sort-btn" [class.active]="sortKey() === 'level'" (click)="toggleSort('level')">
+            +Niv {{ sortKey() === 'level' ? (sortDir() === 1 ? '↑' : '↓') : '' }}
+          </button>
+          <button class="sort-btn" [class.active]="sortKey() === 'rank'" (click)="toggleSort('rank')">
+            Rang {{ sortKey() === 'rank' ? (sortDir() === 1 ? '↑' : '↓') : '' }}
+          </button>
+          <button class="sort-btn" [class.active]="sortKey() === 'type'" (click)="toggleSort('type')">
+            Type {{ sortKey() === 'type' ? (sortDir() === 1 ? '↑' : '↓') : '' }}
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Table -->
+    <div class="table-wrapper">
+      <table class="artifacts-table">
+        <thead>
+          <tr>
+            <th class="col-type">Type</th>
+            <th class="col-attr">Attribut / Style</th>
+            <th class="col-level">+Niveau</th>
+            <th class="col-rank">Rang</th>
+            <th class="col-main">Effet principal</th>
+            <th class="col-subs">Sous-effets</th>
+            <th class="col-equipped">Équipé sur</th>
+          </tr>
+        </thead>
+        <tbody>
+          @for (art of filteredArtifacts(); track art.rid) {
+            <tr>
+              <td class="col-type">
+                <span class="type-badge" [class]="getTypeClass(art.type)">{{ getTypeLabel(art.type) }}</span>
+              </td>
+              <td class="col-attr">
+                @if (art.type === 1) {
+                  <span class="attr-label" [class]="getAttrClass(art.attribute)">
+                    {{ getAttributeLabel(art.attribute) }}
+                  </span>
+                } @else {
+                  <span class="style-label">{{ getStyleLabel(art.unit_style) }}</span>
+                }
+              </td>
+              <td class="col-level">
+                <span class="level-badge" [class]="getLevelClass(art.level)">+{{ art.level }}</span>
+              </td>
+              <td class="col-rank">
+                <span class="rank-stars">{{ '★'.repeat(art.rank) }}</span>
+                <span class="nat-stars"> (nat {{ art.natural_rank }}★)</span>
+              </td>
+              <td class="col-main stat-cell">{{ getPriEffectLabel(art) }}</td>
+              <td class="col-subs">
+                <div class="sub-effects">
+                  @for (eff of art.sec_effects; track $index) {
+                    @if (eff[0] !== 0) {
+                      <span class="sub-effect">{{ getEffectLabel(eff) }}</span>
+                    }
+                  }
+                </div>
+              </td>
+              <td class="col-equipped">
+                <span class="equipped-label" [class.inventory]="art.occupied_id === 0">
+                  {{ getEquippedOn(art) }}
+                </span>
+              </td>
+            </tr>
+          }
+
+          @if (filteredArtifacts().length === 0) {
+            <tr>
+              <td colspan="7" class="no-results">Aucun artefact ne correspond aux filtres.</td>
+            </tr>
+          }
+        </tbody>
+      </table>
+    </div>
+  }
+
+</div>
