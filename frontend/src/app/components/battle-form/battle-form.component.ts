@@ -3,7 +3,7 @@ import {
 } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { Monster, ELEMENT_LABELS } from '../../models/monster.model';
+import { Monster } from '../../models/monster.model';
 import { MonsterPickerComponent } from '../monster-picker/monster-picker.component';
 
 interface PickerTarget {
@@ -30,8 +30,6 @@ export class BattleFormComponent {
   defTeam = signal<(Monster | null)[]>([null, null, null]);
   winner = signal<'att' | 'def'>('att');
   pickerTarget = signal<PickerTarget | null>(null);
-
-  readonly elementLabels = ELEMENT_LABELS;
 
   readonly allSelectedIds = computed(() => {
     const att = this.attTeam().filter((m): m is Monster => m !== null).map(m => m.id);
@@ -95,10 +93,6 @@ export class BattleFormComponent {
     this.attTeam.set([null, null, null]);
     this.defTeam.set([null, null, null]);
     this.winner.set('att');
-  }
-
-  getElemEmoji(elem: Monster['elem']): string {
-    return ELEMENT_LABELS[elem]?.emoji ?? '';
   }
 
   getNatStars(nat: number): string {

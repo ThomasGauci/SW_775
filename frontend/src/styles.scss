@@ -278,3 +278,32 @@ textarea {
   border-radius: 8px;
   font-size: 13px;
 }
+
+/* ===== Element color dots ===== */
+.elem-dot, .elem-dot-sm, .elem-dot-xs {
+  display: inline-block;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.elem-dot    { width: 10px; height: 10px; }
+.elem-dot-sm { width:  8px; height:  8px; }
+.elem-dot-xs { width:  6px; height:  6px; }
+
+.elem-f { background: var(--fire); }
+.elem-w { background: var(--water); }
+.elem-n { background: var(--wind); }
+.elem-l { background: var(--light); }
+.elem-d { background: var(--dark); }
+
+/* ===== Element fallback backgrounds ===== */
+.elem-bg-f, .elem-bg-w, .elem-bg-n, .elem-bg-l, .elem-bg-d {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+.elem-bg-f { background: rgba(232, 100,  58, 0.3); }
+.elem-bg-w { background: rgba( 58, 143, 232, 0.3); }
+.elem-bg-n { background: rgba( 58, 184, 112, 0.3); }
+.elem-bg-l { background: rgba(212, 168,  58, 0.3); }
+.elem-bg-d { background: rgba(155,  92, 240, 0.3); }

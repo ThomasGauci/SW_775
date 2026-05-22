@@ -125,7 +125,7 @@
 .win-lbl { color: var(--win); }
 .lose-lbl { color: var(--lose); }
 
-.top-monsters-section {
+.table-section {
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -262,6 +262,49 @@
 .win-text {
   color: var(--win);
   font-weight: 600;
+}
+
+/* Teams columns */
+.teams-header, .teams-row {
+  grid-template-columns: 36px 1fr 70px 70px 80px;
+
+  @media (max-width: 500px) {
+    grid-template-columns: 28px 1fr 50px 50px 60px;
+  }
+}
+
+.col-team { min-width: 0; }
+
+.team-cell {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.team-monster-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  overflow: hidden;
+  flex-shrink: 0;
+  background: var(--bg4);
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.mini-fallback-sm {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.elem-dot-xs {
+  width: 6px;
+  height: 6px;
 }
 
 .wr-pill {

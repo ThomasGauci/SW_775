@@ -67,13 +67,9 @@ export class MonsterPickerComponent implements OnInit {
     this.natFilter.set(nat);
   }
 
-  getElemEmoji(elem: Element): string {
-    return ELEMENT_LABELS[elem]?.emoji ?? '';
-  }
-
   getElemLabel(elem: ElemFilter): string {
     if (elem === 'all') return 'Tous';
-    return ELEMENT_LABELS[elem]?.emoji ?? elem;
+    return ELEMENT_LABELS[elem]?.label ?? elem;
   }
 
   getNatStars(nat: number): string {

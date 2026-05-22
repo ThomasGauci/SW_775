@@ -15,12 +15,12 @@
                   @if (slot.img) {
                     <img [src]="slot.img" [alt]="slot.name" />
                   } @else {
-                    <span class="slot-fallback">{{ getElemEmoji(slot.elem) }}</span>
+                    <span class="slot-fallback" [class]="'elem-bg-' + slot.elem"></span>
                   }
                 </div>
                 <div class="slot-name">{{ slot.name }}</div>
                 <div class="slot-meta">
-                  <span class="elem-dot">{{ getElemEmoji(slot.elem) }}</span>
+                  <span class="elem-dot" [class]="'elem-' + slot.elem"></span>
                   <span class="nat-stars">{{ getNatStars(slot.nat) }}</span>
                 </div>
                 <button class="slot-remove" (click)="removeMonster('att', $index)" aria-label="Retirer">✕</button>
@@ -53,12 +53,12 @@
                   @if (slot.img) {
                     <img [src]="slot.img" [alt]="slot.name" />
                   } @else {
-                    <span class="slot-fallback">{{ getElemEmoji(slot.elem) }}</span>
+                    <span class="slot-fallback" [class]="'elem-bg-' + slot.elem"></span>
                   }
                 </div>
                 <div class="slot-name">{{ slot.name }}</div>
                 <div class="slot-meta">
-                  <span class="elem-dot">{{ getElemEmoji(slot.elem) }}</span>
+                  <span class="elem-dot" [class]="'elem-' + slot.elem"></span>
                   <span class="nat-stars">{{ getNatStars(slot.nat) }}</span>
                 </div>
                 <button class="slot-remove" (click)="removeMonster('def', $index)" aria-label="Retirer">✕</button>
@@ -98,7 +98,7 @@
     (click)="submit()"
     [disabled]="!isValid()"
   >
-    ✅ Enregistrer le combat
+    Enregistrer le combat
   </button>
 </div>
 

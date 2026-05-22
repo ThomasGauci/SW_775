@@ -8,10 +8,10 @@ export interface Monster {
   img?: string; // base64 data URL
 }
 
-export const ELEMENT_LABELS: Record<Element, { emoji: string; label: string }> = {
-  f: { emoji: '🔥', label: 'Feu' },
-  w: { emoji: '💧', label: 'Eau' },
-  n: { emoji: '🌪️', label: 'Vent' },
-  l: { emoji: '☀️', label: 'Lumière' },
-  d: { emoji: '🌑', label: 'Ténèbres' }
+export const ELEMENT_LABELS: Record<Element, { label: string; cssClass: string }> = {
+  f: { label: 'Feu',      cssClass: 'elem-f' },
+  w: { label: 'Eau',      cssClass: 'elem-w' },
+  n: { label: 'Vent',     cssClass: 'elem-n' },
+  l: { label: 'Lumière',  cssClass: 'elem-l' },
+  d: { label: 'Ténèbres', cssClass: 'elem-d' },
 };

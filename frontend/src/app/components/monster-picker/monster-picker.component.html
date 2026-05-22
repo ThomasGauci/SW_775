@@ -23,10 +23,16 @@
             <button
               class="filter-btn elem-btn"
               [class.active]="elemFilter() === elem"
-              [class]="elem !== 'all' ? 'elem-' + elem : ''"
+              [class]="elem !== 'all' ? 'filter-btn elem-btn elem-filter-' + elem : 'filter-btn elem-btn'"
+              [class.active]="elemFilter() === elem"
               (click)="setElem(elem)"
             >
-              {{ getElemLabel(elem) }}
+              @if (elem === 'all') {
+                Tous
+              } @else {
+                <span class="elem-dot-sm" [class]="'elem-' + elem"></span>
+                {{ getElemLabel(elem) }}
+              }
             </button>
           }
         </div>
@@ -65,13 +71,13 @@
                 @if (monster.img) {
                   <img [src]="monster.img | safeUrl" [alt]="monster.name" />
                 } @else {
-                  <span class="monster-fallback-icon">{{ getElemEmoji(monster.elem) }}</span>
+                  <span class="monster-fallback" [class]="'elem-bg-' + monster.elem"></span>
                 }
               </div>
               <div class="monster-info">
                 <span class="monster-name">{{ monster.name }}</span>
                 <div class="monster-meta">
-                  <span class="elem-dot" [class]="'elem-' + monster.elem">{{ getElemEmoji(monster.elem) }}</span>
+                  <span class="elem-dot-sm" [class]="'elem-' + monster.elem"></span>
                   <span class="nat-stars">{{ getNatStars(monster.nat) }}</span>
                 </div>
               </div>

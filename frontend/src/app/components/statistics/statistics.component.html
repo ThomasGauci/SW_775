@@ -11,7 +11,8 @@
       <small>Enregistrez des combats pour voir vos statistiques</small>
     </div>
   } @else {
-    <!-- Overview Cards -->
+
+    <!-- KPI Cards -->
     <div class="stat-cards">
       <div class="stat-card">
         <div class="stat-value">{{ stats.total }}</div>
@@ -26,7 +27,7 @@
         <div class="stat-label">Défaites</div>
       </div>
       <div class="stat-card accent">
-        <div class="stat-value accent">{{ formatPct(stats.winRate) }}</div>
+        <div class="stat-value accent">{{ pct(stats.winRate) }}</div>
         <div class="stat-label">Win Rate</div>
       </div>
     </div>
@@ -34,56 +35,60 @@
     <!-- Win Rate Bar -->
     <div class="winrate-section">
       <div class="winrate-header">
-        <span class="section-title">Taux de victoire</span>
-        <span class="winrate-value">{{ formatPct(stats.winRate) }}</span>
+        <span class="section-title">Taux de victoire global</span>
+        <span class="winrate-value">{{ pct(stats.winRate) }}</span>
       </div>
       <div class="winrate-bar-track">
-        <div class="winrate-bar-fill" [style.width]="getWinRateWidth(stats.winRate)"></div>
+        <div class="winrate-bar-fill" [style.width]="barWidth(stats.winRate)"></div>
       </div>
       <div class="winrate-labels">
-        <span class="win-lbl">✅ {{ stats.wins }} victoires</span>
-        <span class="lose-lbl">❌ {{ stats.losses }} défaites</span>
+        <span class="win-lbl">{{ stats.wins }} victoires</span>
+        <span class="lose-lbl">{{ stats.losses }} défaites</span>
       </div>
     </div>
 
-    <!-- Top 10 Monsters -->
+    <!-- Top Monstres -->
     @if (stats.topMonsters && stats.topMonsters.length > 0) {
-      <div class="top-monsters-section">
-        <h3 class="section-title">Top 10 monstres</h3>
+      <div class="table-section">
+        <h3 class="section-title">Monstres — {{ stats.topMonsters.length }} utilisés</h3>
         <div class="top-table">
           <div class="top-table-header">
             <span class="col-rank">#</span>
             <span class="col-monster">Monstre</span>
-            <span class="col-app">Présences</span>
-            <span class="col-wins">Victoires</span>
+            <span class="col-num">Joués</span>
+            <span class="col-num">Victoires</span>
             <span class="col-wr">Win Rate</span>
           </div>
-          @for (entry of stats.topMonsters; track entry.monster.id; let i = $index) {
-            <div class="top-table-row">
-              <span class="col-rank rank-num" [class.gold]="i === 0" [class.silver]="i === 1" [class.bronze]="i === 2">
-                {{ i + 1 }}
+          @for (entry of stats.topMonsters; track entry.monsterId) {
+            <div class="top-table-row" [class.gold-row]="$index === 0" [class.silver-row]="$index === 1" [class.bronze-row]="$index === 2">
+              <span class="col-rank rank-num"
+                [class.gold]="$index === 0" [class.silver]="$index === 1" [class.bronze]="$index === 2">
+                {{ $index + 1 }}
               </span>
               <div class="col-monster monster-cell">
                 <div class="mini-img-sm">
-                  @if (entry.monster.img) {
-                    <img [src]="entry.monster.img" [alt]="entry.monster.name" />
-                  } @else {
-                    <span>{{ getElemEmoji(entry.monster.elem) }}</span>
-                  }
+                  <ng-container *ngIf="getImg(entry.monsterId) as img">
+                    <img [src]="img | safeUrl" [alt]="entry.name" />
+                  </ng-container>
+                  <ng-container *ngIf="!getImg(entry.monsterId)">
+                    <span class="mini-fallback-sm" [class]="'elem-bg-' + entry.elem"></span>
+                  </ng-container>
                 </div>
                 <div class="monster-cell-info">
-                  <span class="monster-cell-name">{{ entry.monster.name }}</span>
-                  <span class="monster-cell-meta">
-                    {{ getElemEmoji(entry.monster.elem) }}
-                    <span class="nat-stars-sm">{{ getNatStars(entry.monster.nat) }}</span>
-                  </span>
+                  <span class="monster-cell-name">{{ entry.name }}</span>
+                  <div class="monster-cell-meta">
+                    <span class="elem-dot-xs" [class]="'elem-' + entry.elem"></span>
+                    <span class="nat-stars-sm">{{ getNatStars(entry.nat) }}</span>
+                  </div>
                 </div>
               </div>
-              <span class="col-app">{{ entry.appearances }}</span>
-              <span class="col-wins win-text">{{ entry.wins }}</span>
+              <span class="col-num">{{ entry.usage }}</span>
+              <span class="col-num win-text">{{ entry.wins }}</span>
               <span class="col-wr">
-                <span class="wr-pill" [class.high]="entry.winRate >= 0.6" [class.low]="entry.winRate < 0.4">
-                  {{ formatPct(entry.winRate) }}
+                <span class="wr-pill"
+                  [class.high]="entry.winRate >= 0.6"
+                  [class.low]="entry.winRate < 0.4">
+                  {{ pct(entry.winRate) }}
                 </span>
               </span>
             </div>
@@ -91,5 +96,51 @@
         </div>
       </div>
     }
+
+    <!-- Top Équipes -->
+    @if (stats.topTeams && stats.topTeams.length > 0) {
+      <div class="table-section">
+        <h3 class="section-title">Équipes — {{ stats.topTeams.length }} compositions</h3>
+        <div class="top-table">
+          <div class="top-table-header teams-header">
+            <span class="col-rank">#</span>
+            <span class="col-team">Composition</span>
+            <span class="col-num">Joués</span>
+            <span class="col-num">Victoires</span>
+            <span class="col-wr">Win Rate</span>
+          </div>
+          @for (team of stats.topTeams; track $index) {
+            <div class="top-table-row teams-row">
+              <span class="col-rank rank-num"
+                [class.gold]="$index === 0" [class.silver]="$index === 1" [class.bronze]="$index === 2">
+                {{ $index + 1 }}
+              </span>
+              <div class="col-team team-cell">
+                @for (m of team.monsters; track m.monsterId) {
+                  <div class="team-monster-icon" [title]="m.name">
+                    <ng-container *ngIf="getImg(m.monsterId) as img">
+                      <img [src]="img | safeUrl" [alt]="m.name" />
+                    </ng-container>
+                    <ng-container *ngIf="!getImg(m.monsterId)">
+                      <span class="mini-fallback-sm" [class]="'elem-bg-' + m.elem"></span>
+                    </ng-container>
+                  </div>
+                }
+              </div>
+              <span class="col-num">{{ team.usage }}</span>
+              <span class="col-num win-text">{{ team.wins }}</span>
+              <span class="col-wr">
+                <span class="wr-pill"
+                  [class.high]="team.winRate >= 0.6"
+                  [class.low]="team.winRate < 0.4">
+                  {{ pct(team.winRate) }}
+                </span>
+              </span>
+            </div>
+          }
+        </div>
+      </div>
+    }
+
   }
 </div>

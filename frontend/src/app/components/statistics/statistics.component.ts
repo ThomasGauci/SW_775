@@ -1,12 +1,13 @@
 import { Component, Input, ChangeDetectionStrategy } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { CommonModule, NgIf } from '@angular/common';
 import { BattleStats } from '../../models/battle.model';
-import { ELEMENT_LABELS, Monster } from '../../models/monster.model';
+import { MonsterService } from '../../core/services/monster.service';
+import { SafeUrlPipe } from '../../core/pipes/safe-url.pipe';
 
 @Component({
   selector: 'app-statistics',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, NgIf, SafeUrlPipe],
   templateUrl: './statistics.component.html',
   styleUrls: ['./statistics.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
@@ -15,19 +16,21 @@ export class StatisticsComponent {
   @Input() stats: BattleStats | null = null;
   @Input() loading = false;
 
-  getElemEmoji(elem: Monster['elem']): string {
-    return ELEMENT_LABELS[elem]?.emoji ?? '';
+  constructor(private monsterService: MonsterService) {}
+
+  getImg(monsterId: number): string | undefined {
+    return this.monsterService.getById(monsterId)?.img;
+  }
+
+  pct(rate: number): string {
+    return `${Math.round(rate * 100)}%`;
+  }
+
+  barWidth(rate: number): string {
+    return `${Math.min(100, Math.round(rate * 100))}%`;
   }
 
   getNatStars(nat: number): string {
     return '★'.repeat(nat);
-  }
-
-  getWinRateWidth(rate: number): string {
-    return `${Math.round(rate * 100)}%`;
-  }
-
-  formatPct(rate: number): string {
-    return `${Math.round(rate * 100)}%`;
   }
 }

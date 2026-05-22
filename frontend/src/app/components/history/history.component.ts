@@ -3,12 +3,13 @@ import {
 } from '@angular/core';
 import { CommonModule, DatePipe } from '@angular/common';
 import { Battle } from '../../models/battle.model';
-import { Monster, ELEMENT_LABELS } from '../../models/monster.model';
+import { MonsterService } from '../../core/services/monster.service';
+import { SafeUrlPipe } from '../../core/pipes/safe-url.pipe';
 
 @Component({
   selector: 'app-history',
   standalone: true,
-  imports: [CommonModule, DatePipe],
+  imports: [CommonModule, DatePipe, SafeUrlPipe],
   templateUrl: './history.component.html',
   styleUrls: ['./history.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
@@ -18,19 +19,13 @@ export class HistoryComponent {
   @Input() loading = false;
   @Output() deleteBattle = new EventEmitter<number>();
 
-  getElemEmoji(elem: Monster['elem']): string {
-    return ELEMENT_LABELS[elem]?.emoji ?? '';
-  }
+  constructor(private monsterService: MonsterService) {}
 
-  getNatStars(nat: number): string {
-    return '★'.repeat(nat);
+  getImg(monsterId: number): string | undefined {
+    return this.monsterService.getById(monsterId)?.img;
   }
 
   onDelete(id: number): void {
     this.deleteBattle.emit(id);
-  }
-
-  trackById(_: number, battle: Battle): number {
-    return battle.id;
   }
 }
