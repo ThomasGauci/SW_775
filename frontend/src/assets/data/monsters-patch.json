@@ -1,4 +1,5570 @@
 [
-  { "id": 28912, "name": "Moogwang",  "elem": "f", "nat": 5 },
-  { "id": 31311, "name": "Lamiella",  "elem": "w", "nat": 5 }
+  {
+    "id": 28912,
+    "name": "Moogwang",
+    "elem": "f",
+    "nat": 5
+  },
+  {
+    "id": 31311,
+    "name": "Lamiella",
+    "elem": "w",
+    "nat": 5
+  },
+  {
+    "id": 30014,
+    "name": "51LV3R",
+    "elem": "l",
+    "nat": 5
+  },
+  {
+    "id": 30013,
+    "name": "570RM",
+    "elem": "n",
+    "nat": 5
+  },
+  {
+    "id": 30012,
+    "name": "7R1X",
+    "elem": "f",
+    "nat": 5
+  },
+  {
+    "id": 10133,
+    "name": "Aeilene",
+    "elem": "n",
+    "nat": 2
+  },
+  {
+    "id": 34212,
+    "name": "Agrenia",
+    "elem": "f",
+    "nat": 5
+  },
+  {
+    "id": 34112,
+    "name": "Agrius",
+    "elem": "f",
+    "nat": 4
+  },
+  {
+    "id": 30114,
+    "name": "Alesia",
+    "elem": "l",
+    "nat": 4
+  },
+  {
+    "id": 15231,
+    "name": "Allen",
+    "elem": "w",
+    "nat": 2
+  },
+  {
+    "id": 14902,
+    "name": "Amazon",
+    "elem": "f",
+    "nat": 3
+  },
+  {
+    "id": 14901,
+    "name": "Amazon",
+    "elem": "w",
+    "nat": 3
+  },
+  {
+    "id": 14904,
+    "name": "Amazon",
+    "elem": "l",
+    "nat": 3
+  },
+  {
+    "id": 14905,
+    "name": "Amazon",
+    "elem": "d",
+    "nat": 3
+  },
+  {
+    "id": 29611,
+    "name": "Anders",
+    "elem": "w",
+    "nat": 5
+  },
+  {
+    "id": 11733,
+    "name": "Anduril",
+    "elem": "n",
+    "nat": 3
+  },
+  {
+    "id": 14202,
+    "name": "Angelmon",
+    "elem": "f",
+    "nat": 1
+  },
+  {
+    "id": 14201,
+    "name": "Angelmon",
+    "elem": "w",
+    "nat": 1
+  },
+  {
+    "id": 14203,
+    "name": "Angelmon",
+    "elem": "n",
+    "nat": 1
+  },
+  {
+    "id": 14205,
+    "name": "Angelmon",
+    "elem": "d",
+    "nat": 1
+  },
+  {
+    "id": 14204,
+    "name": "Angelmon",
+    "elem": "l",
+    "nat": 1
+  },
+  {
+    "id": 20402,
+    "name": "Anubis",
+    "elem": "f",
+    "nat": 4
+  },
+  {
+    "id": 20403,
+    "name": "Anubis",
+    "elem": "n",
+    "nat": 4
+  },
+  {
+    "id": 20401,
+    "name": "Anubis",
+    "elem": "w",
+    "nat": 4
+  },
+  {
+    "id": 20404,
+    "name": "Anubis",
+    "elem": "l",
+    "nat": 4
+  },
+  {
+    "id": 20405,
+    "name": "Anubis",
+    "elem": "d",
+    "nat": 5
+  },
+  {
+    "id": 34611,
+    "name": "Aragorn",
+    "elem": "w",
+    "nat": 5
+  },
+  {
+    "id": 34612,
+    "name": "Aragorn",
+    "elem": "f",
+    "nat": 5
+  },
+  {
+    "id": 34613,
+    "name": "Aragorn",
+    "elem": "n",
+    "nat": 4
+  },
+  {
+    "id": 34614,
+    "name": "Aragorn",
+    "elem": "l",
+    "nat": 4
+  },
+  {
+    "id": 34615,
+    "name": "Aragorn",
+    "elem": "d",
+    "nat": 5
+  },
+  {
+    "id": 29814,
+    "name": "Arcana",
+    "elem": "l",
+    "nat": 4
+  },
+  {
+    "id": 34001,
+    "name": "Arcane Weapon",
+    "elem": "w",
+    "nat": 5
+  },
+  {
+    "id": 34002,
+    "name": "Arcane Weapon",
+    "elem": "f",
+    "nat": 5
+  },
+  {
+    "id": 34003,
+    "name": "Arcane Weapon",
+    "elem": "n",
+    "nat": 5
+  },
+  {
+    "id": 34004,
+    "name": "Arcane Weapon",
+    "elem": "l",
+    "nat": 5
+  },
+  {
+    "id": 34005,
+    "name": "Arcane Weapon",
+    "elem": "d",
+    "nat": 5
+  },
+  {
+    "id": 17002,
+    "name": "Archangel",
+    "elem": "f",
+    "nat": 5
+  },
+  {
+    "id": 17003,
+    "name": "Archangel",
+    "elem": "n",
+    "nat": 5
+  },
+  {
+    "id": 17001,
+    "name": "Archangel",
+    "elem": "w",
+    "nat": 5
+  },
+  {
+    "id": 17004,
+    "name": "Archangel",
+    "elem": "l",
+    "nat": 5
+  },
+  {
+    "id": 17005,
+    "name": "Archangel",
+    "elem": "d",
+    "nat": 5
+  },
+  {
+    "id": 34214,
+    "name": "Arella",
+    "elem": "l",
+    "nat": 5
+  },
+  {
+    "id": 23701,
+    "name": "Art Master",
+    "elem": "w",
+    "nat": 5
+  },
+  {
+    "id": 23702,
+    "name": "Art Master",
+    "elem": "f",
+    "nat": 5
+  },
+  {
+    "id": 23703,
+    "name": "Art Master",
+    "elem": "n",
+    "nat": 5
+  },
+  {
+    "id": 23704,
+    "name": "Art Master",
+    "elem": "l",
+    "nat": 5
+  },
+  {
+    "id": 23705,
+    "name": "Art Master",
+    "elem": "d",
+    "nat": 5
+  },
+  {
+    "id": 34115,
+    "name": "Asbolus",
+    "elem": "d",
+    "nat": 4
+  },
+  {
+    "id": 19902,
+    "name": "Assassin",
+    "elem": "f",
+    "nat": 4
+  },
+  {
+    "id": 19901,
+    "name": "Assassin",
+    "elem": "w",
+    "nat": 4
+  },
+  {
+    "id": 19903,
+    "name": "Assassin",
+    "elem": "n",
+    "nat": 4
+  },
+  {
+    "id": 19904,
+    "name": "Assassin",
+    "elem": "l",
+    "nat": 4
+  },
+  {
+    "id": 19905,
+    "name": "Assassin",
+    "elem": "d",
+    "nat": 4
+  },
+  {
+    "id": 28501,
+    "name": "Asura",
+    "elem": "w",
+    "nat": 4
+  },
+  {
+    "id": 28502,
+    "name": "Asura",
+    "elem": "f",
+    "nat": 4
+  },
+  {
+    "id": 28503,
+    "name": "Asura",
+    "elem": "n",
+    "nat": 4
+  },
+  {
+    "id": 28504,
+    "name": "Asura",
+    "elem": "l",
+    "nat": 4
+  },
+  {
+    "id": 28505,
+    "name": "Asura",
+    "elem": "d",
+    "nat": 4
+  },
+  {
+    "id": 18802,
+    "name": "Barbaric King",
+    "elem": "f",
+    "nat": 4
+  },
+  {
+    "id": 18803,
+    "name": "Barbaric King",
+    "elem": "n",
+    "nat": 4
+  },
+  {
+    "id": 18801,
+    "name": "Barbaric King",
+    "elem": "w",
+    "nat": 4
+  },
+  {
+    "id": 18804,
+    "name": "Barbaric King",
+    "elem": "l",
+    "nat": 4
+  },
+  {
+    "id": 18805,
+    "name": "Barbaric King",
+    "elem": "d",
+    "nat": 4
+  },
+  {
+    "id": 26101,
+    "name": "Battle Angel",
+    "elem": "w",
+    "nat": 5
+  },
+  {
+    "id": 26102,
+    "name": "Battle Angel",
+    "elem": "f",
+    "nat": 5
+  },
+  {
+    "id": 26103,
+    "name": "Battle Angel",
+    "elem": "n",
+    "nat": 5
+  },
+  {
+    "id": 26104,
+    "name": "Battle Angel",
+    "elem": "l",
+    "nat": 5
+  },
+  {
+    "id": 26105,
+    "name": "Battle Angel",
+    "elem": "d",
+    "nat": 5
+  },
+  {
+    "id": 19002,
+    "name": "Battle Mammoth",
+    "elem": "f",
+    "nat": 3
+  },
+  {
+    "id": 19001,
+    "name": "Battle Mammoth",
+    "elem": "w",
+    "nat": 3
+  },
+  {
+    "id": 19003,
+    "name": "Battle Mammoth",
+    "elem": "n",
+    "nat": 3
+  },
+  {
+    "id": 19004,
+    "name": "Battle Mammoth",
+    "elem": "l",
+    "nat": 3
+  },
+  {
+    "id": 19005,
+    "name": "Battle Mammoth",
+    "elem": "d",
+    "nat": 3
+  },
+  {
+    "id": 17602,
+    "name": "Battle Scorpion",
+    "elem": "f",
+    "nat": 2
+  },
+  {
+    "id": 17601,
+    "name": "Battle Scorpion",
+    "elem": "w",
+    "nat": 2
+  },
+  {
+    "id": 17603,
+    "name": "Battle Scorpion",
+    "elem": "n",
+    "nat": 2
+  },
+  {
+    "id": 13704,
+    "name": "Bearman",
+    "elem": "l",
+    "nat": 3
+  },
+  {
+    "id": 13705,
+    "name": "Bearman",
+    "elem": "d",
+    "nat": 3
+  },
+  {
+    "id": 18501,
+    "name": "Beast Hunter",
+    "elem": "w",
+    "nat": 3
+  },
+  {
+    "id": 18503,
+    "name": "Beast Hunter",
+    "elem": "n",
+    "nat": 3
+  },
+  {
+    "id": 18504,
+    "name": "Beast Hunter",
+    "elem": "l",
+    "nat": 3
+  },
+  {
+    "id": 18505,
+    "name": "Beast Hunter",
+    "elem": "d",
+    "nat": 3
+  },
+  {
+    "id": 17402,
+    "name": "Beast Monk",
+    "elem": "f",
+    "nat": 5
+  },
+  {
+    "id": 17403,
+    "name": "Beast Monk",
+    "elem": "n",
+    "nat": 5
+  },
+  {
+    "id": 17401,
+    "name": "Beast Monk",
+    "elem": "w",
+    "nat": 5
+  },
+  {
+    "id": 17404,
+    "name": "Beast Monk",
+    "elem": "l",
+    "nat": 5
+  },
+  {
+    "id": 17405,
+    "name": "Beast Monk",
+    "elem": "d",
+    "nat": 5
+  },
+  {
+    "id": 23501,
+    "name": "Beast Rider",
+    "elem": "w",
+    "nat": 5
+  },
+  {
+    "id": 23502,
+    "name": "Beast Rider",
+    "elem": "f",
+    "nat": 5
+  },
+  {
+    "id": 23503,
+    "name": "Beast Rider",
+    "elem": "n",
+    "nat": 5
+  },
+  {
+    "id": 23504,
+    "name": "Beast Rider",
+    "elem": "l",
+    "nat": 5
+  },
+  {
+    "id": 23505,
+    "name": "Beast Rider",
+    "elem": "d",
+    "nat": 5
+  },
+  {
+    "id": 32301,
+    "name": "Beetle Guardian",
+    "elem": "w",
+    "nat": 5
+  },
+  {
+    "id": 32302,
+    "name": "Beetle Guardian",
+    "elem": "f",
+    "nat": 5
+  },
+  {
+    "id": 32303,
+    "name": "Beetle Guardian",
+    "elem": "n",
+    "nat": 5
+  },
+  {
+    "id": 32304,
+    "name": "Beetle Guardian",
+    "elem": "l",
+    "nat": 5
+  },
+  {
+    "id": 32305,
+    "name": "Beetle Guardian",
+    "elem": "d",
+    "nat": 5
+  },
+  {
+    "id": 11034,
+    "name": "Belladeon",
+    "elem": "l",
+    "nat": 3
+  },
+  {
+    "id": 11533,
+    "name": "Bernard",
+    "elem": "n",
+    "nat": 3
+  },
+  {
+    "id": 29714,
+    "name": "Birgitta",
+    "elem": "l",
+    "nat": 5
+  },
+  {
+    "id": 27001,
+    "name": "Black Tea Bunny",
+    "elem": "w",
+    "nat": 4
+  },
+  {
+    "id": 27002,
+    "name": "Black Tea Bunny",
+    "elem": "f",
+    "nat": 4
+  },
+  {
+    "id": 27003,
+    "name": "Black Tea Bunny",
+    "elem": "n",
+    "nat": 4
+  },
+  {
+    "id": 27004,
+    "name": "Black Tea Bunny",
+    "elem": "l",
+    "nat": 4
+  },
+  {
+    "id": 27005,
+    "name": "Black Tea Bunny",
+    "elem": "d",
+    "nat": 4
+  },
+  {
+    "id": 24901,
+    "name": "Blade Dancer",
+    "elem": "w",
+    "nat": 4
+  },
+  {
+    "id": 24902,
+    "name": "Blade Dancer",
+    "elem": "f",
+    "nat": 4
+  },
+  {
+    "id": 24903,
+    "name": "Blade Dancer",
+    "elem": "n",
+    "nat": 4
+  },
+  {
+    "id": 24904,
+    "name": "Blade Dancer",
+    "elem": "l",
+    "nat": 4
+  },
+  {
+    "id": 24905,
+    "name": "Blade Dancer",
+    "elem": "d",
+    "nat": 4
+  },
+  {
+    "id": 22001,
+    "name": "Boomerang Warrior",
+    "elem": "w",
+    "nat": 4
+  },
+  {
+    "id": 22002,
+    "name": "Boomerang Warrior",
+    "elem": "f",
+    "nat": 4
+  },
+  {
+    "id": 22003,
+    "name": "Boomerang Warrior",
+    "elem": "n",
+    "nat": 4
+  },
+  {
+    "id": 22004,
+    "name": "Boomerang Warrior",
+    "elem": "l",
+    "nat": 4
+  },
+  {
+    "id": 22005,
+    "name": "Boomerang Warrior",
+    "elem": "d",
+    "nat": 4
+  },
+  {
+    "id": 15602,
+    "name": "Bounty Hunter",
+    "elem": "f",
+    "nat": 3
+  },
+  {
+    "id": 15601,
+    "name": "Bounty Hunter",
+    "elem": "w",
+    "nat": 3
+  },
+  {
+    "id": 15604,
+    "name": "Bounty Hunter",
+    "elem": "l",
+    "nat": 3
+  },
+  {
+    "id": 15605,
+    "name": "Bounty Hunter",
+    "elem": "d",
+    "nat": 3
+  },
+  {
+    "id": 18002,
+    "name": "Brownie Magician",
+    "elem": "f",
+    "nat": 4
+  },
+  {
+    "id": 18003,
+    "name": "Brownie Magician",
+    "elem": "n",
+    "nat": 4
+  },
+  {
+    "id": 18001,
+    "name": "Brownie Magician",
+    "elem": "w",
+    "nat": 4
+  },
+  {
+    "id": 18004,
+    "name": "Brownie Magician",
+    "elem": "l",
+    "nat": 4
+  },
+  {
+    "id": 18005,
+    "name": "Brownie Magician",
+    "elem": "d",
+    "nat": 4
+  },
+  {
+    "id": 20832,
+    "name": "Bulldozer",
+    "elem": "f",
+    "nat": 3
+  },
+  {
+    "id": 10335,
+    "name": "Camaryn",
+    "elem": "d",
+    "nat": 2
+  },
+  {
+    "id": 22901,
+    "name": "Cannon Girl",
+    "elem": "w",
+    "nat": 4
+  },
+  {
+    "id": 22902,
+    "name": "Cannon Girl",
+    "elem": "f",
+    "nat": 4
+  },
+  {
+    "id": 22903,
+    "name": "Cannon Girl",
+    "elem": "n",
+    "nat": 5
+  },
+  {
+    "id": 22904,
+    "name": "Cannon Girl",
+    "elem": "l",
+    "nat": 4
+  },
+  {
+    "id": 22905,
+    "name": "Cannon Girl",
+    "elem": "d",
+    "nat": 5
+  },
+  {
+    "id": 30112,
+    "name": "Carmella",
+    "elem": "f",
+    "nat": 4
+  },
+  {
+    "id": 34011,
+    "name": "Cecilia",
+    "elem": "w",
+    "nat": 5
+  },
+  {
+    "id": 29915,
+    "name": "Celestara",
+    "elem": "d",
+    "nat": 5
+  },
+  {
+    "id": 34101,
+    "name": "Centaur Knight",
+    "elem": "w",
+    "nat": 4
+  },
+  {
+    "id": 34102,
+    "name": "Centaur Knight",
+    "elem": "f",
+    "nat": 4
+  },
+  {
+    "id": 34103,
+    "name": "Centaur Knight",
+    "elem": "n",
+    "nat": 4
+  },
+  {
+    "id": 34104,
+    "name": "Centaur Knight",
+    "elem": "l",
+    "nat": 4
+  },
+  {
+    "id": 34105,
+    "name": "Centaur Knight",
+    "elem": "d",
+    "nat": 4
+  },
+  {
+    "id": 13235,
+    "name": "Chacha and Friends",
+    "elem": "d",
+    "nat": 2
+  },
+  {
+    "id": 21901,
+    "name": "Chakram Dancer",
+    "elem": "w",
+    "nat": 4
+  },
+  {
+    "id": 21902,
+    "name": "Chakram Dancer",
+    "elem": "f",
+    "nat": 4
+  },
+  {
+    "id": 21903,
+    "name": "Chakram Dancer",
+    "elem": "n",
+    "nat": 4
+  },
+  {
+    "id": 21904,
+    "name": "Chakram Dancer",
+    "elem": "l",
+    "nat": 4
+  },
+  {
+    "id": 21905,
+    "name": "Chakram Dancer",
+    "elem": "d",
+    "nat": 4
+  },
+  {
+    "id": 19502,
+    "name": "Charger Shark",
+    "elem": "f",
+    "nat": 3
+  },
+  {
+    "id": 19501,
+    "name": "Charger Shark",
+    "elem": "w",
+    "nat": 3
+  },
+  {
+    "id": 19505,
+    "name": "Charger Shark",
+    "elem": "d",
+    "nat": 3
+  },
+  {
+    "id": 19504,
+    "name": "Charger Shark",
+    "elem": "l",
+    "nat": 3
+  },
+  {
+    "id": 10334,
+    "name": "Cheryl",
+    "elem": "l",
+    "nat": 2
+  },
+  {
+    "id": 13233,
+    "name": "Chichi and Friends",
+    "elem": "n",
+    "nat": 2
+  },
+  {
+    "id": 14602,
+    "name": "Chimera",
+    "elem": "f",
+    "nat": 5
+  },
+  {
+    "id": 14603,
+    "name": "Chimera",
+    "elem": "n",
+    "nat": 5
+  },
+  {
+    "id": 14601,
+    "name": "Chimera",
+    "elem": "w",
+    "nat": 5
+  },
+  {
+    "id": 14604,
+    "name": "Chimera",
+    "elem": "l",
+    "nat": 5
+  },
+  {
+    "id": 14605,
+    "name": "Chimera",
+    "elem": "d",
+    "nat": 5
+  },
+  {
+    "id": 34114,
+    "name": "Chiron",
+    "elem": "l",
+    "nat": 4
+  },
+  {
+    "id": 27101,
+    "name": "Choco Knight",
+    "elem": "w",
+    "nat": 4
+  },
+  {
+    "id": 27102,
+    "name": "Choco Knight",
+    "elem": "f",
+    "nat": 4
+  },
+  {
+    "id": 27103,
+    "name": "Choco Knight",
+    "elem": "n",
+    "nat": 4
+  },
+  {
+    "id": 27104,
+    "name": "Choco Knight",
+    "elem": "l",
+    "nat": 4
+  },
+  {
+    "id": 27105,
+    "name": "Choco Knight",
+    "elem": "d",
+    "nat": 4
+  },
+  {
+    "id": 34014,
+    "name": "Christine",
+    "elem": "l",
+    "nat": 5
+  },
+  {
+    "id": 12132,
+    "name": "Colleen",
+    "elem": "f",
+    "nat": 2
+  },
+  {
+    "id": 16533,
+    "name": "Copper",
+    "elem": "n",
+    "nat": 3
+  },
+  {
+    "id": 19302,
+    "name": "Cow Girl",
+    "elem": "f",
+    "nat": 3
+  },
+  {
+    "id": 19301,
+    "name": "Cow Girl",
+    "elem": "w",
+    "nat": 3
+  },
+  {
+    "id": 19303,
+    "name": "Cow Girl",
+    "elem": "n",
+    "nat": 3
+  },
+  {
+    "id": 19305,
+    "name": "Cow Girl",
+    "elem": "d",
+    "nat": 3
+  },
+  {
+    "id": 20833,
+    "name": "Crane",
+    "elem": "n",
+    "nat": 3
+  },
+  {
+    "id": 20835,
+    "name": "Crawler",
+    "elem": "d",
+    "nat": 3
+  },
+  {
+    "id": 30101,
+    "name": "Cyborg",
+    "elem": "w",
+    "nat": 4
+  },
+  {
+    "id": 30102,
+    "name": "Cyborg",
+    "elem": "f",
+    "nat": 4
+  },
+  {
+    "id": 30103,
+    "name": "Cyborg",
+    "elem": "n",
+    "nat": 4
+  },
+  {
+    "id": 30104,
+    "name": "Cyborg",
+    "elem": "l",
+    "nat": 4
+  },
+  {
+    "id": 30105,
+    "name": "Cyborg",
+    "elem": "d",
+    "nat": 4
+  },
+  {
+    "id": 34012,
+    "name": "Cynthia",
+    "elem": "f",
+    "nat": 5
+  },
+  {
+    "id": 10731,
+    "name": "Dagora",
+    "elem": "w",
+    "nat": 3
+  },
+  {
+    "id": 33512,
+    "name": "Daimon",
+    "elem": "f",
+    "nat": 5
+  },
+  {
+    "id": 34013,
+    "name": "Daisy",
+    "elem": "n",
+    "nat": 5
+  },
+  {
+    "id": 15234,
+    "name": "Darion",
+    "elem": "l",
+    "nat": 3
+  },
+  {
+    "id": 16202,
+    "name": "Death Knight",
+    "elem": "f",
+    "nat": 4
+  },
+  {
+    "id": 16203,
+    "name": "Death Knight",
+    "elem": "n",
+    "nat": 4
+  },
+  {
+    "id": 16201,
+    "name": "Death Knight",
+    "elem": "w",
+    "nat": 4
+  },
+  {
+    "id": 16204,
+    "name": "Death Knight",
+    "elem": "l",
+    "nat": 4
+  },
+  {
+    "id": 16205,
+    "name": "Death Knight",
+    "elem": "d",
+    "nat": 4
+  },
+  {
+    "id": 23101,
+    "name": "Demon",
+    "elem": "w",
+    "nat": 5
+  },
+  {
+    "id": 23102,
+    "name": "Demon",
+    "elem": "f",
+    "nat": 5
+  },
+  {
+    "id": 23103,
+    "name": "Demon",
+    "elem": "n",
+    "nat": 5
+  },
+  {
+    "id": 23104,
+    "name": "Demon",
+    "elem": "l",
+    "nat": 5
+  },
+  {
+    "id": 23105,
+    "name": "Demon",
+    "elem": "d",
+    "nat": 5
+  },
+  {
+    "id": 20502,
+    "name": "Desert Queen",
+    "elem": "f",
+    "nat": 5
+  },
+  {
+    "id": 20501,
+    "name": "Desert Queen",
+    "elem": "w",
+    "nat": 5
+  },
+  {
+    "id": 20503,
+    "name": "Desert Queen",
+    "elem": "n",
+    "nat": 5
+  },
+  {
+    "id": 20504,
+    "name": "Desert Queen",
+    "elem": "l",
+    "nat": 5
+  },
+  {
+    "id": 20505,
+    "name": "Desert Queen",
+    "elem": "d",
+    "nat": 5
+  },
+  {
+    "id": 28001,
+    "name": "Desert Warrior",
+    "elem": "w",
+    "nat": 4
+  },
+  {
+    "id": 28002,
+    "name": "Desert Warrior",
+    "elem": "f",
+    "nat": 5
+  },
+  {
+    "id": 28003,
+    "name": "Desert Warrior",
+    "elem": "n",
+    "nat": 5
+  },
+  {
+    "id": 28004,
+    "name": "Desert Warrior",
+    "elem": "l",
+    "nat": 4
+  },
+  {
+    "id": 28005,
+    "name": "Desert Warrior",
+    "elem": "d",
+    "nat": 5
+  },
+  {
+    "id": 28601,
+    "name": "Devil Maiden",
+    "elem": "w",
+    "nat": 5
+  },
+  {
+    "id": 28602,
+    "name": "Devil Maiden",
+    "elem": "f",
+    "nat": 5
+  },
+  {
+    "id": 28603,
+    "name": "Devil Maiden",
+    "elem": "n",
+    "nat": 5
+  },
+  {
+    "id": 28604,
+    "name": "Devil Maiden",
+    "elem": "l",
+    "nat": 5
+  },
+  {
+    "id": 28605,
+    "name": "Devil Maiden",
+    "elem": "d",
+    "nat": 5
+  },
+  {
+    "id": 15105,
+    "name": "Devilmon",
+    "elem": "d",
+    "nat": 1
+  },
+  {
+    "id": 21302,
+    "name": "Dice Magician",
+    "elem": "f",
+    "nat": 4
+  },
+  {
+    "id": 21301,
+    "name": "Dice Magician",
+    "elem": "w",
+    "nat": 4
+  },
+  {
+    "id": 21303,
+    "name": "Dice Magician",
+    "elem": "n",
+    "nat": 4
+  },
+  {
+    "id": 21304,
+    "name": "Dice Magician",
+    "elem": "l",
+    "nat": 4
+  },
+  {
+    "id": 21305,
+    "name": "Dice Magician",
+    "elem": "d",
+    "nat": 4
+  },
+  {
+    "id": 28901,
+    "name": "Dokkaebi Lord",
+    "elem": "w",
+    "nat": 5
+  },
+  {
+    "id": 28902,
+    "name": "Dokkaebi Lord",
+    "elem": "f",
+    "nat": 5
+  },
+  {
+    "id": 28903,
+    "name": "Dokkaebi Lord",
+    "elem": "n",
+    "nat": 5
+  },
+  {
+    "id": 28904,
+    "name": "Dokkaebi Lord",
+    "elem": "l",
+    "nat": 5
+  },
+  {
+    "id": 28905,
+    "name": "Dokkaebi Lord",
+    "elem": "d",
+    "nat": 5
+  },
+  {
+    "id": 29001,
+    "name": "Dokkaebi Princess and Sapsaree",
+    "elem": "w",
+    "nat": 4
+  },
+  {
+    "id": 29003,
+    "name": "Dokkaebi Princess and Sapsaree",
+    "elem": "n",
+    "nat": 4
+  },
+  {
+    "id": 29004,
+    "name": "Dokkaebi Princess and Sapsaree",
+    "elem": "l",
+    "nat": 4
+  },
+  {
+    "id": 29005,
+    "name": "Dokkaebi Princess and Sapsaree",
+    "elem": "d",
+    "nat": 4
+  },
+  {
+    "id": 35514,
+    "name": "Dr. Albert",
+    "elem": "l",
+    "nat": 5
+  },
+  {
+    "id": 35513,
+    "name": "Dr. Christoph",
+    "elem": "n",
+    "nat": 5
+  },
+  {
+    "id": 35511,
+    "name": "Dr. Felix",
+    "elem": "w",
+    "nat": 5
+  },
+  {
+    "id": 35512,
+    "name": "Dr. Matteo",
+    "elem": "f",
+    "nat": 5
+  },
+  {
+    "id": 35501,
+    "name": "Dr. Plasma",
+    "elem": "w",
+    "nat": 5
+  },
+  {
+    "id": 35502,
+    "name": "Dr. Plasma",
+    "elem": "f",
+    "nat": 5
+  },
+  {
+    "id": 35503,
+    "name": "Dr. Plasma",
+    "elem": "n",
+    "nat": 5
+  },
+  {
+    "id": 35504,
+    "name": "Dr. Plasma",
+    "elem": "l",
+    "nat": 5
+  },
+  {
+    "id": 35505,
+    "name": "Dr. Plasma",
+    "elem": "d",
+    "nat": 5
+  },
+  {
+    "id": 35515,
+    "name": "Dr. Richard",
+    "elem": "d",
+    "nat": 5
+  },
+  {
+    "id": 14402,
+    "name": "Dragon",
+    "elem": "f",
+    "nat": 5
+  },
+  {
+    "id": 14403,
+    "name": "Dragon",
+    "elem": "n",
+    "nat": 5
+  },
+  {
+    "id": 14401,
+    "name": "Dragon",
+    "elem": "w",
+    "nat": 5
+  },
+  {
+    "id": 14404,
+    "name": "Dragon",
+    "elem": "l",
+    "nat": 5
+  },
+  {
+    "id": 14405,
+    "name": "Dragon",
+    "elem": "d",
+    "nat": 5
+  },
+  {
+    "id": 16602,
+    "name": "Dragon Knight",
+    "elem": "f",
+    "nat": 5
+  },
+  {
+    "id": 16603,
+    "name": "Dragon Knight",
+    "elem": "n",
+    "nat": 5
+  },
+  {
+    "id": 16601,
+    "name": "Dragon Knight",
+    "elem": "w",
+    "nat": 5
+  },
+  {
+    "id": 16604,
+    "name": "Dragon Knight",
+    "elem": "l",
+    "nat": 5
+  },
+  {
+    "id": 16605,
+    "name": "Dragon Knight",
+    "elem": "d",
+    "nat": 5
+  },
+  {
+    "id": 30701,
+    "name": "Drakan Warrior",
+    "elem": "w",
+    "nat": 5
+  },
+  {
+    "id": 30702,
+    "name": "Drakan Warrior",
+    "elem": "f",
+    "nat": 5
+  },
+  {
+    "id": 30703,
+    "name": "Drakan Warrior",
+    "elem": "n",
+    "nat": 5
+  },
+  {
+    "id": 30704,
+    "name": "Drakan Warrior",
+    "elem": "l",
+    "nat": 5
+  },
+  {
+    "id": 30705,
+    "name": "Drakan Warrior",
+    "elem": "d",
+    "nat": 5
+  },
+  {
+    "id": 34213,
+    "name": "Driana",
+    "elem": "n",
+    "nat": 5
+  },
+  {
+    "id": 20834,
+    "name": "Driller",
+    "elem": "l",
+    "nat": 3
+  },
+  {
+    "id": 11735,
+    "name": "Drogan",
+    "elem": "d",
+    "nat": 3
+  },
+  {
+    "id": 22201,
+    "name": "Druid",
+    "elem": "w",
+    "nat": 5
+  },
+  {
+    "id": 22202,
+    "name": "Druid",
+    "elem": "f",
+    "nat": 5
+  },
+  {
+    "id": 22203,
+    "name": "Druid",
+    "elem": "n",
+    "nat": 5
+  },
+  {
+    "id": 22204,
+    "name": "Druid",
+    "elem": "l",
+    "nat": 5
+  },
+  {
+    "id": 22205,
+    "name": "Druid",
+    "elem": "d",
+    "nat": 5
+  },
+  {
+    "id": 17202,
+    "name": "Drunken Master",
+    "elem": "f",
+    "nat": 3
+  },
+  {
+    "id": 17203,
+    "name": "Drunken Master",
+    "elem": "n",
+    "nat": 3
+  },
+  {
+    "id": 17204,
+    "name": "Drunken Master",
+    "elem": "l",
+    "nat": 3
+  },
+  {
+    "id": 17205,
+    "name": "Drunken Master",
+    "elem": "d",
+    "nat": 3
+  },
+  {
+    "id": 22101,
+    "name": "Dryad",
+    "elem": "w",
+    "nat": 4
+  },
+  {
+    "id": 22102,
+    "name": "Dryad",
+    "elem": "f",
+    "nat": 4
+  },
+  {
+    "id": 22104,
+    "name": "Dryad",
+    "elem": "l",
+    "nat": 4
+  },
+  {
+    "id": 22105,
+    "name": "Dryad",
+    "elem": "d",
+    "nat": 4
+  },
+  {
+    "id": 27804,
+    "name": "Dual Blade",
+    "elem": "l",
+    "nat": 5
+  },
+  {
+    "id": 33811,
+    "name": "Duke",
+    "elem": "w",
+    "nat": 5
+  },
+  {
+    "id": 33812,
+    "name": "Duke",
+    "elem": "f",
+    "nat": 5
+  },
+  {
+    "id": 33813,
+    "name": "Duke",
+    "elem": "n",
+    "nat": 5
+  },
+  {
+    "id": 33814,
+    "name": "Duke",
+    "elem": "l",
+    "nat": 4
+  },
+  {
+    "id": 33815,
+    "name": "Duke",
+    "elem": "d",
+    "nat": 4
+  },
+  {
+    "id": 10804,
+    "name": "Elemental",
+    "elem": "l",
+    "nat": 3
+  },
+  {
+    "id": 10805,
+    "name": "Elemental",
+    "elem": "d",
+    "nat": 3
+  },
+  {
+    "id": 34015,
+    "name": "Elise",
+    "elem": "d",
+    "nat": 5
+  },
+  {
+    "id": 16704,
+    "name": "Elite Magical Archer",
+    "elem": "l",
+    "nat": 3
+  },
+  {
+    "id": 30113,
+    "name": "Eliza",
+    "elem": "n",
+    "nat": 4
+  },
+  {
+    "id": 12031,
+    "name": "Ellena",
+    "elem": "w",
+    "nat": 3
+  },
+  {
+    "id": 10131,
+    "name": "Elucia",
+    "elem": "w",
+    "nat": 3
+  },
+  {
+    "id": 11734,
+    "name": "Eludain",
+    "elem": "l",
+    "nat": 3
+  },
+  {
+    "id": 20904,
+    "name": "Elven Ranger",
+    "elem": "l",
+    "nat": 3
+  },
+  {
+    "id": 20901,
+    "name": "Elven Ranger",
+    "elem": "w",
+    "nat": 3
+  },
+  {
+    "id": 20903,
+    "name": "Elven Ranger",
+    "elem": "n",
+    "nat": 3
+  },
+  {
+    "id": 20902,
+    "name": "Elven Ranger",
+    "elem": "f",
+    "nat": 3
+  },
+  {
+    "id": 20905,
+    "name": "Elven Ranger",
+    "elem": "d",
+    "nat": 4
+  },
+  {
+    "id": 29912,
+    "name": "Enshia",
+    "elem": "f",
+    "nat": 5
+  },
+  {
+    "id": 15302,
+    "name": "Epikion Priest",
+    "elem": "f",
+    "nat": 4
+  },
+  {
+    "id": 15301,
+    "name": "Epikion Priest",
+    "elem": "w",
+    "nat": 3
+  },
+  {
+    "id": 15303,
+    "name": "Epikion Priest",
+    "elem": "n",
+    "nat": 3
+  },
+  {
+    "id": 15305,
+    "name": "Epikion Priest",
+    "elem": "d",
+    "nat": 3
+  },
+  {
+    "id": 15304,
+    "name": "Epikion Priest",
+    "elem": "l",
+    "nat": 4
+  },
+  {
+    "id": 14034,
+    "name": "Eshir",
+    "elem": "l",
+    "nat": 3
+  },
+  {
+    "id": 10105,
+    "name": "Fairy",
+    "elem": "d",
+    "nat": 2
+  },
+  {
+    "id": 10101,
+    "name": "Fairy",
+    "elem": "w",
+    "nat": 3
+  },
+  {
+    "id": 10104,
+    "name": "Fairy",
+    "elem": "l",
+    "nat": 3
+  },
+  {
+    "id": 21102,
+    "name": "Fairy King",
+    "elem": "f",
+    "nat": 5
+  },
+  {
+    "id": 21101,
+    "name": "Fairy King",
+    "elem": "w",
+    "nat": 5
+  },
+  {
+    "id": 21103,
+    "name": "Fairy King",
+    "elem": "n",
+    "nat": 5
+  },
+  {
+    "id": 21104,
+    "name": "Fairy King",
+    "elem": "l",
+    "nat": 5
+  },
+  {
+    "id": 21105,
+    "name": "Fairy King",
+    "elem": "d",
+    "nat": 5
+  },
+  {
+    "id": 19104,
+    "name": "Fairy Queen",
+    "elem": "l",
+    "nat": 3
+  },
+  {
+    "id": 29715,
+    "name": "Fiona",
+    "elem": "d",
+    "nat": 4
+  },
+  {
+    "id": 12302,
+    "name": "Forest Keeper",
+    "elem": "f",
+    "nat": 1
+  },
+  {
+    "id": 12301,
+    "name": "Forest Keeper",
+    "elem": "w",
+    "nat": 1
+  },
+  {
+    "id": 12303,
+    "name": "Forest Keeper",
+    "elem": "n",
+    "nat": 1
+  },
+  {
+    "id": 20802,
+    "name": "Frankenstein",
+    "elem": "f",
+    "nat": 3
+  },
+  {
+    "id": 20801,
+    "name": "Frankenstein",
+    "elem": "w",
+    "nat": 3
+  },
+  {
+    "id": 20804,
+    "name": "Frankenstein",
+    "elem": "l",
+    "nat": 3
+  },
+  {
+    "id": 20805,
+    "name": "Frankenstein",
+    "elem": "d",
+    "nat": 3
+  },
+  {
+    "id": 34311,
+    "name": "Frodo",
+    "elem": "w",
+    "nat": 5
+  },
+  {
+    "id": 10633,
+    "name": "Gamir",
+    "elem": "n",
+    "nat": 2
+  },
+  {
+    "id": 34411,
+    "name": "Gandalf",
+    "elem": "w",
+    "nat": 5
+  },
+  {
+    "id": 34412,
+    "name": "Gandalf",
+    "elem": "f",
+    "nat": 5
+  },
+  {
+    "id": 34413,
+    "name": "Gandalf",
+    "elem": "n",
+    "nat": 5
+  },
+  {
+    "id": 34414,
+    "name": "Gandalf",
+    "elem": "l",
+    "nat": 5
+  },
+  {
+    "id": 34415,
+    "name": "Gandalf",
+    "elem": "d",
+    "nat": 5
+  },
+  {
+    "id": 23301,
+    "name": "Gargoyle",
+    "elem": "w",
+    "nat": 4
+  },
+  {
+    "id": 23302,
+    "name": "Gargoyle",
+    "elem": "f",
+    "nat": 4
+  },
+  {
+    "id": 23303,
+    "name": "Gargoyle",
+    "elem": "n",
+    "nat": 4
+  },
+  {
+    "id": 23304,
+    "name": "Gargoyle",
+    "elem": "l",
+    "nat": 4
+  },
+  {
+    "id": 23305,
+    "name": "Gargoyle",
+    "elem": "d",
+    "nat": 4
+  },
+  {
+    "id": 14032,
+    "name": "Garoche",
+    "elem": "f",
+    "nat": 3
+  },
+  {
+    "id": 10903,
+    "name": "Garuda",
+    "elem": "n",
+    "nat": 2
+  },
+  {
+    "id": 10905,
+    "name": "Garuda",
+    "elem": "d",
+    "nat": 2
+  },
+  {
+    "id": 10904,
+    "name": "Garuda",
+    "elem": "l",
+    "nat": 3
+  },
+  {
+    "id": 12702,
+    "name": "Ghost",
+    "elem": "f",
+    "nat": 1
+  },
+  {
+    "id": 12701,
+    "name": "Ghost",
+    "elem": "w",
+    "nat": 1
+  },
+  {
+    "id": 12703,
+    "name": "Ghost",
+    "elem": "n",
+    "nat": 1
+  },
+  {
+    "id": 12705,
+    "name": "Ghost",
+    "elem": "d",
+    "nat": 1
+  },
+  {
+    "id": 22401,
+    "name": "Giant Warrior",
+    "elem": "w",
+    "nat": 3
+  },
+  {
+    "id": 22402,
+    "name": "Giant Warrior",
+    "elem": "f",
+    "nat": 3
+  },
+  {
+    "id": 22403,
+    "name": "Giant Warrior",
+    "elem": "n",
+    "nat": 4
+  },
+  {
+    "id": 22404,
+    "name": "Giant Warrior",
+    "elem": "l",
+    "nat": 4
+  },
+  {
+    "id": 22405,
+    "name": "Giant Warrior",
+    "elem": "d",
+    "nat": 4
+  },
+  {
+    "id": 15935,
+    "name": "Gina",
+    "elem": "d",
+    "nat": 3
+  },
+  {
+    "id": 26213,
+    "name": "GingerBrave",
+    "elem": "n",
+    "nat": 5
+  },
+  {
+    "id": 28101,
+    "name": "Gladiatrix",
+    "elem": "w",
+    "nat": 4
+  },
+  {
+    "id": 28102,
+    "name": "Gladiatrix",
+    "elem": "f",
+    "nat": 5
+  },
+  {
+    "id": 28103,
+    "name": "Gladiatrix",
+    "elem": "n",
+    "nat": 5
+  },
+  {
+    "id": 28104,
+    "name": "Gladiatrix",
+    "elem": "l",
+    "nat": 4
+  },
+  {
+    "id": 28105,
+    "name": "Gladiatrix",
+    "elem": "d",
+    "nat": 5
+  },
+  {
+    "id": 11404,
+    "name": "Golem",
+    "elem": "l",
+    "nat": 3
+  },
+  {
+    "id": 11405,
+    "name": "Golem",
+    "elem": "d",
+    "nat": 3
+  },
+  {
+    "id": 34811,
+    "name": "Gollum",
+    "elem": "w",
+    "nat": 4
+  },
+  {
+    "id": 34812,
+    "name": "Gollum",
+    "elem": "f",
+    "nat": 4
+  },
+  {
+    "id": 34813,
+    "name": "Gollum",
+    "elem": "n",
+    "nat": 4
+  },
+  {
+    "id": 34814,
+    "name": "Gollum",
+    "elem": "l",
+    "nat": 4
+  },
+  {
+    "id": 34815,
+    "name": "Gollum",
+    "elem": "d",
+    "nat": 4
+  },
+  {
+    "id": 10735,
+    "name": "Gorgo",
+    "elem": "d",
+    "nat": 2
+  },
+  {
+    "id": 11504,
+    "name": "Griffon",
+    "elem": "l",
+    "nat": 3
+  },
+  {
+    "id": 11505,
+    "name": "Griffon",
+    "elem": "d",
+    "nat": 3
+  },
+  {
+    "id": 16002,
+    "name": "Grim Reaper",
+    "elem": "f",
+    "nat": 3
+  },
+  {
+    "id": 16004,
+    "name": "Grim Reaper",
+    "elem": "l",
+    "nat": 3
+  },
+  {
+    "id": 16005,
+    "name": "Grim Reaper",
+    "elem": "d",
+    "nat": 3
+  },
+  {
+    "id": 29914,
+    "name": "Groa",
+    "elem": "l",
+    "nat": 5
+  },
+  {
+    "id": 30001,
+    "name": "Hacker",
+    "elem": "w",
+    "nat": 5
+  },
+  {
+    "id": 30002,
+    "name": "Hacker",
+    "elem": "f",
+    "nat": 5
+  },
+  {
+    "id": 30003,
+    "name": "Hacker",
+    "elem": "n",
+    "nat": 5
+  },
+  {
+    "id": 30004,
+    "name": "Hacker",
+    "elem": "l",
+    "nat": 5
+  },
+  {
+    "id": 30005,
+    "name": "Hacker",
+    "elem": "d",
+    "nat": 5
+  },
+  {
+    "id": 21001,
+    "name": "Harg",
+    "elem": "w",
+    "nat": 3
+  },
+  {
+    "id": 21002,
+    "name": "Harg",
+    "elem": "f",
+    "nat": 3
+  },
+  {
+    "id": 21003,
+    "name": "Harg",
+    "elem": "n",
+    "nat": 4
+  },
+  {
+    "id": 21004,
+    "name": "Harg",
+    "elem": "l",
+    "nat": 4
+  },
+  {
+    "id": 21005,
+    "name": "Harg",
+    "elem": "d",
+    "nat": 3
+  },
+  {
+    "id": 21401,
+    "name": "Harp Magician",
+    "elem": "w",
+    "nat": 4
+  },
+  {
+    "id": 21403,
+    "name": "Harp Magician",
+    "elem": "n",
+    "nat": 4
+  },
+  {
+    "id": 21404,
+    "name": "Harp Magician",
+    "elem": "l",
+    "nat": 5
+  },
+  {
+    "id": 21405,
+    "name": "Harp Magician",
+    "elem": "d",
+    "nat": 5
+  },
+  {
+    "id": 12102,
+    "name": "Harpu",
+    "elem": "f",
+    "nat": 2
+  },
+  {
+    "id": 12101,
+    "name": "Harpu",
+    "elem": "w",
+    "nat": 2
+  },
+  {
+    "id": 12104,
+    "name": "Harpu",
+    "elem": "l",
+    "nat": 3
+  },
+  {
+    "id": 12105,
+    "name": "Harpu",
+    "elem": "d",
+    "nat": 3
+  },
+  {
+    "id": 10502,
+    "name": "Harpy",
+    "elem": "f",
+    "nat": 3
+  },
+  {
+    "id": 10504,
+    "name": "Harpy",
+    "elem": "l",
+    "nat": 3
+  },
+  {
+    "id": 10505,
+    "name": "Harpy",
+    "elem": "d",
+    "nat": 3
+  },
+  {
+    "id": 33012,
+    "name": "Heihachi Mishima",
+    "elem": "f",
+    "nat": 5
+  },
+  {
+    "id": 17902,
+    "name": "Hell Lady",
+    "elem": "f",
+    "nat": 5
+  },
+  {
+    "id": 17903,
+    "name": "Hell Lady",
+    "elem": "n",
+    "nat": 5
+  },
+  {
+    "id": 17901,
+    "name": "Hell Lady",
+    "elem": "w",
+    "nat": 5
+  },
+  {
+    "id": 17904,
+    "name": "Hell Lady",
+    "elem": "l",
+    "nat": 5
+  },
+  {
+    "id": 17905,
+    "name": "Hell Lady",
+    "elem": "d",
+    "nat": 5
+  },
+  {
+    "id": 10603,
+    "name": "Hellhound",
+    "elem": "n",
+    "nat": 2
+  },
+  {
+    "id": 10604,
+    "name": "Hellhound",
+    "elem": "l",
+    "nat": 2
+  },
+  {
+    "id": 10605,
+    "name": "Hellhound",
+    "elem": "d",
+    "nat": 3
+  },
+  {
+    "id": 16031,
+    "name": "Hemos",
+    "elem": "w",
+    "nat": 3
+  },
+  {
+    "id": 29613,
+    "name": "Henrik",
+    "elem": "n",
+    "nat": 5
+  },
+  {
+    "id": 29813,
+    "name": "Hexarina",
+    "elem": "n",
+    "nat": 4
+  },
+  {
+    "id": 12001,
+    "name": "High Elemental",
+    "elem": "w",
+    "nat": 3
+  },
+  {
+    "id": 12004,
+    "name": "High Elemental",
+    "elem": "l",
+    "nat": 3
+  },
+  {
+    "id": 12005,
+    "name": "High Elemental",
+    "elem": "d",
+    "nat": 3
+  },
+  {
+    "id": 29815,
+    "name": "Hilda",
+    "elem": "d",
+    "nat": 5
+  },
+  {
+    "id": 16033,
+    "name": "Hiva",
+    "elem": "n",
+    "nat": 3
+  },
+  {
+    "id": 13002,
+    "name": "Horned Frog",
+    "elem": "f",
+    "nat": 1
+  },
+  {
+    "id": 13001,
+    "name": "Horned Frog",
+    "elem": "w",
+    "nat": 1
+  },
+  {
+    "id": 13003,
+    "name": "Horned Frog",
+    "elem": "n",
+    "nat": 1
+  },
+  {
+    "id": 13005,
+    "name": "Horned Frog",
+    "elem": "d",
+    "nat": 1
+  },
+  {
+    "id": 20602,
+    "name": "Horus",
+    "elem": "f",
+    "nat": 4
+  },
+  {
+    "id": 20603,
+    "name": "Horus",
+    "elem": "n",
+    "nat": 4
+  },
+  {
+    "id": 20604,
+    "name": "Horus",
+    "elem": "l",
+    "nat": 5
+  },
+  {
+    "id": 20605,
+    "name": "Horus",
+    "elem": "d",
+    "nat": 4
+  },
+  {
+    "id": 13202,
+    "name": "Howl",
+    "elem": "f",
+    "nat": 2
+  },
+  {
+    "id": 13201,
+    "name": "Howl",
+    "elem": "w",
+    "nat": 2
+  },
+  {
+    "id": 13205,
+    "name": "Howl",
+    "elem": "d",
+    "nat": 2
+  },
+  {
+    "id": 13204,
+    "name": "Howl",
+    "elem": "l",
+    "nat": 2
+  },
+  {
+    "id": 26001,
+    "name": "Hypnomeow",
+    "elem": "w",
+    "nat": 4
+  },
+  {
+    "id": 26002,
+    "name": "Hypnomeow",
+    "elem": "f",
+    "nat": 4
+  },
+  {
+    "id": 26003,
+    "name": "Hypnomeow",
+    "elem": "n",
+    "nat": 4
+  },
+  {
+    "id": 26004,
+    "name": "Hypnomeow",
+    "elem": "l",
+    "nat": 4
+  },
+  {
+    "id": 26005,
+    "name": "Hypnomeow",
+    "elem": "d",
+    "nat": 4
+  },
+  {
+    "id": 11031,
+    "name": "Icaru",
+    "elem": "w",
+    "nat": 3
+  },
+  {
+    "id": 19202,
+    "name": "Ifrit",
+    "elem": "f",
+    "nat": 5
+  },
+  {
+    "id": 19203,
+    "name": "Ifrit",
+    "elem": "n",
+    "nat": 5
+  },
+  {
+    "id": 19201,
+    "name": "Ifrit",
+    "elem": "w",
+    "nat": 5
+  },
+  {
+    "id": 19204,
+    "name": "Ifrit",
+    "elem": "l",
+    "nat": 5
+  },
+  {
+    "id": 19205,
+    "name": "Ifrit",
+    "elem": "d",
+    "nat": 5
+  },
+  {
+    "id": 10203,
+    "name": "Imp",
+    "elem": "n",
+    "nat": 2
+  },
+  {
+    "id": 10205,
+    "name": "Imp",
+    "elem": "d",
+    "nat": 2
+  },
+  {
+    "id": 10204,
+    "name": "Imp",
+    "elem": "l",
+    "nat": 2
+  },
+  {
+    "id": 15801,
+    "name": "Imp Champion",
+    "elem": "w",
+    "nat": 3
+  },
+  {
+    "id": 15803,
+    "name": "Imp Champion",
+    "elem": "n",
+    "nat": 3
+  },
+  {
+    "id": 15804,
+    "name": "Imp Champion",
+    "elem": "l",
+    "nat": 3
+  },
+  {
+    "id": 15805,
+    "name": "Imp Champion",
+    "elem": "d",
+    "nat": 3
+  },
+  {
+    "id": 28301,
+    "name": "Indra",
+    "elem": "w",
+    "nat": 5
+  },
+  {
+    "id": 28302,
+    "name": "Indra",
+    "elem": "f",
+    "nat": 5
+  },
+  {
+    "id": 28303,
+    "name": "Indra",
+    "elem": "n",
+    "nat": 5
+  },
+  {
+    "id": 28304,
+    "name": "Indra",
+    "elem": "l",
+    "nat": 5
+  },
+  {
+    "id": 28305,
+    "name": "Indra",
+    "elem": "d",
+    "nat": 5
+  },
+  {
+    "id": 11702,
+    "name": "Inferno",
+    "elem": "f",
+    "nat": 3
+  },
+  {
+    "id": 11704,
+    "name": "Inferno",
+    "elem": "l",
+    "nat": 3
+  },
+  {
+    "id": 11705,
+    "name": "Inferno",
+    "elem": "d",
+    "nat": 3
+  },
+  {
+    "id": 11004,
+    "name": "Inugami",
+    "elem": "l",
+    "nat": 3
+  },
+  {
+    "id": 11005,
+    "name": "Inugami",
+    "elem": "d",
+    "nat": 3
+  },
+  {
+    "id": 16532,
+    "name": "Iron",
+    "elem": "f",
+    "nat": 3
+  },
+  {
+    "id": 10132,
+    "name": "Iselia",
+    "elem": "f",
+    "nat": 3
+  },
+  {
+    "id": 20702,
+    "name": "Jack-o'-lantern",
+    "elem": "f",
+    "nat": 4
+  },
+  {
+    "id": 20701,
+    "name": "Jack-o'-lantern",
+    "elem": "w",
+    "nat": 4
+  },
+  {
+    "id": 20703,
+    "name": "Jack-o'-lantern",
+    "elem": "n",
+    "nat": 4
+  },
+  {
+    "id": 20704,
+    "name": "Jack-o'-lantern",
+    "elem": "l",
+    "nat": 4
+  },
+  {
+    "id": 20705,
+    "name": "Jack-o'-lantern",
+    "elem": "d",
+    "nat": 4
+  },
+  {
+    "id": 29811,
+    "name": "Johanna",
+    "elem": "w",
+    "nat": 5
+  },
+  {
+    "id": 13403,
+    "name": "Joker",
+    "elem": "n",
+    "nat": 4
+  },
+  {
+    "id": 13401,
+    "name": "Joker",
+    "elem": "w",
+    "nat": 4
+  },
+  {
+    "id": 13404,
+    "name": "Joker",
+    "elem": "l",
+    "nat": 4
+  },
+  {
+    "id": 13405,
+    "name": "Joker",
+    "elem": "d",
+    "nat": 4
+  },
+  {
+    "id": 15235,
+    "name": "Jubelle",
+    "elem": "d",
+    "nat": 3
+  },
+  {
+    "id": 14035,
+    "name": "Jultan",
+    "elem": "d",
+    "nat": 3
+  },
+  {
+    "id": 12035,
+    "name": "Jumaline",
+    "elem": "d",
+    "nat": 3
+  },
+  {
+    "id": 34201,
+    "name": "Justice",
+    "elem": "w",
+    "nat": 5
+  },
+  {
+    "id": 34202,
+    "name": "Justice",
+    "elem": "f",
+    "nat": 5
+  },
+  {
+    "id": 34203,
+    "name": "Justice",
+    "elem": "n",
+    "nat": 5
+  },
+  {
+    "id": 34204,
+    "name": "Justice",
+    "elem": "l",
+    "nat": 5
+  },
+  {
+    "id": 34205,
+    "name": "Justice",
+    "elem": "d",
+    "nat": 5
+  },
+  {
+    "id": 30011,
+    "name": "K1D",
+    "elem": "w",
+    "nat": 5
+  },
+  {
+    "id": 10331,
+    "name": "Kacey",
+    "elem": "w",
+    "nat": 2
+  },
+  {
+    "id": 12032,
+    "name": "Kahli",
+    "elem": "f",
+    "nat": 3
+  },
+  {
+    "id": 11531,
+    "name": "Kahn",
+    "elem": "w",
+    "nat": 3
+  },
+  {
+    "id": 33611,
+    "name": "Kai",
+    "elem": "w",
+    "nat": 4
+  },
+  {
+    "id": 33612,
+    "name": "Kai",
+    "elem": "f",
+    "nat": 5
+  },
+  {
+    "id": 33613,
+    "name": "Kai",
+    "elem": "n",
+    "nat": 5
+  },
+  {
+    "id": 33614,
+    "name": "Kai",
+    "elem": "l",
+    "nat": 4
+  },
+  {
+    "id": 33615,
+    "name": "Kai",
+    "elem": "d",
+    "nat": 5
+  },
+  {
+    "id": 15232,
+    "name": "Kai'en",
+    "elem": "f",
+    "nat": 3
+  },
+  {
+    "id": 24112,
+    "name": "KEN",
+    "elem": "f",
+    "nat": 5
+  },
+  {
+    "id": 18202,
+    "name": "King Angelmon",
+    "elem": "f",
+    "nat": 1
+  },
+  {
+    "id": 18201,
+    "name": "King Angelmon",
+    "elem": "w",
+    "nat": 1
+  },
+  {
+    "id": 18203,
+    "name": "King Angelmon",
+    "elem": "n",
+    "nat": 1
+  },
+  {
+    "id": 18205,
+    "name": "King Angelmon",
+    "elem": "d",
+    "nat": 1
+  },
+  {
+    "id": 18204,
+    "name": "King Angelmon",
+    "elem": "l",
+    "nat": 1
+  },
+  {
+    "id": 18102,
+    "name": "Kobold Bomber",
+    "elem": "f",
+    "nat": 4
+  },
+  {
+    "id": 18103,
+    "name": "Kobold Bomber",
+    "elem": "n",
+    "nat": 4
+  },
+  {
+    "id": 18101,
+    "name": "Kobold Bomber",
+    "elem": "w",
+    "nat": 4
+  },
+  {
+    "id": 18104,
+    "name": "Kobold Bomber",
+    "elem": "l",
+    "nat": 4
+  },
+  {
+    "id": 18105,
+    "name": "Kobold Bomber",
+    "elem": "d",
+    "nat": 4
+  },
+  {
+    "id": 11035,
+    "name": "Kro",
+    "elem": "d",
+    "nat": 3
+  },
+  {
+    "id": 17302,
+    "name": "Kung Fu Girl",
+    "elem": "f",
+    "nat": 4
+  },
+  {
+    "id": 17301,
+    "name": "Kung Fu Girl",
+    "elem": "w",
+    "nat": 4
+  },
+  {
+    "id": 17304,
+    "name": "Kung Fu Girl",
+    "elem": "l",
+    "nat": 4
+  },
+  {
+    "id": 17305,
+    "name": "Kung Fu Girl",
+    "elem": "d",
+    "nat": 4
+  },
+  {
+    "id": 13232,
+    "name": "Lala and Friends",
+    "elem": "f",
+    "nat": 2
+  },
+  {
+    "id": 29614,
+    "name": "Lars",
+    "elem": "l",
+    "nat": 5
+  },
+  {
+    "id": 34711,
+    "name": "Legolas",
+    "elem": "w",
+    "nat": 4
+  },
+  {
+    "id": 34712,
+    "name": "Legolas",
+    "elem": "f",
+    "nat": 5
+  },
+  {
+    "id": 34713,
+    "name": "Legolas",
+    "elem": "n",
+    "nat": 5
+  },
+  {
+    "id": 34714,
+    "name": "Legolas",
+    "elem": "l",
+    "nat": 5
+  },
+  {
+    "id": 34715,
+    "name": "Legolas",
+    "elem": "d",
+    "nat": 4
+  },
+  {
+    "id": 16302,
+    "name": "Lich",
+    "elem": "f",
+    "nat": 4
+  },
+  {
+    "id": 16303,
+    "name": "Lich",
+    "elem": "n",
+    "nat": 4
+  },
+  {
+    "id": 16301,
+    "name": "Lich",
+    "elem": "w",
+    "nat": 4
+  },
+  {
+    "id": 16304,
+    "name": "Lich",
+    "elem": "l",
+    "nat": 4
+  },
+  {
+    "id": 16305,
+    "name": "Lich",
+    "elem": "d",
+    "nat": 4
+  },
+  {
+    "id": 22601,
+    "name": "Lightning Emperor",
+    "elem": "w",
+    "nat": 5
+  },
+  {
+    "id": 22602,
+    "name": "Lightning Emperor",
+    "elem": "f",
+    "nat": 5
+  },
+  {
+    "id": 22603,
+    "name": "Lightning Emperor",
+    "elem": "n",
+    "nat": 5
+  },
+  {
+    "id": 22604,
+    "name": "Lightning Emperor",
+    "elem": "l",
+    "nat": 5
+  },
+  {
+    "id": 22605,
+    "name": "Lightning Emperor",
+    "elem": "d",
+    "nat": 5
+  },
+  {
+    "id": 15934,
+    "name": "Linda",
+    "elem": "l",
+    "nat": 3
+  },
+  {
+    "id": 16501,
+    "name": "Living Armor",
+    "elem": "w",
+    "nat": 3
+  },
+  {
+    "id": 16503,
+    "name": "Living Armor",
+    "elem": "n",
+    "nat": 3
+  },
+  {
+    "id": 16504,
+    "name": "Living Armor",
+    "elem": "l",
+    "nat": 3
+  },
+  {
+    "id": 16505,
+    "name": "Living Armor",
+    "elem": "d",
+    "nat": 3
+  },
+  {
+    "id": 17802,
+    "name": "Lizardman",
+    "elem": "f",
+    "nat": 3
+  },
+  {
+    "id": 17804,
+    "name": "Lizardman",
+    "elem": "l",
+    "nat": 3
+  },
+  {
+    "id": 17805,
+    "name": "Lizardman",
+    "elem": "d",
+    "nat": 3
+  },
+  {
+    "id": 26703,
+    "name": "Lollipop Warrior",
+    "elem": "n",
+    "nat": 5
+  },
+  {
+    "id": 30111,
+    "name": "Lorenza",
+    "elem": "w",
+    "nat": 4
+  },
+  {
+    "id": 12802,
+    "name": "Low Elemental",
+    "elem": "f",
+    "nat": 1
+  },
+  {
+    "id": 12801,
+    "name": "Low Elemental",
+    "elem": "w",
+    "nat": 1
+  },
+  {
+    "id": 12803,
+    "name": "Low Elemental",
+    "elem": "n",
+    "nat": 1
+  },
+  {
+    "id": 12805,
+    "name": "Low Elemental",
+    "elem": "d",
+    "nat": 1
+  },
+  {
+    "id": 13231,
+    "name": "Lulu and Friends",
+    "elem": "w",
+    "nat": 2
+  },
+  {
+    "id": 29911,
+    "name": "Lumina",
+    "elem": "w",
+    "nat": 4
+  },
+  {
+    "id": 10734,
+    "name": "Lusha",
+    "elem": "l",
+    "nat": 3
+  },
+  {
+    "id": 26901,
+    "name": "Macaron Guard",
+    "elem": "w",
+    "nat": 5
+  },
+  {
+    "id": 26902,
+    "name": "Macaron Guard",
+    "elem": "f",
+    "nat": 5
+  },
+  {
+    "id": 26903,
+    "name": "Macaron Guard",
+    "elem": "n",
+    "nat": 5
+  },
+  {
+    "id": 26904,
+    "name": "Macaron Guard",
+    "elem": "l",
+    "nat": 5
+  },
+  {
+    "id": 26905,
+    "name": "Macaron Guard",
+    "elem": "d",
+    "nat": 5
+  },
+  {
+    "id": 25201,
+    "name": "Mage",
+    "elem": "w",
+    "nat": 5
+  },
+  {
+    "id": 25202,
+    "name": "Mage",
+    "elem": "f",
+    "nat": 5
+  },
+  {
+    "id": 25203,
+    "name": "Mage",
+    "elem": "n",
+    "nat": 5
+  },
+  {
+    "id": 25204,
+    "name": "Mage",
+    "elem": "l",
+    "nat": 5
+  },
+  {
+    "id": 25205,
+    "name": "Mage",
+    "elem": "d",
+    "nat": 5
+  },
+  {
+    "id": 19802,
+    "name": "Magic Knight",
+    "elem": "f",
+    "nat": 4
+  },
+  {
+    "id": 19801,
+    "name": "Magic Knight",
+    "elem": "w",
+    "nat": 4
+  },
+  {
+    "id": 19804,
+    "name": "Magic Knight",
+    "elem": "l",
+    "nat": 4
+  },
+  {
+    "id": 19805,
+    "name": "Magic Knight",
+    "elem": "d",
+    "nat": 4
+  },
+  {
+    "id": 29901,
+    "name": "Magic Order Elementalist",
+    "elem": "w",
+    "nat": 4
+  },
+  {
+    "id": 29902,
+    "name": "Magic Order Elementalist",
+    "elem": "f",
+    "nat": 5
+  },
+  {
+    "id": 29903,
+    "name": "Magic Order Elementalist",
+    "elem": "n",
+    "nat": 4
+  },
+  {
+    "id": 29904,
+    "name": "Magic Order Elementalist",
+    "elem": "l",
+    "nat": 5
+  },
+  {
+    "id": 29905,
+    "name": "Magic Order Elementalist",
+    "elem": "d",
+    "nat": 5
+  },
+  {
+    "id": 29801,
+    "name": "Magic Order Enchantress",
+    "elem": "w",
+    "nat": 5
+  },
+  {
+    "id": 29802,
+    "name": "Magic Order Enchantress",
+    "elem": "f",
+    "nat": 5
+  },
+  {
+    "id": 29803,
+    "name": "Magic Order Enchantress",
+    "elem": "n",
+    "nat": 4
+  },
+  {
+    "id": 29804,
+    "name": "Magic Order Enchantress",
+    "elem": "l",
+    "nat": 4
+  },
+  {
+    "id": 29805,
+    "name": "Magic Order Enchantress",
+    "elem": "d",
+    "nat": 5
+  },
+  {
+    "id": 29601,
+    "name": "Magic Order Guardian",
+    "elem": "w",
+    "nat": 5
+  },
+  {
+    "id": 29602,
+    "name": "Magic Order Guardian",
+    "elem": "f",
+    "nat": 5
+  },
+  {
+    "id": 29603,
+    "name": "Magic Order Guardian",
+    "elem": "n",
+    "nat": 5
+  },
+  {
+    "id": 29604,
+    "name": "Magic Order Guardian",
+    "elem": "l",
+    "nat": 5
+  },
+  {
+    "id": 29605,
+    "name": "Magic Order Guardian",
+    "elem": "d",
+    "nat": 5
+  },
+  {
+    "id": 29701,
+    "name": "Magic Order Swordsinger",
+    "elem": "w",
+    "nat": 5
+  },
+  {
+    "id": 29702,
+    "name": "Magic Order Swordsinger",
+    "elem": "f",
+    "nat": 4
+  },
+  {
+    "id": 29703,
+    "name": "Magic Order Swordsinger",
+    "elem": "n",
+    "nat": 5
+  },
+  {
+    "id": 29704,
+    "name": "Magic Order Swordsinger",
+    "elem": "l",
+    "nat": 5
+  },
+  {
+    "id": 29705,
+    "name": "Magic Order Swordsinger",
+    "elem": "d",
+    "nat": 4
+  },
+  {
+    "id": 15404,
+    "name": "Magical Archer",
+    "elem": "l",
+    "nat": 4
+  },
+  {
+    "id": 15405,
+    "name": "Magical Archer",
+    "elem": "d",
+    "nat": 4
+  },
+  {
+    "id": 29612,
+    "name": "Magnus",
+    "elem": "f",
+    "nat": 5
+  },
+  {
+    "id": 12502,
+    "name": "Maned Boar",
+    "elem": "f",
+    "nat": 2
+  },
+  {
+    "id": 12501,
+    "name": "Maned Boar",
+    "elem": "w",
+    "nat": 2
+  },
+  {
+    "id": 12503,
+    "name": "Maned Boar",
+    "elem": "n",
+    "nat": 2
+  },
+  {
+    "id": 20202,
+    "name": "Martial Artist",
+    "elem": "f",
+    "nat": 3
+  },
+  {
+    "id": 20203,
+    "name": "Martial Artist",
+    "elem": "n",
+    "nat": 3
+  },
+  {
+    "id": 20204,
+    "name": "Martial Artist",
+    "elem": "l",
+    "nat": 3
+  },
+  {
+    "id": 20205,
+    "name": "Martial Artist",
+    "elem": "d",
+    "nat": 3
+  },
+  {
+    "id": 15003,
+    "name": "Martial Cat",
+    "elem": "n",
+    "nat": 3
+  },
+  {
+    "id": 15004,
+    "name": "Martial Cat",
+    "elem": "l",
+    "nat": 3
+  },
+  {
+    "id": 15005,
+    "name": "Martial Cat",
+    "elem": "d",
+    "nat": 3
+  },
+  {
+    "id": 15931,
+    "name": "Megan",
+    "elem": "w",
+    "nat": 3
+  },
+  {
+    "id": 15032,
+    "name": "Mei",
+    "elem": "f",
+    "nat": 3
+  },
+  {
+    "id": 28201,
+    "name": "Mercenary Queen",
+    "elem": "w",
+    "nat": 5
+  },
+  {
+    "id": 28202,
+    "name": "Mercenary Queen",
+    "elem": "f",
+    "nat": 4
+  },
+  {
+    "id": 28203,
+    "name": "Mercenary Queen",
+    "elem": "n",
+    "nat": 4
+  },
+  {
+    "id": 28204,
+    "name": "Mercenary Queen",
+    "elem": "l",
+    "nat": 5
+  },
+  {
+    "id": 28205,
+    "name": "Mercenary Queen",
+    "elem": "d",
+    "nat": 5
+  },
+  {
+    "id": 19602,
+    "name": "Mermaid",
+    "elem": "f",
+    "nat": 4
+  },
+  {
+    "id": 19601,
+    "name": "Mermaid",
+    "elem": "w",
+    "nat": 4
+  },
+  {
+    "id": 19603,
+    "name": "Mermaid",
+    "elem": "n",
+    "nat": 4
+  },
+  {
+    "id": 19604,
+    "name": "Mermaid",
+    "elem": "l",
+    "nat": 4
+  },
+  {
+    "id": 19605,
+    "name": "Mermaid",
+    "elem": "d",
+    "nat": 4
+  },
+  {
+    "id": 15035,
+    "name": "Miho",
+    "elem": "d",
+    "nat": 3
+  },
+  {
+    "id": 12902,
+    "name": "Mimic",
+    "elem": "f",
+    "nat": 1
+  },
+  {
+    "id": 12901,
+    "name": "Mimic",
+    "elem": "w",
+    "nat": 1
+  },
+  {
+    "id": 12903,
+    "name": "Mimic",
+    "elem": "n",
+    "nat": 1
+  },
+  {
+    "id": 12905,
+    "name": "Mimic",
+    "elem": "d",
+    "nat": 1
+  },
+  {
+    "id": 15031,
+    "name": "Mina",
+    "elem": "w",
+    "nat": 3
+  },
+  {
+    "id": 17702,
+    "name": "Minotauros",
+    "elem": "f",
+    "nat": 3
+  },
+  {
+    "id": 17701,
+    "name": "Minotauros",
+    "elem": "w",
+    "nat": 3
+  },
+  {
+    "id": 17704,
+    "name": "Minotauros",
+    "elem": "l",
+    "nat": 3
+  },
+  {
+    "id": 17705,
+    "name": "Minotauros",
+    "elem": "d",
+    "nat": 3
+  },
+  {
+    "id": 17502,
+    "name": "Mischievous Bat",
+    "elem": "f",
+    "nat": 2
+  },
+  {
+    "id": 17503,
+    "name": "Mischievous Bat",
+    "elem": "n",
+    "nat": 2
+  },
+  {
+    "id": 17501,
+    "name": "Mischievous Bat",
+    "elem": "w",
+    "nat": 2
+  },
+  {
+    "id": 16802,
+    "name": "Monkey King",
+    "elem": "f",
+    "nat": 5
+  },
+  {
+    "id": 16803,
+    "name": "Monkey King",
+    "elem": "n",
+    "nat": 5
+  },
+  {
+    "id": 16801,
+    "name": "Monkey King",
+    "elem": "w",
+    "nat": 5
+  },
+  {
+    "id": 16804,
+    "name": "Monkey King",
+    "elem": "l",
+    "nat": 5
+  },
+  {
+    "id": 16805,
+    "name": "Monkey King",
+    "elem": "d",
+    "nat": 5
+  },
+  {
+    "id": 12602,
+    "name": "Monster Flower",
+    "elem": "f",
+    "nat": 2
+  },
+  {
+    "id": 12601,
+    "name": "Monster Flower",
+    "elem": "w",
+    "nat": 2
+  },
+  {
+    "id": 12603,
+    "name": "Monster Flower",
+    "elem": "n",
+    "nat": 2
+  },
+  {
+    "id": 12605,
+    "name": "Monster Flower",
+    "elem": "d",
+    "nat": 2
+  },
+  {
+    "id": 12033,
+    "name": "Moria",
+    "elem": "n",
+    "nat": 3
+  },
+  {
+    "id": 20302,
+    "name": "Mummy",
+    "elem": "f",
+    "nat": 3
+  },
+  {
+    "id": 20303,
+    "name": "Mummy",
+    "elem": "n",
+    "nat": 3
+  },
+  {
+    "id": 20304,
+    "name": "Mummy",
+    "elem": "l",
+    "nat": 3
+  },
+  {
+    "id": 20305,
+    "name": "Mummy",
+    "elem": "d",
+    "nat": 3
+  },
+  {
+    "id": 12402,
+    "name": "Mushroom",
+    "elem": "f",
+    "nat": 1
+  },
+  {
+    "id": 12401,
+    "name": "Mushroom",
+    "elem": "w",
+    "nat": 1
+  },
+  {
+    "id": 12403,
+    "name": "Mushroom",
+    "elem": "n",
+    "nat": 1
+  },
+  {
+    "id": 15901,
+    "name": "Mystic Witch",
+    "elem": "w",
+    "nat": 3
+  },
+  {
+    "id": 15903,
+    "name": "Mystic Witch",
+    "elem": "n",
+    "nat": 3
+  },
+  {
+    "id": 15904,
+    "name": "Mystic Witch",
+    "elem": "l",
+    "nat": 3
+  },
+  {
+    "id": 15905,
+    "name": "Mystic Witch",
+    "elem": "d",
+    "nat": 3
+  },
+  {
+    "id": 30015,
+    "name": "N1X",
+    "elem": "d",
+    "nat": 5
+  },
+  {
+    "id": 15033,
+    "name": "Naomi",
+    "elem": "n",
+    "nat": 3
+  },
+  {
+    "id": 10134,
+    "name": "Neal",
+    "elem": "l",
+    "nat": 3
+  },
+  {
+    "id": 20102,
+    "name": "Neostone Agent",
+    "elem": "f",
+    "nat": 4
+  },
+  {
+    "id": 20103,
+    "name": "Neostone Agent",
+    "elem": "n",
+    "nat": 4
+  },
+  {
+    "id": 20104,
+    "name": "Neostone Agent",
+    "elem": "l",
+    "nat": 4
+  },
+  {
+    "id": 20105,
+    "name": "Neostone Agent",
+    "elem": "d",
+    "nat": 5
+  },
+  {
+    "id": 20002,
+    "name": "Neostone Fighter",
+    "elem": "f",
+    "nat": 4
+  },
+  {
+    "id": 20001,
+    "name": "Neostone Fighter",
+    "elem": "w",
+    "nat": 4
+  },
+  {
+    "id": 20003,
+    "name": "Neostone Fighter",
+    "elem": "n",
+    "nat": 4
+  },
+  {
+    "id": 20004,
+    "name": "Neostone Fighter",
+    "elem": "l",
+    "nat": 4
+  },
+  {
+    "id": 20005,
+    "name": "Neostone Fighter",
+    "elem": "d",
+    "nat": 4
+  },
+  {
+    "id": 34211,
+    "name": "Neriope",
+    "elem": "w",
+    "nat": 5
+  },
+  {
+    "id": 16531,
+    "name": "Nickel",
+    "elem": "w",
+    "nat": 3
+  },
+  {
+    "id": 11202,
+    "name": "Nine-tailed Fox",
+    "elem": "f",
+    "nat": 4
+  },
+  {
+    "id": 11201,
+    "name": "Nine-tailed Fox",
+    "elem": "w",
+    "nat": 4
+  },
+  {
+    "id": 11204,
+    "name": "Nine-tailed Fox",
+    "elem": "l",
+    "nat": 4
+  },
+  {
+    "id": 11205,
+    "name": "Nine-tailed Fox",
+    "elem": "d",
+    "nat": 4
+  },
+  {
+    "id": 13502,
+    "name": "Ninja",
+    "elem": "f",
+    "nat": 4
+  },
+  {
+    "id": 13503,
+    "name": "Ninja",
+    "elem": "n",
+    "nat": 4
+  },
+  {
+    "id": 13504,
+    "name": "Ninja",
+    "elem": "l",
+    "nat": 4
+  },
+  {
+    "id": 13505,
+    "name": "Ninja",
+    "elem": "d",
+    "nat": 5
+  },
+  {
+    "id": 29913,
+    "name": "Nobella",
+    "elem": "n",
+    "nat": 4
+  },
+  {
+    "id": 16102,
+    "name": "Occult Girl",
+    "elem": "f",
+    "nat": 5
+  },
+  {
+    "id": 16103,
+    "name": "Occult Girl",
+    "elem": "n",
+    "nat": 5
+  },
+  {
+    "id": 16101,
+    "name": "Occult Girl",
+    "elem": "w",
+    "nat": 5
+  },
+  {
+    "id": 16104,
+    "name": "Occult Girl",
+    "elem": "l",
+    "nat": 5
+  },
+  {
+    "id": 16105,
+    "name": "Occult Girl",
+    "elem": "d",
+    "nat": 5
+  },
+  {
+    "id": 25101,
+    "name": "Onimusha",
+    "elem": "w",
+    "nat": 4
+  },
+  {
+    "id": 25102,
+    "name": "Onimusha",
+    "elem": "f",
+    "nat": 4
+  },
+  {
+    "id": 25103,
+    "name": "Onimusha",
+    "elem": "n",
+    "nat": 4
+  },
+  {
+    "id": 25104,
+    "name": "Onimusha",
+    "elem": "l",
+    "nat": 4
+  },
+  {
+    "id": 25105,
+    "name": "Onimusha",
+    "elem": "d",
+    "nat": 5
+  },
+  {
+    "id": 25001,
+    "name": "Onmyouji",
+    "elem": "w",
+    "nat": 5
+  },
+  {
+    "id": 25002,
+    "name": "Onmyouji",
+    "elem": "f",
+    "nat": 5
+  },
+  {
+    "id": 25003,
+    "name": "Onmyouji",
+    "elem": "n",
+    "nat": 5
+  },
+  {
+    "id": 25004,
+    "name": "Onmyouji",
+    "elem": "l",
+    "nat": 5
+  },
+  {
+    "id": 25005,
+    "name": "Onmyouji",
+    "elem": "d",
+    "nat": 5
+  },
+  {
+    "id": 15702,
+    "name": "Oracle",
+    "elem": "f",
+    "nat": 5
+  },
+  {
+    "id": 15703,
+    "name": "Oracle",
+    "elem": "n",
+    "nat": 5
+  },
+  {
+    "id": 15701,
+    "name": "Oracle",
+    "elem": "w",
+    "nat": 5
+  },
+  {
+    "id": 15704,
+    "name": "Oracle",
+    "elem": "l",
+    "nat": 5
+  },
+  {
+    "id": 15705,
+    "name": "Oracle",
+    "elem": "d",
+    "nat": 5
+  },
+  {
+    "id": 21804,
+    "name": "Paladin",
+    "elem": "l",
+    "nat": 5
+  },
+  {
+    "id": 21801,
+    "name": "Paladin",
+    "elem": "w",
+    "nat": 5
+  },
+  {
+    "id": 21802,
+    "name": "Paladin",
+    "elem": "f",
+    "nat": 5
+  },
+  {
+    "id": 21803,
+    "name": "Paladin",
+    "elem": "n",
+    "nat": 5
+  },
+  {
+    "id": 21805,
+    "name": "Paladin",
+    "elem": "d",
+    "nat": 5
+  },
+  {
+    "id": 21202,
+    "name": "Panda Warrior",
+    "elem": "f",
+    "nat": 5
+  },
+  {
+    "id": 21201,
+    "name": "Panda Warrior",
+    "elem": "w",
+    "nat": 5
+  },
+  {
+    "id": 21203,
+    "name": "Panda Warrior",
+    "elem": "n",
+    "nat": 5
+  },
+  {
+    "id": 21204,
+    "name": "Panda Warrior",
+    "elem": "l",
+    "nat": 5
+  },
+  {
+    "id": 21205,
+    "name": "Panda Warrior",
+    "elem": "d",
+    "nat": 5
+  },
+  {
+    "id": 18702,
+    "name": "Penguin Knight",
+    "elem": "f",
+    "nat": 3
+  },
+  {
+    "id": 18701,
+    "name": "Penguin Knight",
+    "elem": "w",
+    "nat": 3
+  },
+  {
+    "id": 18703,
+    "name": "Penguin Knight",
+    "elem": "n",
+    "nat": 3
+  },
+  {
+    "id": 18704,
+    "name": "Penguin Knight",
+    "elem": "l",
+    "nat": 3
+  },
+  {
+    "id": 18705,
+    "name": "Penguin Knight",
+    "elem": "d",
+    "nat": 3
+  },
+  {
+    "id": 14102,
+    "name": "Phantom Thief",
+    "elem": "f",
+    "nat": 4
+  },
+  {
+    "id": 14103,
+    "name": "Phantom Thief",
+    "elem": "n",
+    "nat": 4
+  },
+  {
+    "id": 14101,
+    "name": "Phantom Thief",
+    "elem": "w",
+    "nat": 4
+  },
+  {
+    "id": 14104,
+    "name": "Phantom Thief",
+    "elem": "l",
+    "nat": 4
+  },
+  {
+    "id": 14105,
+    "name": "Phantom Thief",
+    "elem": "d",
+    "nat": 4
+  },
+  {
+    "id": 14502,
+    "name": "Phoenix",
+    "elem": "f",
+    "nat": 5
+  },
+  {
+    "id": 14503,
+    "name": "Phoenix",
+    "elem": "n",
+    "nat": 5
+  },
+  {
+    "id": 14501,
+    "name": "Phoenix",
+    "elem": "w",
+    "nat": 5
+  },
+  {
+    "id": 14504,
+    "name": "Phoenix",
+    "elem": "l",
+    "nat": 5
+  },
+  {
+    "id": 14505,
+    "name": "Phoenix",
+    "elem": "d",
+    "nat": 5
+  },
+  {
+    "id": 34113,
+    "name": "Pholus",
+    "elem": "n",
+    "nat": 4
+  },
+  {
+    "id": 13902,
+    "name": "Pierrette",
+    "elem": "f",
+    "nat": 4
+  },
+  {
+    "id": 13903,
+    "name": "Pierrette",
+    "elem": "n",
+    "nat": 4
+  },
+  {
+    "id": 13901,
+    "name": "Pierrette",
+    "elem": "w",
+    "nat": 4
+  },
+  {
+    "id": 13904,
+    "name": "Pierrette",
+    "elem": "l",
+    "nat": 4
+  },
+  {
+    "id": 13905,
+    "name": "Pierrette",
+    "elem": "d",
+    "nat": 4
+  },
+  {
+    "id": 19402,
+    "name": "Pirate Captain",
+    "elem": "f",
+    "nat": 4
+  },
+  {
+    "id": 19401,
+    "name": "Pirate Captain",
+    "elem": "w",
+    "nat": 4
+  },
+  {
+    "id": 19403,
+    "name": "Pirate Captain",
+    "elem": "n",
+    "nat": 4
+  },
+  {
+    "id": 19404,
+    "name": "Pirate Captain",
+    "elem": "l",
+    "nat": 4
+  },
+  {
+    "id": 19405,
+    "name": "Pirate Captain",
+    "elem": "d",
+    "nat": 4
+  },
+  {
+    "id": 10302,
+    "name": "Pixie",
+    "elem": "f",
+    "nat": 2
+  },
+  {
+    "id": 10303,
+    "name": "Pixie",
+    "elem": "n",
+    "nat": 2
+  },
+  {
+    "id": 10305,
+    "name": "Pixie",
+    "elem": "d",
+    "nat": 2
+  },
+  {
+    "id": 10304,
+    "name": "Pixie",
+    "elem": "l",
+    "nat": 2
+  },
+  {
+    "id": 24801,
+    "name": "Poison Master",
+    "elem": "w",
+    "nat": 4
+  },
+  {
+    "id": 24802,
+    "name": "Poison Master",
+    "elem": "f",
+    "nat": 4
+  },
+  {
+    "id": 24803,
+    "name": "Poison Master",
+    "elem": "n",
+    "nat": 4
+  },
+  {
+    "id": 24804,
+    "name": "Poison Master",
+    "elem": "l",
+    "nat": 4
+  },
+  {
+    "id": 24805,
+    "name": "Poison Master",
+    "elem": "d",
+    "nat": 4
+  },
+  {
+    "id": 18902,
+    "name": "Polar Queen",
+    "elem": "f",
+    "nat": 5
+  },
+  {
+    "id": 18903,
+    "name": "Polar Queen",
+    "elem": "n",
+    "nat": 5
+  },
+  {
+    "id": 18901,
+    "name": "Polar Queen",
+    "elem": "w",
+    "nat": 5
+  },
+  {
+    "id": 18904,
+    "name": "Polar Queen",
+    "elem": "l",
+    "nat": 5
+  },
+  {
+    "id": 18905,
+    "name": "Polar Queen",
+    "elem": "d",
+    "nat": 5
+  },
+  {
+    "id": 16034,
+    "name": "Prom",
+    "elem": "l",
+    "nat": 3
+  },
+  {
+    "id": 26801,
+    "name": "Pudding Princess",
+    "elem": "w",
+    "nat": 5
+  },
+  {
+    "id": 26802,
+    "name": "Pudding Princess",
+    "elem": "f",
+    "nat": 5
+  },
+  {
+    "id": 26803,
+    "name": "Pudding Princess",
+    "elem": "n",
+    "nat": 5
+  },
+  {
+    "id": 26804,
+    "name": "Pudding Princess",
+    "elem": "l",
+    "nat": 5
+  },
+  {
+    "id": 26805,
+    "name": "Pudding Princess",
+    "elem": "d",
+    "nat": 5
+  },
+  {
+    "id": 27201,
+    "name": "Puppeteer",
+    "elem": "w",
+    "nat": 5
+  },
+  {
+    "id": 27202,
+    "name": "Puppeteer",
+    "elem": "f",
+    "nat": 5
+  },
+  {
+    "id": 27203,
+    "name": "Puppeteer",
+    "elem": "n",
+    "nat": 5
+  },
+  {
+    "id": 27204,
+    "name": "Puppeteer",
+    "elem": "l",
+    "nat": 5
+  },
+  {
+    "id": 27205,
+    "name": "Puppeteer",
+    "elem": "d",
+    "nat": 5
+  },
+  {
+    "id": 11731,
+    "name": "Purian",
+    "elem": "w",
+    "nat": 3
+  },
+  {
+    "id": 15502,
+    "name": "Rakshasa",
+    "elem": "f",
+    "nat": 4
+  },
+  {
+    "id": 15503,
+    "name": "Rakshasa",
+    "elem": "n",
+    "nat": 4
+  },
+  {
+    "id": 15501,
+    "name": "Rakshasa",
+    "elem": "w",
+    "nat": 4
+  },
+  {
+    "id": 15504,
+    "name": "Rakshasa",
+    "elem": "l",
+    "nat": 4
+  },
+  {
+    "id": 15505,
+    "name": "Rakshasa",
+    "elem": "d",
+    "nat": 4
+  },
+  {
+    "id": 10733,
+    "name": "Ramagos",
+    "elem": "n",
+    "nat": 2
+  },
+  {
+    "id": 11033,
+    "name": "Ramahan",
+    "elem": "n",
+    "nat": 3
+  },
+  {
+    "id": 11032,
+    "name": "Raoq",
+    "elem": "f",
+    "nat": 3
+  },
+  {
+    "id": 15932,
+    "name": "Rebecca",
+    "elem": "f",
+    "nat": 3
+  },
+  {
+    "id": 29712,
+    "name": "Reyka",
+    "elem": "f",
+    "nat": 4
+  },
+  {
+    "id": 34111,
+    "name": "Rhoetus",
+    "elem": "w",
+    "nat": 4
+  },
+  {
+    "id": 29711,
+    "name": "Rigna",
+    "elem": "w",
+    "nat": 5
+  },
+  {
+    "id": 30115,
+    "name": "Roberta",
+    "elem": "d",
+    "nat": 4
+  },
+  {
+    "id": 25401,
+    "name": "ROBO",
+    "elem": "w",
+    "nat": 4
+  },
+  {
+    "id": 25402,
+    "name": "ROBO",
+    "elem": "f",
+    "nat": 4
+  },
+  {
+    "id": 25403,
+    "name": "ROBO",
+    "elem": "n",
+    "nat": 4
+  },
+  {
+    "id": 25404,
+    "name": "ROBO",
+    "elem": "l",
+    "nat": 4
+  },
+  {
+    "id": 25405,
+    "name": "ROBO",
+    "elem": "d",
+    "nat": 4
+  },
+  {
+    "id": 15233,
+    "name": "Roid",
+    "elem": "n",
+    "nat": 2
+  },
+  {
+    "id": 25801,
+    "name": "Rune Blacksmith",
+    "elem": "w",
+    "nat": 4
+  },
+  {
+    "id": 25802,
+    "name": "Rune Blacksmith",
+    "elem": "f",
+    "nat": 4
+  },
+  {
+    "id": 25803,
+    "name": "Rune Blacksmith",
+    "elem": "n",
+    "nat": 4
+  },
+  {
+    "id": 25804,
+    "name": "Rune Blacksmith",
+    "elem": "l",
+    "nat": 4
+  },
+  {
+    "id": 25805,
+    "name": "Rune Blacksmith",
+    "elem": "d",
+    "nat": 4
+  },
+  {
+    "id": 18602,
+    "name": "Sage",
+    "elem": "f",
+    "nat": 5
+  },
+  {
+    "id": 18603,
+    "name": "Sage",
+    "elem": "n",
+    "nat": 5
+  },
+  {
+    "id": 18601,
+    "name": "Sage",
+    "elem": "w",
+    "nat": 5
+  },
+  {
+    "id": 18604,
+    "name": "Sage",
+    "elem": "l",
+    "nat": 5
+  },
+  {
+    "id": 18605,
+    "name": "Sage",
+    "elem": "d",
+    "nat": 5
+  },
+  {
+    "id": 11101,
+    "name": "Salamander",
+    "elem": "w",
+    "nat": 2
+  },
+  {
+    "id": 11105,
+    "name": "Salamander",
+    "elem": "d",
+    "nat": 2
+  },
+  {
+    "id": 11104,
+    "name": "Salamander",
+    "elem": "l",
+    "nat": 2
+  },
+  {
+    "id": 16902,
+    "name": "Samurai",
+    "elem": "f",
+    "nat": 4
+  },
+  {
+    "id": 16903,
+    "name": "Samurai",
+    "elem": "n",
+    "nat": 4
+  },
+  {
+    "id": 16904,
+    "name": "Samurai",
+    "elem": "l",
+    "nat": 4
+  },
+  {
+    "id": 16905,
+    "name": "Samurai",
+    "elem": "d",
+    "nat": 4
+  },
+  {
+    "id": 13102,
+    "name": "Sandman",
+    "elem": "f",
+    "nat": 1
+  },
+  {
+    "id": 13101,
+    "name": "Sandman",
+    "elem": "w",
+    "nat": 1
+  },
+  {
+    "id": 13105,
+    "name": "Sandman",
+    "elem": "d",
+    "nat": 1
+  },
+  {
+    "id": 13103,
+    "name": "Sandman",
+    "elem": "n",
+    "nat": 1
+  },
+  {
+    "id": 16032,
+    "name": "Sath",
+    "elem": "f",
+    "nat": 3
+  },
+  {
+    "id": 19702,
+    "name": "Sea Emperor",
+    "elem": "f",
+    "nat": 5
+  },
+  {
+    "id": 19701,
+    "name": "Sea Emperor",
+    "elem": "w",
+    "nat": 5
+  },
+  {
+    "id": 19703,
+    "name": "Sea Emperor",
+    "elem": "n",
+    "nat": 5
+  },
+  {
+    "id": 19704,
+    "name": "Sea Emperor",
+    "elem": "l",
+    "nat": 5
+  },
+  {
+    "id": 19705,
+    "name": "Sea Emperor",
+    "elem": "d",
+    "nat": 5
+  },
+  {
+    "id": 12133,
+    "name": "Seal",
+    "elem": "n",
+    "nat": 2
+  },
+  {
+    "id": 12135,
+    "name": "Seren",
+    "elem": "d",
+    "nat": 3
+  },
+  {
+    "id": 11304,
+    "name": "Serpent",
+    "elem": "l",
+    "nat": 3
+  },
+  {
+    "id": 11305,
+    "name": "Serpent",
+    "elem": "d",
+    "nat": 3
+  },
+  {
+    "id": 24602,
+    "name": "Shadow Claw",
+    "elem": "f",
+    "nat": 5
+  },
+  {
+    "id": 25901,
+    "name": "Shadowcaster",
+    "elem": "w",
+    "nat": 5
+  },
+  {
+    "id": 25902,
+    "name": "Shadowcaster",
+    "elem": "f",
+    "nat": 5
+  },
+  {
+    "id": 25903,
+    "name": "Shadowcaster",
+    "elem": "n",
+    "nat": 5
+  },
+  {
+    "id": 25904,
+    "name": "Shadowcaster",
+    "elem": "l",
+    "nat": 5
+  },
+  {
+    "id": 25905,
+    "name": "Shadowcaster",
+    "elem": "d",
+    "nat": 5
+  },
+  {
+    "id": 14033,
+    "name": "Shakan",
+    "elem": "n",
+    "nat": 3
+  },
+  {
+    "id": 11534,
+    "name": "Shamann",
+    "elem": "l",
+    "nat": 3
+  },
+  {
+    "id": 10634,
+    "name": "Shamar",
+    "elem": "l",
+    "nat": 2
+  },
+  {
+    "id": 10333,
+    "name": "Shannon",
+    "elem": "n",
+    "nat": 2
+  },
+  {
+    "id": 33911,
+    "name": "Shasha",
+    "elem": "w",
+    "nat": 5
+  },
+  {
+    "id": 33912,
+    "name": "Shasha",
+    "elem": "f",
+    "nat": 4
+  },
+  {
+    "id": 33913,
+    "name": "Shasha",
+    "elem": "n",
+    "nat": 4
+  },
+  {
+    "id": 33914,
+    "name": "Shasha",
+    "elem": "l",
+    "nat": 5
+  },
+  {
+    "id": 33915,
+    "name": "Shasha",
+    "elem": "d",
+    "nat": 5
+  },
+  {
+    "id": 12034,
+    "name": "Shren",
+    "elem": "l",
+    "nat": 3
+  },
+  {
+    "id": 10635,
+    "name": "Shumar",
+    "elem": "d",
+    "nat": 3
+  },
+  {
+    "id": 13234,
+    "name": "Shushu and Friends",
+    "elem": "l",
+    "nat": 2
+  },
+  {
+    "id": 12134,
+    "name": "Sia",
+    "elem": "l",
+    "nat": 3
+  },
+  {
+    "id": 10632,
+    "name": "Sieq",
+    "elem": "f",
+    "nat": 2
+  },
+  {
+    "id": 15933,
+    "name": "Silia",
+    "elem": "n",
+    "nat": 3
+  },
+  {
+    "id": 16534,
+    "name": "Silver",
+    "elem": "l",
+    "nat": 3
+  },
+  {
+    "id": 12131,
+    "name": "Sisroo",
+    "elem": "w",
+    "nat": 2
+  },
+  {
+    "id": 16402,
+    "name": "Skull Soldier",
+    "elem": "f",
+    "nat": 2
+  },
+  {
+    "id": 16401,
+    "name": "Skull Soldier",
+    "elem": "w",
+    "nat": 2
+  },
+  {
+    "id": 16403,
+    "name": "Skull Soldier",
+    "elem": "n",
+    "nat": 2
+  },
+  {
+    "id": 18302,
+    "name": "Sky Dancer",
+    "elem": "f",
+    "nat": 4
+  },
+  {
+    "id": 18303,
+    "name": "Sky Dancer",
+    "elem": "n",
+    "nat": 4
+  },
+  {
+    "id": 18301,
+    "name": "Sky Dancer",
+    "elem": "w",
+    "nat": 4
+  },
+  {
+    "id": 18304,
+    "name": "Sky Dancer",
+    "elem": "l",
+    "nat": 5
+  },
+  {
+    "id": 18305,
+    "name": "Sky Dancer",
+    "elem": "d",
+    "nat": 5
+  },
+  {
+    "id": 25301,
+    "name": "Sky Surfer",
+    "elem": "w",
+    "nat": 5
+  },
+  {
+    "id": 25302,
+    "name": "Sky Surfer",
+    "elem": "f",
+    "nat": 5
+  },
+  {
+    "id": 25303,
+    "name": "Sky Surfer",
+    "elem": "n",
+    "nat": 5
+  },
+  {
+    "id": 25304,
+    "name": "Sky Surfer",
+    "elem": "l",
+    "nat": 5
+  },
+  {
+    "id": 25305,
+    "name": "Sky Surfer",
+    "elem": "d",
+    "nat": 5
+  },
+  {
+    "id": 24701,
+    "name": "Slayer",
+    "elem": "w",
+    "nat": 5
+  },
+  {
+    "id": 24702,
+    "name": "Slayer",
+    "elem": "f",
+    "nat": 5
+  },
+  {
+    "id": 24703,
+    "name": "Slayer",
+    "elem": "n",
+    "nat": 5
+  },
+  {
+    "id": 24704,
+    "name": "Slayer",
+    "elem": "l",
+    "nat": 5
+  },
+  {
+    "id": 24705,
+    "name": "Slayer",
+    "elem": "d",
+    "nat": 5
+  },
+  {
+    "id": 12201,
+    "name": "Slime",
+    "elem": "w",
+    "nat": 1
+  },
+  {
+    "id": 12202,
+    "name": "Slime",
+    "elem": "f",
+    "nat": 1
+  },
+  {
+    "id": 12203,
+    "name": "Slime",
+    "elem": "n",
+    "nat": 1
+  },
+  {
+    "id": 22701,
+    "name": "Sniper Mk.I",
+    "elem": "w",
+    "nat": 4
+  },
+  {
+    "id": 22702,
+    "name": "Sniper Mk.I",
+    "elem": "f",
+    "nat": 4
+  },
+  {
+    "id": 22703,
+    "name": "Sniper Mk.I",
+    "elem": "n",
+    "nat": 4
+  },
+  {
+    "id": 22704,
+    "name": "Sniper Mk.I",
+    "elem": "l",
+    "nat": 4
+  },
+  {
+    "id": 22705,
+    "name": "Sniper Mk.I",
+    "elem": "d",
+    "nat": 4
+  },
+  {
+    "id": 10135,
+    "name": "Sorin",
+    "elem": "d",
+    "nat": 2
+  },
+  {
+    "id": 31301,
+    "name": "Specter Princess",
+    "elem": "w",
+    "nat": 5
+  },
+  {
+    "id": 31302,
+    "name": "Specter Princess",
+    "elem": "f",
+    "nat": 5
+  },
+  {
+    "id": 31303,
+    "name": "Specter Princess",
+    "elem": "n",
+    "nat": 5
+  },
+  {
+    "id": 31304,
+    "name": "Specter Princess",
+    "elem": "l",
+    "nat": 5
+  },
+  {
+    "id": 31305,
+    "name": "Specter Princess",
+    "elem": "d",
+    "nat": 5
+  },
+  {
+    "id": 11532,
+    "name": "Spectra",
+    "elem": "f",
+    "nat": 3
+  },
+  {
+    "id": 27901,
+    "name": "Steel Commander",
+    "elem": "w",
+    "nat": 5
+  },
+  {
+    "id": 27902,
+    "name": "Steel Commander",
+    "elem": "f",
+    "nat": 5
+  },
+  {
+    "id": 27903,
+    "name": "Steel Commander",
+    "elem": "n",
+    "nat": 4
+  },
+  {
+    "id": 27904,
+    "name": "Steel Commander",
+    "elem": "l",
+    "nat": 5
+  },
+  {
+    "id": 27905,
+    "name": "Steel Commander",
+    "elem": "d",
+    "nat": 4
+  },
+  {
+    "id": 24501,
+    "name": "Striker",
+    "elem": "w",
+    "nat": 5
+  },
+  {
+    "id": 24502,
+    "name": "Striker",
+    "elem": "f",
+    "nat": 5
+  },
+  {
+    "id": 24503,
+    "name": "Striker",
+    "elem": "n",
+    "nat": 5
+  },
+  {
+    "id": 24504,
+    "name": "Striker",
+    "elem": "l",
+    "nat": 5
+  },
+  {
+    "id": 24505,
+    "name": "Striker",
+    "elem": "d",
+    "nat": 5
+  },
+  {
+    "id": 23901,
+    "name": "String Master",
+    "elem": "w",
+    "nat": 4
+  },
+  {
+    "id": 23902,
+    "name": "String Master",
+    "elem": "f",
+    "nat": 4
+  },
+  {
+    "id": 23903,
+    "name": "String Master",
+    "elem": "n",
+    "nat": 4
+  },
+  {
+    "id": 23904,
+    "name": "String Master",
+    "elem": "l",
+    "nat": 4
+  },
+  {
+    "id": 23905,
+    "name": "String Master",
+    "elem": "d",
+    "nat": 4
+  },
+  {
+    "id": 13303,
+    "name": "Succubus",
+    "elem": "n",
+    "nat": 4
+  },
+  {
+    "id": 13301,
+    "name": "Succubus",
+    "elem": "w",
+    "nat": 4
+  },
+  {
+    "id": 13304,
+    "name": "Succubus",
+    "elem": "l",
+    "nat": 4
+  },
+  {
+    "id": 13305,
+    "name": "Succubus",
+    "elem": "d",
+    "nat": 4
+  },
+  {
+    "id": 21714,
+    "name": "Super Angelmon",
+    "elem": "l",
+    "nat": 1
+  },
+  {
+    "id": 13602,
+    "name": "Surprise Box",
+    "elem": "f",
+    "nat": 2
+  },
+  {
+    "id": 13601,
+    "name": "Surprise Box",
+    "elem": "w",
+    "nat": 2
+  },
+  {
+    "id": 13603,
+    "name": "Surprise Box",
+    "elem": "n",
+    "nat": 2
+  },
+  {
+    "id": 13605,
+    "name": "Surprise Box",
+    "elem": "d",
+    "nat": 2
+  },
+  {
+    "id": 13604,
+    "name": "Surprise Box",
+    "elem": "l",
+    "nat": 2
+  },
+  {
+    "id": 11803,
+    "name": "Sylph",
+    "elem": "n",
+    "nat": 4
+  },
+  {
+    "id": 11801,
+    "name": "Sylph",
+    "elem": "w",
+    "nat": 4
+  },
+  {
+    "id": 11804,
+    "name": "Sylph",
+    "elem": "l",
+    "nat": 4
+  },
+  {
+    "id": 11805,
+    "name": "Sylph",
+    "elem": "d",
+    "nat": 4
+  },
+  {
+    "id": 11902,
+    "name": "Sylphid",
+    "elem": "f",
+    "nat": 4
+  },
+  {
+    "id": 11903,
+    "name": "Sylphid",
+    "elem": "n",
+    "nat": 4
+  },
+  {
+    "id": 11901,
+    "name": "Sylphid",
+    "elem": "w",
+    "nat": 4
+  },
+  {
+    "id": 11904,
+    "name": "Sylphid",
+    "elem": "l",
+    "nat": 4
+  },
+  {
+    "id": 11905,
+    "name": "Sylphid",
+    "elem": "d",
+    "nat": 4
+  },
+  {
+    "id": 33711,
+    "name": "Taebaek",
+    "elem": "w",
+    "nat": 5
+  },
+  {
+    "id": 33712,
+    "name": "Taebaek",
+    "elem": "f",
+    "nat": 4
+  },
+  {
+    "id": 33713,
+    "name": "Taebaek",
+    "elem": "n",
+    "nat": 5
+  },
+  {
+    "id": 33714,
+    "name": "Taebaek",
+    "elem": "l",
+    "nat": 5
+  },
+  {
+    "id": 33715,
+    "name": "Taebaek",
+    "elem": "d",
+    "nat": 4
+  },
+  {
+    "id": 11732,
+    "name": "Tagaros",
+    "elem": "f",
+    "nat": 3
+  },
+  {
+    "id": 18402,
+    "name": "Taoist",
+    "elem": "f",
+    "nat": 3
+  },
+  {
+    "id": 18405,
+    "name": "Taoist",
+    "elem": "d",
+    "nat": 3
+  },
+  {
+    "id": 18403,
+    "name": "Taoist",
+    "elem": "n",
+    "nat": 4
+  },
+  {
+    "id": 18401,
+    "name": "Taoist",
+    "elem": "w",
+    "nat": 4
+  },
+  {
+    "id": 18404,
+    "name": "Taoist",
+    "elem": "l",
+    "nat": 4
+  },
+  {
+    "id": 29812,
+    "name": "Tarnisha",
+    "elem": "f",
+    "nat": 5
+  },
+  {
+    "id": 10631,
+    "name": "Tarq",
+    "elem": "w",
+    "nat": 2
+  },
+  {
+    "id": 10332,
+    "name": "Tatu",
+    "elem": "f",
+    "nat": 2
+  },
+  {
+    "id": 34215,
+    "name": "Theonia",
+    "elem": "d",
+    "nat": 5
+  },
+  {
+    "id": 16035,
+    "name": "Thrain",
+    "elem": "d",
+    "nat": 3
+  },
+  {
+    "id": 29713,
+    "name": "Tirsa",
+    "elem": "n",
+    "nat": 5
+  },
+  {
+    "id": 31401,
+    "name": "Tomb Warden",
+    "elem": "w",
+    "nat": 4
+  },
+  {
+    "id": 31402,
+    "name": "Tomb Warden",
+    "elem": "f",
+    "nat": 4
+  },
+  {
+    "id": 31403,
+    "name": "Tomb Warden",
+    "elem": "n",
+    "nat": 4
+  },
+  {
+    "id": 31404,
+    "name": "Tomb Warden",
+    "elem": "l",
+    "nat": 4
+  },
+  {
+    "id": 31405,
+    "name": "Tomb Warden",
+    "elem": "d",
+    "nat": 4
+  },
+  {
+    "id": 25601,
+    "name": "Totemist",
+    "elem": "w",
+    "nat": 5
+  },
+  {
+    "id": 25602,
+    "name": "Totemist",
+    "elem": "f",
+    "nat": 5
+  },
+  {
+    "id": 25603,
+    "name": "Totemist",
+    "elem": "n",
+    "nat": 5
+  },
+  {
+    "id": 25604,
+    "name": "Totemist",
+    "elem": "l",
+    "nat": 5
+  },
+  {
+    "id": 25605,
+    "name": "Totemist",
+    "elem": "d",
+    "nat": 5
+  },
+  {
+    "id": 20831,
+    "name": "Tractor",
+    "elem": "w",
+    "nat": 3
+  },
+  {
+    "id": 29105,
+    "name": "Twin Angels",
+    "elem": "d",
+    "nat": 5
+  },
+  {
+    "id": 29101,
+    "name": "Twin Angels",
+    "elem": "w",
+    "nat": 5
+  },
+  {
+    "id": 29102,
+    "name": "Twin Angels",
+    "elem": "f",
+    "nat": 5
+  },
+  {
+    "id": 29103,
+    "name": "Twin Angels",
+    "elem": "n",
+    "nat": 5
+  },
+  {
+    "id": 29104,
+    "name": "Twin Angels",
+    "elem": "l",
+    "nat": 5
+  },
+  {
+    "id": 11602,
+    "name": "Undine",
+    "elem": "f",
+    "nat": 4
+  },
+  {
+    "id": 11603,
+    "name": "Undine",
+    "elem": "n",
+    "nat": 4
+  },
+  {
+    "id": 11604,
+    "name": "Undine",
+    "elem": "l",
+    "nat": 4
+  },
+  {
+    "id": 11605,
+    "name": "Undine",
+    "elem": "d",
+    "nat": 4
+  },
+  {
+    "id": 21501,
+    "name": "Unicorn",
+    "elem": "w",
+    "nat": 5
+  },
+  {
+    "id": 21502,
+    "name": "Unicorn",
+    "elem": "f",
+    "nat": 5
+  },
+  {
+    "id": 21503,
+    "name": "Unicorn",
+    "elem": "n",
+    "nat": 5
+  },
+  {
+    "id": 21504,
+    "name": "Unicorn",
+    "elem": "l",
+    "nat": 5
+  },
+  {
+    "id": 21505,
+    "name": "Unicorn",
+    "elem": "d",
+    "nat": 5
+  },
+  {
+    "id": 10732,
+    "name": "Ursha",
+    "elem": "f",
+    "nat": 2
+  },
+  {
+    "id": 15201,
+    "name": "Vagabond",
+    "elem": "w",
+    "nat": 2
+  },
+  {
+    "id": 15203,
+    "name": "Vagabond",
+    "elem": "n",
+    "nat": 2
+  },
+  {
+    "id": 15204,
+    "name": "Vagabond",
+    "elem": "l",
+    "nat": 3
+  },
+  {
+    "id": 15205,
+    "name": "Vagabond",
+    "elem": "d",
+    "nat": 3
+  },
+  {
+    "id": 29615,
+    "name": "Valdemar",
+    "elem": "d",
+    "nat": 5
+  },
+  {
+    "id": 13802,
+    "name": "Valkyrja",
+    "elem": "f",
+    "nat": 5
+  },
+  {
+    "id": 13803,
+    "name": "Valkyrja",
+    "elem": "n",
+    "nat": 5
+  },
+  {
+    "id": 13801,
+    "name": "Valkyrja",
+    "elem": "w",
+    "nat": 5
+  },
+  {
+    "id": 13804,
+    "name": "Valkyrja",
+    "elem": "l",
+    "nat": 5
+  },
+  {
+    "id": 13805,
+    "name": "Valkyrja",
+    "elem": "d",
+    "nat": 5
+  },
+  {
+    "id": 14701,
+    "name": "Vampire",
+    "elem": "w",
+    "nat": 4
+  },
+  {
+    "id": 14704,
+    "name": "Vampire",
+    "elem": "l",
+    "nat": 5
+  },
+  {
+    "id": 14705,
+    "name": "Vampire",
+    "elem": "d",
+    "nat": 5
+  },
+  {
+    "id": 23005,
+    "name": "Vampire Lord",
+    "elem": "d",
+    "nat": 5
+  },
+  {
+    "id": 11535,
+    "name": "Varus",
+    "elem": "d",
+    "nat": 3
+  },
+  {
+    "id": 14031,
+    "name": "Vigor",
+    "elem": "w",
+    "nat": 3
+  },
+  {
+    "id": 14801,
+    "name": "Viking",
+    "elem": "w",
+    "nat": 2
+  },
+  {
+    "id": 14804,
+    "name": "Viking",
+    "elem": "l",
+    "nat": 2
+  },
+  {
+    "id": 14805,
+    "name": "Viking",
+    "elem": "d",
+    "nat": 3
+  },
+  {
+    "id": 14803,
+    "name": "Viking",
+    "elem": "n",
+    "nat": 2
+  },
+  {
+    "id": 10702,
+    "name": "Warbear",
+    "elem": "f",
+    "nat": 2
+  },
+  {
+    "id": 10703,
+    "name": "Warbear",
+    "elem": "n",
+    "nat": 2
+  },
+  {
+    "id": 10705,
+    "name": "Warbear",
+    "elem": "d",
+    "nat": 2
+  },
+  {
+    "id": 10704,
+    "name": "Warbear",
+    "elem": "l",
+    "nat": 3
+  },
+  {
+    "id": 25701,
+    "name": "Weapon Master",
+    "elem": "w",
+    "nat": 5
+  },
+  {
+    "id": 25702,
+    "name": "Weapon Master",
+    "elem": "f",
+    "nat": 5
+  },
+  {
+    "id": 25703,
+    "name": "Weapon Master",
+    "elem": "n",
+    "nat": 5
+  },
+  {
+    "id": 25704,
+    "name": "Weapon Master",
+    "elem": "l",
+    "nat": 5
+  },
+  {
+    "id": 25705,
+    "name": "Weapon Master",
+    "elem": "d",
+    "nat": 5
+  },
+  {
+    "id": 14004,
+    "name": "Werewolf",
+    "elem": "l",
+    "nat": 3
+  },
+  {
+    "id": 14005,
+    "name": "Werewolf",
+    "elem": "d",
+    "nat": 3
+  },
+  {
+    "id": 15034,
+    "name": "Xiao Ling",
+    "elem": "l",
+    "nat": 3
+  },
+  {
+    "id": 10401,
+    "name": "Yeti",
+    "elem": "w",
+    "nat": 2
+  },
+  {
+    "id": 10403,
+    "name": "Yeti",
+    "elem": "n",
+    "nat": 2
+  },
+  {
+    "id": 10404,
+    "name": "Yeti",
+    "elem": "l",
+    "nat": 2
+  },
+  {
+    "id": 16535,
+    "name": "Zinc",
+    "elem": "d",
+    "nat": 3
+  },
+  {
+    "id": 31315,
+    "name": "Velaska",
+    "elem": "d",
+    "nat": 5
+  }
 ]

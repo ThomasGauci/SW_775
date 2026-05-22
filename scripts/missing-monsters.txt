@@ -1,0 +1,926 @@
+id	name	elem	nat
+30014	51LV3R	l	5
+30013	570RM	n	5
+30012	7R1X	f	5
+10133	Aeilene	n	2
+34212	Agrenia	f	5
+34112	Agrius	f	4
+30114	Alesia	l	4
+15231	Allen	w	2
+14902	Amazon	f	3
+14901	Amazon	w	3
+14904	Amazon	l	3
+14905	Amazon	d	3
+29611	Anders	w	5
+11733	Anduril	n	3
+14202	Angelmon	f	1
+14201	Angelmon	w	1
+14203	Angelmon	n	1
+14205	Angelmon	d	1
+14204	Angelmon	l	1
+20402	Anubis	f	4
+20403	Anubis	n	4
+20401	Anubis	w	4
+20404	Anubis	l	4
+20405	Anubis	d	5
+34611	Aragorn	w	5
+34612	Aragorn	f	5
+34613	Aragorn	n	4
+34614	Aragorn	l	4
+34615	Aragorn	d	5
+29814	Arcana	l	4
+34001	Arcane Weapon	w	5
+34002	Arcane Weapon	f	5
+34003	Arcane Weapon	n	5
+34004	Arcane Weapon	l	5
+34005	Arcane Weapon	d	5
+17002	Archangel	f	5
+17003	Archangel	n	5
+17001	Archangel	w	5
+17004	Archangel	l	5
+17005	Archangel	d	5
+34214	Arella	l	5
+23701	Art Master	w	5
+23702	Art Master	f	5
+23703	Art Master	n	5
+23704	Art Master	l	5
+23705	Art Master	d	5
+34115	Asbolus	d	4
+19902	Assassin	f	4
+19901	Assassin	w	4
+19903	Assassin	n	4
+19904	Assassin	l	4
+19905	Assassin	d	4
+28501	Asura	w	4
+28502	Asura	f	4
+28503	Asura	n	4
+28504	Asura	l	4
+28505	Asura	d	4
+18802	Barbaric King	f	4
+18803	Barbaric King	n	4
+18801	Barbaric King	w	4
+18804	Barbaric King	l	4
+18805	Barbaric King	d	4
+26101	Battle Angel	w	5
+26102	Battle Angel	f	5
+26103	Battle Angel	n	5
+26104	Battle Angel	l	5
+26105	Battle Angel	d	5
+19002	Battle Mammoth	f	3
+19001	Battle Mammoth	w	3
+19003	Battle Mammoth	n	3
+19004	Battle Mammoth	l	3
+19005	Battle Mammoth	d	3
+17602	Battle Scorpion	f	2
+17601	Battle Scorpion	w	2
+17603	Battle Scorpion	n	2
+13704	Bearman	l	3
+13705	Bearman	d	3
+18501	Beast Hunter	w	3
+18503	Beast Hunter	n	3
+18504	Beast Hunter	l	3
+18505	Beast Hunter	d	3
+17402	Beast Monk	f	5
+17403	Beast Monk	n	5
+17401	Beast Monk	w	5
+17404	Beast Monk	l	5
+17405	Beast Monk	d	5
+23501	Beast Rider	w	5
+23502	Beast Rider	f	5
+23503	Beast Rider	n	5
+23504	Beast Rider	l	5
+23505	Beast Rider	d	5
+32301	Beetle Guardian	w	5
+32302	Beetle Guardian	f	5
+32303	Beetle Guardian	n	5
+32304	Beetle Guardian	l	5
+32305	Beetle Guardian	d	5
+11034	Belladeon	l	3
+11533	Bernard	n	3
+29714	Birgitta	l	5
+27001	Black Tea Bunny	w	4
+27002	Black Tea Bunny	f	4
+27003	Black Tea Bunny	n	4
+27004	Black Tea Bunny	l	4
+27005	Black Tea Bunny	d	4
+24901	Blade Dancer	w	4
+24902	Blade Dancer	f	4
+24903	Blade Dancer	n	4
+24904	Blade Dancer	l	4
+24905	Blade Dancer	d	4
+22001	Boomerang Warrior	w	4
+22002	Boomerang Warrior	f	4
+22003	Boomerang Warrior	n	4
+22004	Boomerang Warrior	l	4
+22005	Boomerang Warrior	d	4
+15602	Bounty Hunter	f	3
+15601	Bounty Hunter	w	3
+15604	Bounty Hunter	l	3
+15605	Bounty Hunter	d	3
+18002	Brownie Magician	f	4
+18003	Brownie Magician	n	4
+18001	Brownie Magician	w	4
+18004	Brownie Magician	l	4
+18005	Brownie Magician	d	4
+20832	Bulldozer	f	3
+10335	Camaryn	d	2
+22901	Cannon Girl	w	4
+22902	Cannon Girl	f	4
+22903	Cannon Girl	n	5
+22904	Cannon Girl	l	4
+22905	Cannon Girl	d	5
+30112	Carmella	f	4
+34011	Cecilia	w	5
+29915	Celestara	d	5
+34101	Centaur Knight	w	4
+34102	Centaur Knight	f	4
+34103	Centaur Knight	n	4
+34104	Centaur Knight	l	4
+34105	Centaur Knight	d	4
+13235	Chacha and Friends	d	2
+21901	Chakram Dancer	w	4
+21902	Chakram Dancer	f	4
+21903	Chakram Dancer	n	4
+21904	Chakram Dancer	l	4
+21905	Chakram Dancer	d	4
+19502	Charger Shark	f	3
+19501	Charger Shark	w	3
+19505	Charger Shark	d	3
+19504	Charger Shark	l	3
+10334	Cheryl	l	2
+13233	Chichi and Friends	n	2
+14602	Chimera	f	5
+14603	Chimera	n	5
+14601	Chimera	w	5
+14604	Chimera	l	5
+14605	Chimera	d	5
+34114	Chiron	l	4
+27101	Choco Knight	w	4
+27102	Choco Knight	f	4
+27103	Choco Knight	n	4
+27104	Choco Knight	l	4
+27105	Choco Knight	d	4
+34014	Christine	l	5
+12132	Colleen	f	2
+16533	Copper	n	3
+19302	Cow Girl	f	3
+19301	Cow Girl	w	3
+19303	Cow Girl	n	3
+19305	Cow Girl	d	3
+20833	Crane	n	3
+20835	Crawler	d	3
+30101	Cyborg	w	4
+30102	Cyborg	f	4
+30103	Cyborg	n	4
+30104	Cyborg	l	4
+30105	Cyborg	d	4
+34012	Cynthia	f	5
+10731	Dagora	w	3
+33512	Daimon	f	5
+34013	Daisy	n	5
+15234	Darion	l	3
+16202	Death Knight	f	4
+16203	Death Knight	n	4
+16201	Death Knight	w	4
+16204	Death Knight	l	4
+16205	Death Knight	d	4
+23101	Demon	w	5
+23102	Demon	f	5
+23103	Demon	n	5
+23104	Demon	l	5
+23105	Demon	d	5
+20502	Desert Queen	f	5
+20501	Desert Queen	w	5
+20503	Desert Queen	n	5
+20504	Desert Queen	l	5
+20505	Desert Queen	d	5
+28001	Desert Warrior	w	4
+28002	Desert Warrior	f	5
+28003	Desert Warrior	n	5
+28004	Desert Warrior	l	4
+28005	Desert Warrior	d	5
+28601	Devil Maiden	w	5
+28602	Devil Maiden	f	5
+28603	Devil Maiden	n	5
+28604	Devil Maiden	l	5
+28605	Devil Maiden	d	5
+15105	Devilmon	d	1
+21302	Dice Magician	f	4
+21301	Dice Magician	w	4
+21303	Dice Magician	n	4
+21304	Dice Magician	l	4
+21305	Dice Magician	d	4
+28901	Dokkaebi Lord	w	5
+28902	Dokkaebi Lord	f	5
+28903	Dokkaebi Lord	n	5
+28904	Dokkaebi Lord	l	5
+28905	Dokkaebi Lord	d	5
+29001	Dokkaebi Princess and Sapsaree	w	4
+29003	Dokkaebi Princess and Sapsaree	n	4
+29004	Dokkaebi Princess and Sapsaree	l	4
+29005	Dokkaebi Princess and Sapsaree	d	4
+35514	Dr. Albert	l	5
+35513	Dr. Christoph	n	5
+35511	Dr. Felix	w	5
+35512	Dr. Matteo	f	5
+35501	Dr. Plasma	w	5
+35502	Dr. Plasma	f	5
+35503	Dr. Plasma	n	5
+35504	Dr. Plasma	l	5
+35505	Dr. Plasma	d	5
+35515	Dr. Richard	d	5
+14402	Dragon	f	5
+14403	Dragon	n	5
+14401	Dragon	w	5
+14404	Dragon	l	5
+14405	Dragon	d	5
+16602	Dragon Knight	f	5
+16603	Dragon Knight	n	5
+16601	Dragon Knight	w	5
+16604	Dragon Knight	l	5
+16605	Dragon Knight	d	5
+30701	Drakan Warrior	w	5
+30702	Drakan Warrior	f	5
+30703	Drakan Warrior	n	5
+30704	Drakan Warrior	l	5
+30705	Drakan Warrior	d	5
+34213	Driana	n	5
+20834	Driller	l	3
+11735	Drogan	d	3
+22201	Druid	w	5
+22202	Druid	f	5
+22203	Druid	n	5
+22204	Druid	l	5
+22205	Druid	d	5
+17202	Drunken Master	f	3
+17203	Drunken Master	n	3
+17204	Drunken Master	l	3
+17205	Drunken Master	d	3
+22101	Dryad	w	4
+22102	Dryad	f	4
+22104	Dryad	l	4
+22105	Dryad	d	4
+27804	Dual Blade	l	5
+33811	Duke	w	5
+33812	Duke	f	5
+33813	Duke	n	5
+33814	Duke	l	4
+33815	Duke	d	4
+10804	Elemental	l	3
+10805	Elemental	d	3
+34015	Elise	d	5
+16704	Elite Magical Archer	l	3
+30113	Eliza	n	4
+12031	Ellena	w	3
+10131	Elucia	w	3
+11734	Eludain	l	3
+20904	Elven Ranger	l	3
+20901	Elven Ranger	w	3
+20903	Elven Ranger	n	3
+20902	Elven Ranger	f	3
+20905	Elven Ranger	d	4
+29912	Enshia	f	5
+15302	Epikion Priest	f	4
+15301	Epikion Priest	w	3
+15303	Epikion Priest	n	3
+15305	Epikion Priest	d	3
+15304	Epikion Priest	l	4
+14034	Eshir	l	3
+10105	Fairy	d	2
+10101	Fairy	w	3
+10104	Fairy	l	3
+21102	Fairy King	f	5
+21101	Fairy King	w	5
+21103	Fairy King	n	5
+21104	Fairy King	l	5
+21105	Fairy King	d	5
+19104	Fairy Queen	l	3
+29715	Fiona	d	4
+12302	Forest Keeper	f	1
+12301	Forest Keeper	w	1
+12303	Forest Keeper	n	1
+20802	Frankenstein	f	3
+20801	Frankenstein	w	3
+20804	Frankenstein	l	3
+20805	Frankenstein	d	3
+34311	Frodo	w	5
+10633	Gamir	n	2
+34411	Gandalf	w	5
+34412	Gandalf	f	5
+34413	Gandalf	n	5
+34414	Gandalf	l	5
+34415	Gandalf	d	5
+23301	Gargoyle	w	4
+23302	Gargoyle	f	4
+23303	Gargoyle	n	4
+23304	Gargoyle	l	4
+23305	Gargoyle	d	4
+14032	Garoche	f	3
+10903	Garuda	n	2
+10905	Garuda	d	2
+10904	Garuda	l	3
+12702	Ghost	f	1
+12701	Ghost	w	1
+12703	Ghost	n	1
+12705	Ghost	d	1
+22401	Giant Warrior	w	3
+22402	Giant Warrior	f	3
+22403	Giant Warrior	n	4
+22404	Giant Warrior	l	4
+22405	Giant Warrior	d	4
+15935	Gina	d	3
+26213	GingerBrave	n	5
+28101	Gladiatrix	w	4
+28102	Gladiatrix	f	5
+28103	Gladiatrix	n	5
+28104	Gladiatrix	l	4
+28105	Gladiatrix	d	5
+11404	Golem	l	3
+11405	Golem	d	3
+34811	Gollum	w	4
+34812	Gollum	f	4
+34813	Gollum	n	4
+34814	Gollum	l	4
+34815	Gollum	d	4
+10735	Gorgo	d	2
+11504	Griffon	l	3
+11505	Griffon	d	3
+16002	Grim Reaper	f	3
+16004	Grim Reaper	l	3
+16005	Grim Reaper	d	3
+29914	Groa	l	5
+30001	Hacker	w	5
+30002	Hacker	f	5
+30003	Hacker	n	5
+30004	Hacker	l	5
+30005	Hacker	d	5
+21001	Harg	w	3
+21002	Harg	f	3
+21003	Harg	n	4
+21004	Harg	l	4
+21005	Harg	d	3
+21401	Harp Magician	w	4
+21403	Harp Magician	n	4
+21404	Harp Magician	l	5
+21405	Harp Magician	d	5
+12102	Harpu	f	2
+12101	Harpu	w	2
+12104	Harpu	l	3
+12105	Harpu	d	3
+10502	Harpy	f	3
+10504	Harpy	l	3
+10505	Harpy	d	3
+33012	Heihachi Mishima	f	5
+17902	Hell Lady	f	5
+17903	Hell Lady	n	5
+17901	Hell Lady	w	5
+17904	Hell Lady	l	5
+17905	Hell Lady	d	5
+10603	Hellhound	n	2
+10604	Hellhound	l	2
+10605	Hellhound	d	3
+16031	Hemos	w	3
+29613	Henrik	n	5
+29813	Hexarina	n	4
+12001	High Elemental	w	3
+12004	High Elemental	l	3
+12005	High Elemental	d	3
+29815	Hilda	d	5
+16033	Hiva	n	3
+13002	Horned Frog	f	1
+13001	Horned Frog	w	1
+13003	Horned Frog	n	1
+13005	Horned Frog	d	1
+20602	Horus	f	4
+20603	Horus	n	4
+20604	Horus	l	5
+20605	Horus	d	4
+13202	Howl	f	2
+13201	Howl	w	2
+13205	Howl	d	2
+13204	Howl	l	2
+26001	Hypnomeow	w	4
+26002	Hypnomeow	f	4
+26003	Hypnomeow	n	4
+26004	Hypnomeow	l	4
+26005	Hypnomeow	d	4
+11031	Icaru	w	3
+19202	Ifrit	f	5
+19203	Ifrit	n	5
+19201	Ifrit	w	5
+19204	Ifrit	l	5
+19205	Ifrit	d	5
+10203	Imp	n	2
+10205	Imp	d	2
+10204	Imp	l	2
+15801	Imp Champion	w	3
+15803	Imp Champion	n	3
+15804	Imp Champion	l	3
+15805	Imp Champion	d	3
+28301	Indra	w	5
+28302	Indra	f	5
+28303	Indra	n	5
+28304	Indra	l	5
+28305	Indra	d	5
+11702	Inferno	f	3
+11704	Inferno	l	3
+11705	Inferno	d	3
+11004	Inugami	l	3
+11005	Inugami	d	3
+16532	Iron	f	3
+10132	Iselia	f	3
+20702	Jack-o'-lantern	f	4
+20701	Jack-o'-lantern	w	4
+20703	Jack-o'-lantern	n	4
+20704	Jack-o'-lantern	l	4
+20705	Jack-o'-lantern	d	4
+29811	Johanna	w	5
+13403	Joker	n	4
+13401	Joker	w	4
+13404	Joker	l	4
+13405	Joker	d	4
+15235	Jubelle	d	3
+14035	Jultan	d	3
+12035	Jumaline	d	3
+34201	Justice	w	5
+34202	Justice	f	5
+34203	Justice	n	5
+34204	Justice	l	5
+34205	Justice	d	5
+30011	K1D	w	5
+10331	Kacey	w	2
+12032	Kahli	f	3
+11531	Kahn	w	3
+33611	Kai	w	4
+33612	Kai	f	5
+33613	Kai	n	5
+33614	Kai	l	4
+33615	Kai	d	5
+15232	Kai'en	f	3
+24112	KEN	f	5
+18202	King Angelmon	f	1
+18201	King Angelmon	w	1
+18203	King Angelmon	n	1
+18205	King Angelmon	d	1
+18204	King Angelmon	l	1
+18102	Kobold Bomber	f	4
+18103	Kobold Bomber	n	4
+18101	Kobold Bomber	w	4
+18104	Kobold Bomber	l	4
+18105	Kobold Bomber	d	4
+11035	Kro	d	3
+17302	Kung Fu Girl	f	4
+17301	Kung Fu Girl	w	4
+17304	Kung Fu Girl	l	4
+17305	Kung Fu Girl	d	4
+13232	Lala and Friends	f	2
+29614	Lars	l	5
+34711	Legolas	w	4
+34712	Legolas	f	5
+34713	Legolas	n	5
+34714	Legolas	l	5
+34715	Legolas	d	4
+16302	Lich	f	4
+16303	Lich	n	4
+16301	Lich	w	4
+16304	Lich	l	4
+16305	Lich	d	4
+22601	Lightning Emperor	w	5
+22602	Lightning Emperor	f	5
+22603	Lightning Emperor	n	5
+22604	Lightning Emperor	l	5
+22605	Lightning Emperor	d	5
+15934	Linda	l	3
+16501	Living Armor	w	3
+16503	Living Armor	n	3
+16504	Living Armor	l	3
+16505	Living Armor	d	3
+17802	Lizardman	f	3
+17804	Lizardman	l	3
+17805	Lizardman	d	3
+26703	Lollipop Warrior	n	5
+30111	Lorenza	w	4
+12802	Low Elemental	f	1
+12801	Low Elemental	w	1
+12803	Low Elemental	n	1
+12805	Low Elemental	d	1
+13231	Lulu and Friends	w	2
+29911	Lumina	w	4
+10734	Lusha	l	3
+26901	Macaron Guard	w	5
+26902	Macaron Guard	f	5
+26903	Macaron Guard	n	5
+26904	Macaron Guard	l	5
+26905	Macaron Guard	d	5
+25201	Mage	w	5
+25202	Mage	f	5
+25203	Mage	n	5
+25204	Mage	l	5
+25205	Mage	d	5
+19802	Magic Knight	f	4
+19801	Magic Knight	w	4
+19804	Magic Knight	l	4
+19805	Magic Knight	d	4
+29901	Magic Order Elementalist	w	4
+29902	Magic Order Elementalist	f	5
+29903	Magic Order Elementalist	n	4
+29904	Magic Order Elementalist	l	5
+29905	Magic Order Elementalist	d	5
+29801	Magic Order Enchantress	w	5
+29802	Magic Order Enchantress	f	5
+29803	Magic Order Enchantress	n	4
+29804	Magic Order Enchantress	l	4
+29805	Magic Order Enchantress	d	5
+29601	Magic Order Guardian	w	5
+29602	Magic Order Guardian	f	5
+29603	Magic Order Guardian	n	5
+29604	Magic Order Guardian	l	5
+29605	Magic Order Guardian	d	5
+29701	Magic Order Swordsinger	w	5
+29702	Magic Order Swordsinger	f	4
+29703	Magic Order Swordsinger	n	5
+29704	Magic Order Swordsinger	l	5
+29705	Magic Order Swordsinger	d	4
+15404	Magical Archer	l	4
+15405	Magical Archer	d	4
+29612	Magnus	f	5
+12502	Maned Boar	f	2
+12501	Maned Boar	w	2
+12503	Maned Boar	n	2
+20202	Martial Artist	f	3
+20203	Martial Artist	n	3
+20204	Martial Artist	l	3
+20205	Martial Artist	d	3
+15003	Martial Cat	n	3
+15004	Martial Cat	l	3
+15005	Martial Cat	d	3
+15931	Megan	w	3
+15032	Mei	f	3
+28201	Mercenary Queen	w	5
+28202	Mercenary Queen	f	4
+28203	Mercenary Queen	n	4
+28204	Mercenary Queen	l	5
+28205	Mercenary Queen	d	5
+19602	Mermaid	f	4
+19601	Mermaid	w	4
+19603	Mermaid	n	4
+19604	Mermaid	l	4
+19605	Mermaid	d	4
+15035	Miho	d	3
+12902	Mimic	f	1
+12901	Mimic	w	1
+12903	Mimic	n	1
+12905	Mimic	d	1
+15031	Mina	w	3
+17702	Minotauros	f	3
+17701	Minotauros	w	3
+17704	Minotauros	l	3
+17705	Minotauros	d	3
+17502	Mischievous Bat	f	2
+17503	Mischievous Bat	n	2
+17501	Mischievous Bat	w	2
+16802	Monkey King	f	5
+16803	Monkey King	n	5
+16801	Monkey King	w	5
+16804	Monkey King	l	5
+16805	Monkey King	d	5
+12602	Monster Flower	f	2
+12601	Monster Flower	w	2
+12603	Monster Flower	n	2
+12605	Monster Flower	d	2
+12033	Moria	n	3
+20302	Mummy	f	3
+20303	Mummy	n	3
+20304	Mummy	l	3
+20305	Mummy	d	3
+12402	Mushroom	f	1
+12401	Mushroom	w	1
+12403	Mushroom	n	1
+15901	Mystic Witch	w	3
+15903	Mystic Witch	n	3
+15904	Mystic Witch	l	3
+15905	Mystic Witch	d	3
+30015	N1X	d	5
+15033	Naomi	n	3
+10134	Neal	l	3
+20102	Neostone Agent	f	4
+20103	Neostone Agent	n	4
+20104	Neostone Agent	l	4
+20105	Neostone Agent	d	5
+20002	Neostone Fighter	f	4
+20001	Neostone Fighter	w	4
+20003	Neostone Fighter	n	4
+20004	Neostone Fighter	l	4
+20005	Neostone Fighter	d	4
+34211	Neriope	w	5
+16531	Nickel	w	3
+11202	Nine-tailed Fox	f	4
+11201	Nine-tailed Fox	w	4
+11204	Nine-tailed Fox	l	4
+11205	Nine-tailed Fox	d	4
+13502	Ninja	f	4
+13503	Ninja	n	4
+13504	Ninja	l	4
+13505	Ninja	d	5
+29913	Nobella	n	4
+16102	Occult Girl	f	5
+16103	Occult Girl	n	5
+16101	Occult Girl	w	5
+16104	Occult Girl	l	5
+16105	Occult Girl	d	5
+25101	Onimusha	w	4
+25102	Onimusha	f	4
+25103	Onimusha	n	4
+25104	Onimusha	l	4
+25105	Onimusha	d	5
+25001	Onmyouji	w	5
+25002	Onmyouji	f	5
+25003	Onmyouji	n	5
+25004	Onmyouji	l	5
+25005	Onmyouji	d	5
+15702	Oracle	f	5
+15703	Oracle	n	5
+15701	Oracle	w	5
+15704	Oracle	l	5
+15705	Oracle	d	5
+21804	Paladin	l	5
+21801	Paladin	w	5
+21802	Paladin	f	5
+21803	Paladin	n	5
+21805	Paladin	d	5
+21202	Panda Warrior	f	5
+21201	Panda Warrior	w	5
+21203	Panda Warrior	n	5
+21204	Panda Warrior	l	5
+21205	Panda Warrior	d	5
+18702	Penguin Knight	f	3
+18701	Penguin Knight	w	3
+18703	Penguin Knight	n	3
+18704	Penguin Knight	l	3
+18705	Penguin Knight	d	3
+14102	Phantom Thief	f	4
+14103	Phantom Thief	n	4
+14101	Phantom Thief	w	4
+14104	Phantom Thief	l	4
+14105	Phantom Thief	d	4
+14502	Phoenix	f	5
+14503	Phoenix	n	5
+14501	Phoenix	w	5
+14504	Phoenix	l	5
+14505	Phoenix	d	5
+34113	Pholus	n	4
+13902	Pierrette	f	4
+13903	Pierrette	n	4
+13901	Pierrette	w	4
+13904	Pierrette	l	4
+13905	Pierrette	d	4
+19402	Pirate Captain	f	4
+19401	Pirate Captain	w	4
+19403	Pirate Captain	n	4
+19404	Pirate Captain	l	4
+19405	Pirate Captain	d	4
+10302	Pixie	f	2
+10303	Pixie	n	2
+10305	Pixie	d	2
+10304	Pixie	l	2
+24801	Poison Master	w	4
+24802	Poison Master	f	4
+24803	Poison Master	n	4
+24804	Poison Master	l	4
+24805	Poison Master	d	4
+18902	Polar Queen	f	5
+18903	Polar Queen	n	5
+18901	Polar Queen	w	5
+18904	Polar Queen	l	5
+18905	Polar Queen	d	5
+16034	Prom	l	3
+26801	Pudding Princess	w	5
+26802	Pudding Princess	f	5
+26803	Pudding Princess	n	5
+26804	Pudding Princess	l	5
+26805	Pudding Princess	d	5
+27201	Puppeteer	w	5
+27202	Puppeteer	f	5
+27203	Puppeteer	n	5
+27204	Puppeteer	l	5
+27205	Puppeteer	d	5
+11731	Purian	w	3
+15502	Rakshasa	f	4
+15503	Rakshasa	n	4
+15501	Rakshasa	w	4
+15504	Rakshasa	l	4
+15505	Rakshasa	d	4
+10733	Ramagos	n	2
+11033	Ramahan	n	3
+11032	Raoq	f	3
+15932	Rebecca	f	3
+29712	Reyka	f	4
+34111	Rhoetus	w	4
+29711	Rigna	w	5
+30115	Roberta	d	4
+25401	ROBO	w	4
+25402	ROBO	f	4
+25403	ROBO	n	4
+25404	ROBO	l	4
+25405	ROBO	d	4
+15233	Roid	n	2
+25801	Rune Blacksmith	w	4
+25802	Rune Blacksmith	f	4
+25803	Rune Blacksmith	n	4
+25804	Rune Blacksmith	l	4
+25805	Rune Blacksmith	d	4
+18602	Sage	f	5
+18603	Sage	n	5
+18601	Sage	w	5
+18604	Sage	l	5
+18605	Sage	d	5
+11101	Salamander	w	2
+11105	Salamander	d	2
+11104	Salamander	l	2
+16902	Samurai	f	4
+16903	Samurai	n	4
+16904	Samurai	l	4
+16905	Samurai	d	4
+13102	Sandman	f	1
+13101	Sandman	w	1
+13105	Sandman	d	1
+13103	Sandman	n	1
+16032	Sath	f	3
+19702	Sea Emperor	f	5
+19701	Sea Emperor	w	5
+19703	Sea Emperor	n	5
+19704	Sea Emperor	l	5
+19705	Sea Emperor	d	5
+12133	Seal	n	2
+12135	Seren	d	3
+11304	Serpent	l	3
+11305	Serpent	d	3
+24602	Shadow Claw	f	5
+25901	Shadowcaster	w	5
+25902	Shadowcaster	f	5
+25903	Shadowcaster	n	5
+25904	Shadowcaster	l	5
+25905	Shadowcaster	d	5
+14033	Shakan	n	3
+11534	Shamann	l	3
+10634	Shamar	l	2
+10333	Shannon	n	2
+33911	Shasha	w	5
+33912	Shasha	f	4
+33913	Shasha	n	4
+33914	Shasha	l	5
+33915	Shasha	d	5
+12034	Shren	l	3
+10635	Shumar	d	3
+13234	Shushu and Friends	l	2
+12134	Sia	l	3
+10632	Sieq	f	2
+15933	Silia	n	3
+16534	Silver	l	3
+12131	Sisroo	w	2
+16402	Skull Soldier	f	2
+16401	Skull Soldier	w	2
+16403	Skull Soldier	n	2
+18302	Sky Dancer	f	4
+18303	Sky Dancer	n	4
+18301	Sky Dancer	w	4
+18304	Sky Dancer	l	5
+18305	Sky Dancer	d	5
+25301	Sky Surfer	w	5
+25302	Sky Surfer	f	5
+25303	Sky Surfer	n	5
+25304	Sky Surfer	l	5
+25305	Sky Surfer	d	5
+24701	Slayer	w	5
+24702	Slayer	f	5
+24703	Slayer	n	5
+24704	Slayer	l	5
+24705	Slayer	d	5
+12201	Slime	w	1
+12202	Slime	f	1
+12203	Slime	n	1
+22701	Sniper Mk.I	w	4
+22702	Sniper Mk.I	f	4
+22703	Sniper Mk.I	n	4
+22704	Sniper Mk.I	l	4
+22705	Sniper Mk.I	d	4
+10135	Sorin	d	2
+31301	Specter Princess	w	5
+31302	Specter Princess	f	5
+31303	Specter Princess	n	5
+31304	Specter Princess	l	5
+31305	Specter Princess	d	5
+11532	Spectra	f	3
+27901	Steel Commander	w	5
+27902	Steel Commander	f	5
+27903	Steel Commander	n	4
+27904	Steel Commander	l	5
+27905	Steel Commander	d	4
+24501	Striker	w	5
+24502	Striker	f	5
+24503	Striker	n	5
+24504	Striker	l	5
+24505	Striker	d	5
+23901	String Master	w	4
+23902	String Master	f	4
+23903	String Master	n	4
+23904	String Master	l	4
+23905	String Master	d	4
+13303	Succubus	n	4
+13301	Succubus	w	4
+13304	Succubus	l	4
+13305	Succubus	d	4
+21714	Super Angelmon	l	1
+13602	Surprise Box	f	2
+13601	Surprise Box	w	2
+13603	Surprise Box	n	2
+13605	Surprise Box	d	2
+13604	Surprise Box	l	2
+11803	Sylph	n	4
+11801	Sylph	w	4
+11804	Sylph	l	4
+11805	Sylph	d	4
+11902	Sylphid	f	4
+11903	Sylphid	n	4
+11901	Sylphid	w	4
+11904	Sylphid	l	4
+11905	Sylphid	d	4
+33711	Taebaek	w	5
+33712	Taebaek	f	4
+33713	Taebaek	n	5
+33714	Taebaek	l	5
+33715	Taebaek	d	4
+11732	Tagaros	f	3
+18402	Taoist	f	3
+18405	Taoist	d	3
+18403	Taoist	n	4
+18401	Taoist	w	4
+18404	Taoist	l	4
+29812	Tarnisha	f	5
+10631	Tarq	w	2
+10332	Tatu	f	2
+34215	Theonia	d	5
+16035	Thrain	d	3
+29713	Tirsa	n	5
+31401	Tomb Warden	w	4
+31402	Tomb Warden	f	4
+31403	Tomb Warden	n	4
+31404	Tomb Warden	l	4
+31405	Tomb Warden	d	4
+25601	Totemist	w	5
+25602	Totemist	f	5
+25603	Totemist	n	5
+25604	Totemist	l	5
+25605	Totemist	d	5
+20831	Tractor	w	3
+29105	Twin Angels	d	5
+29101	Twin Angels	w	5
+29102	Twin Angels	f	5
+29103	Twin Angels	n	5
+29104	Twin Angels	l	5
+11602	Undine	f	4
+11603	Undine	n	4
+11604	Undine	l	4
+11605	Undine	d	4
+21501	Unicorn	w	5
+21502	Unicorn	f	5
+21503	Unicorn	n	5
+21504	Unicorn	l	5
+21505	Unicorn	d	5
+10732	Ursha	f	2
+15201	Vagabond	w	2
+15203	Vagabond	n	2
+15204	Vagabond	l	3
+15205	Vagabond	d	3
+29615	Valdemar	d	5
+13802	Valkyrja	f	5
+13803	Valkyrja	n	5
+13801	Valkyrja	w	5
+13804	Valkyrja	l	5
+13805	Valkyrja	d	5
+14701	Vampire	w	4
+14704	Vampire	l	5
+14705	Vampire	d	5
+23005	Vampire Lord	d	5
+11535	Varus	d	3
+14031	Vigor	w	3
+14801	Viking	w	2
+14804	Viking	l	2
+14805	Viking	d	3
+14803	Viking	n	2
+10702	Warbear	f	2
+10703	Warbear	n	2
+10705	Warbear	d	2
+10704	Warbear	l	3
+25701	Weapon Master	w	5
+25702	Weapon Master	f	5
+25703	Weapon Master	n	5
+25704	Weapon Master	l	5
+25705	Weapon Master	d	5
+14004	Werewolf	l	3
+14005	Werewolf	d	3
+15034	Xiao Ling	l	3
+10401	Yeti	w	2
+10403	Yeti	n	2
+10404	Yeti	l	2
+16535	Zinc	d	3
