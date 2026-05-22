@@ -50,17 +50,52 @@
     <!-- Top Monstres -->
     @if (stats.topMonsters && stats.topMonsters.length > 0) {
       <div class="table-section">
-        <h3 class="section-title">Monstres — {{ stats.topMonsters.length }} utilisés</h3>
+        <div class="section-header">
+          <h3 class="section-title">
+            Monstres —
+            {{ filteredMonsters().length }}/{{ stats.topMonsters.length }} utilisés
+          </h3>
+          <div class="search-box">
+            <span class="search-icon">🔍</span>
+            <input
+              type="text"
+              placeholder="Rechercher un monstre…"
+              [ngModel]="monsterSearch()"
+              (ngModelChange)="monsterSearch.set($event)"
+              class="search-input"
+            />
+            @if (monsterSearch()) {
+              <button class="search-clear" (click)="monsterSearch.set('')">✕</button>
+            }
+          </div>
+        </div>
+
         <div class="top-table">
           <div class="top-table-header">
             <span class="col-rank">#</span>
-            <span class="col-monster">Monstre</span>
-            <span class="col-num">Joués</span>
-            <span class="col-num">Victoires</span>
-            <span class="col-wr">Win Rate</span>
+            <span class="col-monster sort-col" (click)="sortMonsters('name')">
+              Monstre{{ mSortIcon('name') }}
+            </span>
+            <span class="col-num sort-col" (click)="sortMonsters('usage')">
+              Joués{{ mSortIcon('usage') }}
+            </span>
+            <span class="col-num sort-col" (click)="sortMonsters('wins')">
+              Victoires{{ mSortIcon('wins') }}
+            </span>
+            <span class="col-wr sort-col" (click)="sortMonsters('winRate')">
+              Win Rate{{ mSortIcon('winRate') }}
+            </span>
           </div>
-          @for (entry of stats.topMonsters; track entry.monsterId) {
-            <div class="top-table-row" [class.gold-row]="$index === 0" [class.silver-row]="$index === 1" [class.bronze-row]="$index === 2">
+
+          @if (filteredMonsters().length === 0) {
+            <div class="table-empty">Aucun monstre ne correspond à « {{ monsterSearch() }} »</div>
+          }
+
+          @for (entry of filteredMonsters(); track entry.monsterId) {
+            <div class="top-table-row"
+              [class.gold-row]="$index === 0"
+              [class.silver-row]="$index === 1"
+              [class.bronze-row]="$index === 2">
               <span class="col-rank rank-num"
                 [class.gold]="$index === 0" [class.silver]="$index === 1" [class.bronze]="$index === 2">
                 {{ $index + 1 }}
@@ -100,16 +135,46 @@
     <!-- Top Équipes -->
     @if (stats.topTeams && stats.topTeams.length > 0) {
       <div class="table-section">
-        <h3 class="section-title">Équipes — {{ stats.topTeams.length }} compositions</h3>
+        <div class="section-header">
+          <h3 class="section-title">
+            Équipes —
+            {{ filteredTeams().length }}/{{ stats.topTeams.length }} compositions
+          </h3>
+          <div class="search-box">
+            <span class="search-icon">🔍</span>
+            <input
+              type="text"
+              placeholder="Filtrer par nom de monstre…"
+              [ngModel]="teamSearch()"
+              (ngModelChange)="teamSearch.set($event)"
+              class="search-input"
+            />
+            @if (teamSearch()) {
+              <button class="search-clear" (click)="teamSearch.set('')">✕</button>
+            }
+          </div>
+        </div>
+
         <div class="top-table">
           <div class="top-table-header teams-header">
             <span class="col-rank">#</span>
             <span class="col-team">Composition</span>
-            <span class="col-num">Joués</span>
-            <span class="col-num">Victoires</span>
-            <span class="col-wr">Win Rate</span>
+            <span class="col-num sort-col" (click)="sortTeams('usage')">
+              Joués{{ tSortIcon('usage') }}
+            </span>
+            <span class="col-num sort-col" (click)="sortTeams('wins')">
+              Victoires{{ tSortIcon('wins') }}
+            </span>
+            <span class="col-wr sort-col" (click)="sortTeams('winRate')">
+              Win Rate{{ tSortIcon('winRate') }}
+            </span>
           </div>
-          @for (team of stats.topTeams; track $index) {
+
+          @if (filteredTeams().length === 0) {
+            <div class="table-empty">Aucune équipe ne contient « {{ teamSearch() }} »</div>
+          }
+
+          @for (team of filteredTeams(); track $index) {
             <div class="top-table-row teams-row">
               <span class="col-rank rank-num"
                 [class.gold]="$index === 0" [class.silver]="$index === 1" [class.bronze]="$index === 2">
