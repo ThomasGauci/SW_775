@@ -3,15 +3,17 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { RouterLink } from '@angular/router';
 import { SwAccountService } from '../../core/services/sw-account.service';
+import { MonsterService } from '../../core/services/monster.service';
 import { SwArtifact } from '../../models/sw-account.model';
 import {
   ARTIFACT_ATTRIBUTES,
   ARTIFACT_STYLES,
   ARTIFACT_PRI_EFFECTS,
   ARTIFACT_SEC_EFFECTS,
+  MAX_ARTIFACT_SEC,
 } from '../../core/constants/sw-constants';
 
-type SortKey = 'level' | 'rank' | 'type';
+type SortKey = 'level' | 'rank' | 'type' | 'efficiency';
 
 @Component({
   selector: 'app-artifacts',
@@ -23,22 +25,26 @@ type SortKey = 'level' | 'rank' | 'type';
 })
 export class ArtifactsComponent {
   readonly swAccountService = inject(SwAccountService);
+  readonly monsterService = inject(MonsterService);
 
   filterType = signal<'all' | 1 | 2>('all');
   filterAttribute = signal<number | 'all'>('all');
   filterStyle = signal<number | 'all'>('all');
   filterEquipped = signal<'all' | 'equipped' | 'unequipped'>('all');
+  filterEffect = signal<number | 'all'>('all');
   sortKey = signal<SortKey>('level');
   sortDir = signal<1 | -1>(-1);
 
   readonly attributeKeys = Object.keys(ARTIFACT_ATTRIBUTES).map(Number).filter(k => k !== 98).sort((a, b) => a - b);
   readonly styleKeys = Object.keys(ARTIFACT_STYLES).map(Number).filter(k => k !== 98).sort((a, b) => a - b);
+  readonly effectOptions = [200, 201, 202, 204, 205, 206, 208, 209, 210, 214, 215, 216, 217, 218, 219, 220, 221, 222, 400, 401, 402, 403, 404, 405, 406, 407, 408, 409, 410, 411];
 
   readonly filteredArtifacts = computed<SwArtifact[]>(() => {
     const typeF = this.filterType();
     const attrF = this.filterAttribute();
     const styleF = this.filterStyle();
     const equippedF = this.filterEquipped();
+    const effectF = this.filterEffect();
     const key = this.sortKey();
     const dir = this.sortDir();
 
@@ -48,6 +54,10 @@ export class ArtifactsComponent {
       if (styleF !== 'all' && a.type === 2 && a.unit_style !== styleF) return false;
       if (equippedF === 'equipped' && a.occupied_id === 0) return false;
       if (equippedF === 'unequipped' && a.occupied_id !== 0) return false;
+      if (effectF !== 'all') {
+        const hasEffect = a.sec_effects.some(eff => eff[0] === effectF);
+        if (!hasEffect) return false;
+      }
       return true;
     });
 
@@ -56,6 +66,7 @@ export class ArtifactsComponent {
       if (key === 'level') cmp = a.level - b.level;
       else if (key === 'rank') cmp = a.rank - b.rank;
       else if (key === 'type') cmp = a.type - b.type;
+      else if (key === 'efficiency') cmp = this.calcArtifactEfficiency(a) - this.calcArtifactEfficiency(b);
       return cmp * dir;
     });
 
@@ -90,11 +101,16 @@ export class ArtifactsComponent {
     return `${base}: +${val}%`;
   }
 
+  getSecEffectName(effectId: number): string {
+    return ARTIFACT_SEC_EFFECTS[effectId] ?? `Effet ${effectId}`;
+  }
+
   getEquippedOn(art: SwArtifact): string {
     if (art.occupied_id === 0) return 'Inventaire';
     const unit = this.swAccountService.units().find(u => u.unit_id === art.occupied_id);
-    if (!unit) return `#${art.occupied_id}`;
-    return `#${unit.unit_master_id} (Lvl ${unit.unit_level})`;
+    if (!unit) return '?';
+    const monster = this.monsterService.getById(unit.unit_master_id);
+    return monster?.name ?? `#${unit.unit_master_id}`;
   }
 
   getTypeClass(type: number): string {
@@ -118,7 +134,25 @@ export class ArtifactsComponent {
       this.sortDir.update(d => (d === 1 ? -1 : 1));
     } else {
       this.sortKey.set(key);
-      this.sortDir.set(key === 'level' || key === 'rank' ? -1 : 1);
+      this.sortDir.set(key === 'level' || key === 'rank' || key === 'efficiency' ? -1 : 1);
     }
+  }
+
+  calcArtifactEfficiency(art: SwArtifact): number {
+    let score = 0;
+    for (const eff of art.sec_effects) {
+      if (!eff[0]) continue;
+      const max = MAX_ARTIFACT_SEC[eff[0]];
+      if (!max) continue;
+      score += eff[1] / max;
+    }
+    return Math.round(score / 4 * 100);
+  }
+
+  getArtEffClass(eff: number): string {
+    if (eff >= 100) return 'eff-perfect';
+    if (eff >= 80) return 'eff-high';
+    if (eff >= 60) return 'eff-mid';
+    return 'eff-low';
   }
 }

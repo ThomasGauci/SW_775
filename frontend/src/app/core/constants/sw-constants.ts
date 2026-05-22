@@ -139,3 +139,20 @@ export const RUNE_SET_PIECES: Record<number, number> = {
   24: 2,
   25: 2,
 };
+
+// Max sub-stat values for a +15 Legend rune (used in efficiency formula)
+export const MAX_RUNE_STAT: Record<number, number> = {
+  1: 1875, 2: 63, 3: 100, 4: 63, 5: 100, 6: 63,
+  8: 42, 9: 28, 10: 63, 11: 63, 12: 63,
+};
+
+// Max values for artifact secondary effects (community-sourced)
+export const MAX_ARTIFACT_SEC: Record<number, number> = {
+  200: 8, 201: 8, 202: 12, 204: 12, 205: 10, 206: 10,
+  208: 10, 209: 8, 210: 12, 214: 8, 215: 8,
+  216: 15, 217: 15, 218: 15, 219: 15, 220: 15,
+  221: 1, 222: 1, 223: 15, 224: 1, 225: 8,
+  300: 8, 301: 8, 302: 12, 303: 12, 304: 12, 305: 8, 306: 15,
+  400: 8, 401: 8, 402: 8, 403: 8, 404: 8, 405: 10,
+  406: 8, 407: 8, 408: 10, 409: 10, 410: 8, 411: 8,
+};

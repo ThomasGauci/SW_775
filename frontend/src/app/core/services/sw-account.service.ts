@@ -1,9 +1,9 @@
-import { Injectable, signal, computed } from '@angular/core';
+import { Injectable, signal, computed, effect } from '@angular/core';
 import { SwAccountData, SwRune } from '../../models/sw-account.model';
+import { AuthService } from './auth.service';
 
 @Injectable({ providedIn: 'root' })
 export class SwAccountService {
-  private readonly STORAGE_KEY = 'sw_account_v1';
   private readonly _data = signal<SwAccountData | null>(null);
 
   readonly data = this._data.asReadonly();
@@ -19,14 +19,39 @@ export class SwAccountService {
   });
   readonly artifacts = computed(() => this._data()?.artifacts ?? []);
 
-  constructor() {
+  readonly maxSkillLevels = computed(() => {
+    const map = new Map<number, number>();
+    for (const u of this.units()) {
+      for (const [skillId, level] of u.skills) {
+        map.set(skillId, Math.max(map.get(skillId) ?? 0, level));
+      }
+    }
+    return map;
+  });
+
+  constructor(private authService: AuthService) {
     this._loadFromStorage();
+    // React to user changes — reload from the correct storage key
+    effect(() => {
+      // Access the signal so effect tracks it
+      const _user = this.authService.currentUser();
+      this._loadFromStorage();
+    });
+  }
+
+  private _storageKey(): string {
+    const userId = this.authService.currentUser()?.id ?? 'guest';
+    return `sw_account_v1_${userId}`;
   }
 
   private _loadFromStorage(): void {
     try {
-      const raw = localStorage.getItem(this.STORAGE_KEY);
-      if (raw) this._data.set(JSON.parse(raw));
+      const raw = localStorage.getItem(this._storageKey());
+      if (raw) {
+        this._data.set(JSON.parse(raw));
+      } else {
+        this._data.set(null);
+      }
     } catch { /* ignore */ }
   }
 
@@ -39,7 +64,7 @@ export class SwAccountService {
           const data = this._parse(json);
           this._data.set(data);
           // Store only the essential fields (not images) to stay under localStorage limit
-          localStorage.setItem(this.STORAGE_KEY, JSON.stringify(data));
+          localStorage.setItem(this._storageKey(), JSON.stringify(data));
           resolve(data);
         } catch (err: any) {
           reject(new Error(err?.message ?? 'Erreur de parsing'));
@@ -116,6 +141,6 @@ export class SwAccountService {
 
   clear(): void {
     this._data.set(null);
-    localStorage.removeItem(this.STORAGE_KEY);
+    localStorage.removeItem(this._storageKey());
   }
 }

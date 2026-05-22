@@ -71,6 +71,24 @@
           <button class="sort-btn" [class.active]="sortKey() === 'type'" (click)="toggleSort('type')">
             Type {{ sortKey() === 'type' ? (sortDir() === 1 ? '↑' : '↓') : '' }}
           </button>
+          <button class="sort-btn" [class.active]="sortKey() === 'efficiency'" (click)="toggleSort('efficiency')">
+            Efficacité {{ sortKey() === 'efficiency' ? (sortDir() === 1 ? '↑' : '↓') : '' }}
+          </button>
+        </div>
+      </div>
+
+      <!-- Effect filter row -->
+      <div class="filter-group" style="width:100%">
+        <span class="filter-label">Filtrer par effet</span>
+        <div class="effect-filter-row">
+          <button class="stat-btn" [class.active]="filterEffect() === 'all'" (click)="filterEffect.set('all')">Tous</button>
+          @for (effectId of effectOptions; track effectId) {
+            <button
+              class="stat-btn"
+              [class.active]="filterEffect() === effectId"
+              (click)="filterEffect.set(effectId)"
+            >{{ getSecEffectName(effectId) }}</button>
+          }
         </div>
       </div>
     </div>
@@ -84,6 +102,9 @@
             <th class="col-attr">Attribut / Style</th>
             <th class="col-level">+Niveau</th>
             <th class="col-rank">Rang</th>
+            <th class="col-efficiency sortable" (click)="toggleSort('efficiency')">
+              Efficacité {{ sortKey() === 'efficiency' ? (sortDir() === 1 ? '↑' : '↓') : '' }}
+            </th>
             <th class="col-main">Effet principal</th>
             <th class="col-subs">Sous-effets</th>
             <th class="col-equipped">Équipé sur</th>
@@ -111,6 +132,9 @@
                 <span class="rank-stars">{{ '★'.repeat(art.rank) }}</span>
                 <span class="nat-stars"> (nat {{ art.natural_rank }}★)</span>
               </td>
+              <td class="col-efficiency">
+                <span class="eff-badge" [class]="getArtEffClass(calcArtifactEfficiency(art))">{{ calcArtifactEfficiency(art) }}%</span>
+              </td>
               <td class="col-main stat-cell">{{ getPriEffectLabel(art) }}</td>
               <td class="col-subs">
                 <div class="sub-effects">
@@ -131,7 +155,7 @@
 
           @if (filteredArtifacts().length === 0) {
             <tr>
-              <td colspan="7" class="no-results">Aucun artefact ne correspond aux filtres.</td>
+              <td colspan="8" class="no-results">Aucun artefact ne correspond aux filtres.</td>
             </tr>
           }
         </tbody>

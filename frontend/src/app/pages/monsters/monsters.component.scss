@@ -291,6 +291,42 @@
   font-size: 14px;
 }
 
+// Purple awakened stars
+.awakened-stars {
+  color: #9b59b6;
+  text-shadow: 0 0 6px rgba(155, 89, 182, 0.6);
+}
+
+// Gold nat stars
+.stars-nat {
+  color: var(--light, #f1c40f);
+  font-size: 11px;
+  letter-spacing: -1px;
+}
+
+// Class stars
+.stars-class {
+  font-size: 14px;
+  color: #f1c40f;
+  letter-spacing: -1px;
+}
+
+// Skill max badge
+.skill-max-badge {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background: var(--win);
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-left: 4px;
+  font-size: 9px;
+  line-height: 14px;
+  text-align: center;
+  color: white;
+  content: '✓';
+}
+
 /* ===== Responsive ===== */
 @media (max-width: 600px) {
   .monsters-page { padding: 16px 12px; }

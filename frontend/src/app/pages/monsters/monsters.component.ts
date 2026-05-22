@@ -19,6 +19,7 @@ interface UnitWithMonster {
   nat: number;
   awakened: boolean;
   skillsSummary: string;
+  skillsMaxed: boolean;
 }
 
 @Component({
@@ -48,14 +49,16 @@ export class MonstersComponent implements OnInit {
   ];
 
   readonly enrichedUnits = computed<UnitWithMonster[]>(() => {
+    const maxSkills = this.swAccountService.maxSkillLevels();
     return this.swAccountService.units().map(unit => {
       const monster = this.monsterService.getById(unit.unit_master_id) ?? null;
       const name = monster?.name ?? `#${unit.unit_master_id}`;
       const elem: Element | null = monster?.elem ?? null;
       const nat = monster?.nat ?? 0;
-      const awakened = monster ? unit.class > monster.nat : false;
+      const awakened = this.monsterService.isAwakened(unit.unit_master_id);
       const skillsSummary = this.getSkillsSummary(unit);
-      return { unit, monster, name, elem, nat, awakened, skillsSummary };
+      const skillsMaxed = this.isSkillsMaxed(unit, maxSkills);
+      return { unit, monster, name, elem, nat, awakened, skillsSummary, skillsMaxed };
     });
   });
 
@@ -90,6 +93,15 @@ export class MonstersComponent implements OnInit {
   getSkillsSummary(unit: SwUnit): string {
     if (!unit.skills?.length) return '—';
     return unit.skills.map(s => s[1]).join('/');
+  }
+
+  isSkillsMaxed(unit: SwUnit, maxSkills?: Map<number, number>): boolean {
+    if (!unit.skills?.length) return false;
+    const map = maxSkills ?? this.swAccountService.maxSkillLevels();
+    return unit.skills.every(([skillId, level]) => {
+      const maxLevel = map.get(skillId);
+      return maxLevel !== undefined && level >= maxLevel;
+    });
   }
 
   isMax(unit: SwUnit): boolean {

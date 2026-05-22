@@ -284,6 +284,47 @@
   font-size: 14px;
 }
 
+.eff-badge {
+  display: inline-block;
+  padding: 2px 7px;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: 700;
+  font-family: 'Rajdhani', sans-serif;
+  background: var(--bg4);
+  color: var(--text2);
+  &.eff-perfect { background: rgba(155,89,182,0.2); color: #9b59b6; }
+  &.eff-high    { background: var(--win-bg); color: var(--win); }
+  &.eff-mid     { background: rgba(79,142,247,0.15); color: var(--accent); }
+  &.eff-low     { background: var(--bg4); color: var(--text3); }
+}
+
+.effect-filter-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.stat-btn {
+  padding: 4px 10px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--bg3);
+  color: var(--text2);
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background .15s, color .15s;
+  white-space: nowrap;
+  &:hover, &.active {
+    background: var(--accent);
+    color: #fff;
+    border-color: var(--accent);
+  }
+}
+
 /* ===== Responsive ===== */
 @media (max-width: 600px) {
   .artifacts-page { padding: 16px 12px; }

@@ -88,7 +88,7 @@
 
             <div class="card-meta">
               <span class="card-stars">
-                @for (s of starsArray(item.unit.class); track s) {⭐}
+                <span class="stars-class" [class.awakened-stars]="item.awakened">{{ '★'.repeat(item.unit.class) }}</span>
               </span>
               <span class="card-level" [class.max-level]="item.unit.unit_level === 40">
                 Lvl {{ item.unit.unit_level }}
@@ -97,11 +97,14 @@
 
             <div class="card-nat">
               <span class="nat-label">Nat</span>
-              <span class="nat-stars">{{ '★'.repeat(item.nat || 0) }}</span>
+              <span class="stars-nat">{{ '★'.repeat(item.nat || 0) }}</span>
             </div>
 
             <div class="card-skills">
               Compétences : <span class="skills-val">{{ item.skillsSummary }}</span>
+              @if (item.skillsMaxed) {
+                <span class="skill-max-badge" title="Skills max">✓</span>
+              }
             </div>
           </div>
         </div>

@@ -71,6 +71,21 @@
         [ngModel]="searchText()"
         (ngModelChange)="searchText.set($event)"
       />
+
+      <!-- Stat filter row -->
+      <div class="filter-group" style="width:100%">
+        <span class="filter-label">Filtrer par stat</span>
+        <div class="stat-filter-row">
+          <button class="stat-btn" [class.active]="filterStat() === 'all'" (click)="filterStat.set('all')">Tous</button>
+          @for (statId of statOptions; track statId) {
+            <button
+              class="stat-btn"
+              [class.active]="filterStat() === statId"
+              (click)="filterStat.set(statId)"
+            >{{ getStatName(statId) }}</button>
+          }
+        </div>
+      </div>
     </div>
 
     <!-- Table -->
@@ -89,6 +104,9 @@
             </th>
             <th class="col-rank sortable" (click)="toggleSort('rank')">
               Rang {{ sortKey() === 'rank' ? (sortDir() === 1 ? '↑' : '↓') : '' }}
+            </th>
+            <th class="col-efficiency sortable" (click)="toggleSort('efficiency')">
+              Efficacité {{ sortKey() === 'efficiency' ? (sortDir() === 1 ? '↑' : '↓') : '' }}
             </th>
             <th class="col-main">Principale</th>
             <th class="col-prefix">Préfixe</th>
@@ -113,6 +131,9 @@
               </td>
               <td class="col-rank">
                 <span class="rank-badge" [class]="getRankClass(rune.rank)">{{ getRankName(rune.rank) }}</span>
+              </td>
+              <td class="col-efficiency">
+                <span class="eff-badge" [class]="getEfficiencyClass(calcEfficiency(rune))">{{ calcEfficiency(rune) }}%</span>
               </td>
               <td class="col-main stat-cell">{{ getStatDisplay(rune.pri_eff) }}</td>
               <td class="col-prefix stat-cell">
@@ -143,7 +164,7 @@
 
           @if (filteredRunes().length === 0) {
             <tr>
-              <td colspan="8" class="no-results">Aucune rune ne correspond aux filtres.</td>
+              <td colspan="9" class="no-results">Aucune rune ne correspond aux filtres.</td>
             </tr>
           }
         </tbody>
